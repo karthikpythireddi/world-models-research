@@ -25,10 +25,13 @@ def load_papers():
     last_updated = raw.get("last_updated")
     rows = []
     for p in papers:
-        authors = p.get("authors") or []
-        author_str = ", ".join(a.get("name", "") for a in authors[:3])
-        if len(authors) > 3:
-            author_str += f" +{len(authors)-3}"
+        authors = p.get("authors") or ""
+        if isinstance(authors, list):
+            author_str = ", ".join(a.get("name", "") for a in authors[:3])
+            if len(authors) > 3:
+                author_str += f" +{len(authors)-3}"
+        else:
+            author_str = authors
         rows.append({
             "title":        p.get("title") or "",
             "abstract":     p.get("abstract") or "",
