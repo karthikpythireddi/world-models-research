@@ -13,6 +13,29 @@ st.set_page_config(
     layout="wide",
 )
 
+# ── Topic taxonomy (keyword-based) ────────────────────────────────────────────
+
+TOPICS = {
+    "Robot Navigation":       ["navigation", "path planning", "mobile robot", "localization", "mapping", "slam"],
+    "Autonomous Driving":     ["autonomous driving", "self-driving", "vehicle", "traffic", "waymo", "nuplan", "carla"],
+    "Reinforcement Learning": ["reinforcement learning", " rl ", "policy", "reward", "agent", "q-learning", "actor-critic", "ppo", "sac"],
+    "Video Generation":       ["video generation", "video prediction", "future frame", "video diffusion", "video synthesis"],
+    "3D Scene Modeling":      ["nerf", "3d", "scene reconstruction", "point cloud", "occupancy", "gaussian splatting", "spatial"],
+    "Physics & Dynamics":     ["physics", "dynamics", "simulation", "rigid body", "fluid", "contact", "mujoco", "isaac"],
+    "Planning & Control":     ["planning", "model predictive", "mpc", "tree search", "mcts", "decision making", "control"],
+    "Language & Vision":      ["vision-language", "vlm", "multimodal", "language model", "llm", "gpt", "clip", "vqa"],
+    "Situational Awareness":  ["situational awareness", "scene understanding", "anomaly", "out-of-distribution", "uncertainty", "safety"],
+    "Game Playing":           ["atari", "game", "minecraft", "chess", "go ", "dota", "starcraft", "game environment"],
+    "Robotics & Manipulation":["robot", "manipulation", "grasping", "dexterous", "humanoid", "arm", "end-effector"],
+    "Latent Space Models":    ["latent", "vae", "encoder", "representation learning", "embedding", "dreamer", "rssm"],
+}
+
+
+def assign_topics(title: str, abstract: str) -> list:
+    text = (title + " " + abstract).lower()
+    return [topic for topic, kws in TOPICS.items() if any(kw in text for kw in kws)] or ["Other"]
+
+
 # ── Load data ─────────────────────────────────────────────────────────────────
 
 @st.cache_data(ttl=3600)
@@ -32,17 +55,22 @@ def load_papers():
                 author_str += f" +{len(authors)-3}"
         else:
             author_str = authors
+
+        title    = p.get("title") or ""
+        abstract = p.get("abstract") or ""
+
         rows.append({
-            "title":        p.get("title") or "",
-            "abstract":     p.get("abstract") or "",
-            "year":         p.get("year") or 0,
-            "venue":        p.get("venue") or "Unknown",
-            "authors":      author_str,
-            "citations":    p.get("citationCount") or 0,
-            "paper_url":    p.get("paperUrl") or "",
-            "code_url":     p.get("codeUrl") or "",
-            "pub_date":     p.get("publicationDate") or "",
+            "title":      title,
+            "abstract":   abstract,
+            "year":       p.get("year") or 0,
+            "venue":      p.get("venue") or "",
+            "authors":    author_str,
+            "citations":  p.get("citationCount") or 0,
+            "paper_url":  p.get("paper_url") or p.get("paperUrl") or "",
+            "code_url":   p.get("code_url") or p.get("codeUrl") or "",
+            "topics":     assign_topics(title, abstract),
         })
+
     df = pd.DataFrame(rows)
     df = df[df["year"] > 0].copy()
     return df, last_updated
@@ -57,7 +85,7 @@ if last_updated:
     st.caption(f"Last updated: {last_updated} · Refreshes daily at 09:00 UTC")
 
 if df is None or df.empty:
-    st.warning("No data yet — run `python scripts/fetch_papers.py` to populate.")
+    st.warning("No data yet — run `python3 scripts/fetch_papers.py` to populate.")
     st.stop()
 
 # ── Sidebar filters ───────────────────────────────────────────────────────────
@@ -65,7 +93,7 @@ if df is None or df.empty:
 st.sidebar.header("Filters")
 
 current_year = datetime.now(timezone.utc).year
-min_year = int(df["year"].min())
+min_year     = int(df["year"].min())
 
 year_range = st.sidebar.slider(
     "Year range",
@@ -74,14 +102,19 @@ year_range = st.sidebar.slider(
     value=(current_year - 2, current_year),
 )
 
-venues = sorted(df["venue"].dropna().unique().tolist())
+selected_topics = st.sidebar.multiselect(
+    "Topic",
+    options=sorted(TOPICS.keys()) + ["Other"],
+)
+
+venues = sorted(v for v in df["venue"].dropna().unique() if v)
 selected_venues = st.sidebar.multiselect("Conference / Venue", venues)
 
 search = st.sidebar.text_input("Search title or abstract", "")
 
 sort_by = st.sidebar.selectbox("Sort by", ["Year (newest)", "Citations (most)"])
 
-show_no_code = st.sidebar.checkbox("Only papers with code", value=False)
+show_code_only = st.sidebar.checkbox("Only papers with code", value=False)
 
 # ── Apply filters ─────────────────────────────────────────────────────────────
 
@@ -89,6 +122,11 @@ filtered = df[
     (df["year"] >= year_range[0]) &
     (df["year"] <= year_range[1])
 ].copy()
+
+if selected_topics:
+    filtered = filtered[
+        filtered["topics"].apply(lambda t: any(topic in t for topic in selected_topics))
+    ]
 
 if selected_venues:
     filtered = filtered[filtered["venue"].isin(selected_venues)]
@@ -100,8 +138,8 @@ if search:
     )
     filtered = filtered[mask]
 
-if show_no_code:
-    filtered = filtered[filtered["code_url"] != ""]
+if show_code_only:
+    filtered = filtered[filtered["code_url"].str.strip() != ""]
 
 if sort_by == "Year (newest)":
     filtered = filtered.sort_values("year", ascending=False)
@@ -113,7 +151,7 @@ else:
 col1, col2, col3, col4 = st.columns(4)
 col1.metric("Total papers (all time)", len(df))
 col2.metric("Shown (filtered)", len(filtered))
-col3.metric("With code", int((df["code_url"] != "").sum()))
+col3.metric("With code", int((df["code_url"].str.strip() != "").sum()))
 col4.metric("Year range", f"{min_year} – {current_year}")
 
 st.divider()
@@ -125,27 +163,34 @@ if filtered.empty:
 else:
     for _, row in filtered.iterrows():
         with st.container(border=True):
-            title_line = f"### {row['title']}"
-            st.markdown(title_line)
+            st.markdown(f"### {row['title']}")
 
-            meta_parts = []
+            # Topic badges
+            badges = "  ".join(f"`{t}`" for t in row["topics"] if t != "Other")
+            if badges:
+                st.markdown(badges)
+
+            # Meta line
+            meta = []
             if row["year"]:
-                meta_parts.append(f"📅 **{int(row['year'])}**")
-            if row["venue"] and row["venue"] != "Unknown":
-                meta_parts.append(f"🎓 {row['venue']}")
+                meta.append(f"📅 **{int(row['year'])}**")
+            if row["venue"]:
+                meta.append(f"🎓 {row['venue']}")
             if row["authors"]:
-                meta_parts.append(f"👤 {row['authors']}")
+                meta.append(f"👤 {row['authors']}")
             if row["citations"]:
-                meta_parts.append(f"🔖 {int(row['citations'])} citations")
-            st.markdown("  ·  ".join(meta_parts))
+                meta.append(f"🔖 {int(row['citations'])} citations")
+            if meta:
+                st.markdown("  ·  ".join(meta))
 
-            link_parts = []
+            # Links
+            links = []
             if row["paper_url"]:
-                link_parts.append(f"[📄 Paper]({row['paper_url']})")
-            if row["code_url"]:
-                link_parts.append(f"[💻 Code]({row['code_url']})")
-            if link_parts:
-                st.markdown("  |  ".join(link_parts))
+                links.append(f"[📄 Paper]({row['paper_url']})")
+            if row["code_url"] and row["code_url"].strip():
+                links.append(f"[💻 Code]({row['code_url']})")
+            if links:
+                st.markdown("  |  ".join(links))
 
             if row["abstract"]:
                 with st.expander("Abstract"):
