@@ -183,14 +183,12 @@ else:
             if meta:
                 st.markdown("  ·  ".join(meta))
 
-            # Links
-            links = []
+            # Links as buttons
+            btn_cols = st.columns([1, 1, 8])
             if row["paper_url"]:
-                links.append(f"[📄 Paper]({row['paper_url']})")
+                btn_cols[0].link_button("📄 Paper", row["paper_url"], use_container_width=True)
             if row["code_url"] and row["code_url"].strip():
-                links.append(f"[💻 Code]({row['code_url']})")
-            if links:
-                st.markdown("  |  ".join(links))
+                btn_cols[1].link_button("💻 Code", row["code_url"], use_container_width=True)
 
             if row["abstract"]:
                 with st.expander("Abstract"):
