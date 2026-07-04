@@ -32,20 +32,7 @@ jobs:
           git diff --cached --quiet || git commit -m "chore: daily papers update $(date -u '+%Y-%m-%d')"
           git push
 
-      - name: Push updated papers.json to HuggingFace Space
+      - name: Deploy full app to HuggingFace Space
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: |
-          python - <<'EOF'
-          from huggingface_hub import HfApi
-          api = HfApi()
-          api.upload_file(
-              path_or_fileobj="data/papers.json",
-              path_in_repo="papers.json",
-              repo_id="karthikpythireddi93/world-models-papers",
-              repo_type="space",
-              token="${{ secrets.HF_TOKEN }}",
-              commit_message="Daily papers update",
-          )
-          print("Pushed papers.json to HF Space")
-          EOF
+        run: python scripts/deploy_to_hf.py --token "$HF_TOKEN"
