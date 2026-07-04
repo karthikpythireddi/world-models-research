@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>World Models Research</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="particles"></canvas>
+
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-logo">
+        <span class="logo-icon">⟁</span>
+        <span class="logo-text">World Models</span>
+      </div>
+
+      <div class="filter-section">
+        <label class="filter-label">Year Range</label>
+        <div class="year-range">
+          <input type="number" id="year-from" placeholder="From" min="1990" max="2026" value="2024" />
+          <span>–</span>
+          <input type="number" id="year-to" placeholder="To" min="1990" max="2026" value="2026" />
+        </div>
+      </div>
+
+      <div class="filter-section">
+        <label class="filter-label">Topics</label>
+        <div id="topic-filters" class="topic-list"></div>
+      </div>
+
+      <div class="filter-section">
+        <label class="filter-label">Sort By</label>
+        <select id="sort-select" class="filter-select">
+          <option value="year-desc">Newest first</option>
+          <option value="year-asc">Oldest first</option>
+          <option value="citations">Most cited</option>
+        </select>
+      </div>
+
+      <div class="filter-section">
+        <label class="filter-toggle">
+          <input type="checkbox" id="code-only" />
+          <span>Only papers with code</span>
+        </label>
+      </div>
+
+      <div class="sidebar-stats" id="sidebar-stats"></div>
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+      <header class="topbar">
+        <div class="search-wrap">
+          <span class="search-icon">⌕</span>
+          <input type="text" id="search" placeholder="Search papers, authors, abstracts…" autocomplete="off" />
+          <kbd>⌘K</kbd>
+        </div>
+        <div class="stats-row" id="stats-row">
+          <div class="stat-chip" id="stat-total"></div>
+          <div class="stat-chip" id="stat-shown"></div>
+          <div class="stat-chip" id="stat-code"></div>
+          <div class="stat-chip" id="stat-updated"></div>
+          <div class="stat-chip" id="stat-visits"></div>
+        </div>
+      </header>
+
+      <div id="papers-grid" class="papers-grid"></div>
+      <div id="loading" class="loading"><div class="spinner"></div><p>Fetching papers…</p></div>
+      <div id="empty" class="empty hidden">No papers match your filters.</div>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+  <!-- Visitor analytics: sign up at goatcounter.com and replace YOUR_SITE with your site code -->
+  <script data-goatcounter="https://YOUR_SITE.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

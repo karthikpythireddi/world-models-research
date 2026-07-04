@@ -1,11 +1,11 @@
 """
-Deploys the dashboard to HuggingFace Spaces.
-Run once: python3 scripts/deploy_to_hf.py --token hf_xxx
+Deploy the custom FastAPI dashboard to HuggingFace Spaces.
+Usage: python3 scripts/deploy_to_hf.py --token hf_xxx
 """
 import argparse
 import pathlib
-import tempfile
 import shutil
+import tempfile
 
 from huggingface_hub import HfApi
 
@@ -14,41 +14,23 @@ REPO_ROOT = pathlib.Path(__file__).parent.parent
 
 
 def build_space(tmp: pathlib.Path):
-    """Assemble all Space files into a temp directory."""
-
-    # app.py — fix DATA_PATH for flat Space layout
-    src = (REPO_ROOT / "dashboard" / "app.py").read_text()
-    src = src.replace(
-        'Path(__file__).parent.parent / "data" / "papers.json"',
-        'Path("papers.json")',
-    )
-    (tmp / "app.py").write_text(src)
-
-    # Dockerfile — all files are at repo root in the Space
-    dockerfile = """\
-FROM python:3.11-slim
-WORKDIR /app
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
-COPY app.py .
-COPY papers.json .
-EXPOSE 7860
-CMD ["streamlit", "run", "app.py", \
-"--server.port=7860", "--server.address=0.0.0.0", \
-"--server.headless=true"]
-"""
-    (tmp / "Dockerfile").write_text(dockerfile)
-
-    # requirements.txt
+    shutil.copy(REPO_ROOT / "server.py",       tmp / "server.py")
     shutil.copy(REPO_ROOT / "requirements.txt", tmp / "requirements.txt")
+    shutil.copy(REPO_ROOT / "Dockerfile",       tmp / "Dockerfile")
 
-    # papers.json
-    shutil.copy(REPO_ROOT / "data" / "papers.json", tmp / "papers.json")
+    papers_src = REPO_ROOT / "data" / "papers.json"
+    if papers_src.exists():
+        shutil.copy(papers_src, tmp / "papers.json")
+    else:
+        (tmp / "papers.json").write_text('{"papers":[],"last_updated":null}')
+
+    static_dst = tmp / "static"
+    shutil.copytree(REPO_ROOT / "static", static_dst)
 
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--token", required=True, help="HuggingFace API token")
+    parser.add_argument("--token", required=True, help="HuggingFace write token")
     args = parser.parse_args()
 
     api = HfApi(token=args.token)
@@ -58,14 +40,15 @@ def main():
         build_space(tmp)
 
         print("Files to upload:")
-        for f in sorted(tmp.iterdir()):
-            print(f"  {f.name} ({f.stat().st_size // 1024}KB)")
+        for f in sorted(tmp.rglob("*")):
+            if f.is_file():
+                print(f"  {f.relative_to(tmp)}  ({f.stat().st_size // 1024}KB)")
 
         api.upload_folder(
             folder_path=str(tmp),
             repo_id=REPO_ID,
             repo_type="space",
-            commit_message="Deploy: fix all paths and Dockerfile",
+            commit_message="Deploy: custom FastAPI + vanilla JS dashboard",
         )
 
     print(f"\nDone! https://huggingface.co/spaces/{REPO_ID}")

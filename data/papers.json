@@ -82,7 +82,7 @@
       "paper_url": "https://arxiv.org/abs/2607.01736v1",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/nsmoly/LunarLander_RSSM"
     },
     {
       "paperId": "2607.01595v1",
@@ -130,7 +130,7 @@
       "paper_url": "https://arxiv.org/abs/2607.00917v1",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/Kit115/ValueDiffusionWorldModels"
     },
     {
       "paperId": "2607.00889v1",
@@ -406,7 +406,7 @@
       "paper_url": "https://arxiv.org/abs/2606.29495v1",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/lucianma05-create/CogWM"
     },
     {
       "paperId": "2606.29465v1",
@@ -634,7 +634,7 @@
       "paper_url": "https://arxiv.org/abs/2606.27277v1",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/Luo-Z13/EO-WM"
     },
     {
       "paperId": "2606.27014v1",
@@ -694,7 +694,7 @@
       "paper_url": "https://arxiv.org/abs/2606.26713v1",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/7jiangyq/lithodreamer.git"
     },
     {
       "paperId": "2606.26694v2",
@@ -778,7 +778,7 @@
       "paper_url": "https://arxiv.org/abs/2606.24597v1",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/QwenLM/Qwen-AgentWorld"
     },
     {
       "paperId": "2606.24476v2",
@@ -1054,7 +1054,7 @@
       "paper_url": "https://arxiv.org/abs/2606.21961v1",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/arco-group/vegsim"
     },
     {
       "paperId": "2606.21775v1",
@@ -1390,7 +1390,7 @@
       "paper_url": "https://arxiv.org/abs/2606.16721v1",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/1999kevin/awesome_medical_world_models"
     },
     {
       "paperId": "2606.16605v1",
@@ -1402,7 +1402,7 @@
       "paper_url": "https://arxiv.org/abs/2606.16605v1",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/zaoanguai/ARB4WM"
     },
     {
       "paperId": "2606.16576v1",
@@ -1750,7 +1750,7 @@
       "paper_url": "https://arxiv.org/abs/2606.12780v1",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/antman9914/proplay"
     },
     {
       "paperId": "2606.12316v1",
@@ -2314,7 +2314,7 @@
       "paper_url": "https://arxiv.org/abs/2606.03603v1",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/yczhou001/PF-OPSD"
     },
     {
       "paperId": "2606.03371v3",
@@ -2362,7 +2362,7 @@
       "paper_url": "https://arxiv.org/abs/2606.02800v4",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/nvidia/cosmos"
     },
     {
       "paperId": "2606.02753v1",
@@ -2446,7 +2446,7 @@
       "paper_url": "https://arxiv.org/abs/2606.02372v1",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/loyiv/CoMAP"
     },
     {
       "paperId": "2606.01950v1",
@@ -2506,7 +2506,7 @@
       "paper_url": "https://arxiv.org/abs/2606.01164v1",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/liujiuming123/Awesome-Interactive-World-Model"
     },
     {
       "paperId": "2606.01027v1",
@@ -2638,7 +2638,7 @@
       "paper_url": "https://arxiv.org/abs/2605.30880v3",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/HKBU-KnowComp/PatchWorld"
     },
     {
       "paperId": "2606.00133v1",
@@ -2686,7 +2686,7 @@
       "paper_url": "https://arxiv.org/abs/2605.30263v1",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/shengshu-ai/minWM"
     },
     {
       "paperId": "2605.30100v1",
@@ -2854,7 +2854,7 @@
       "paper_url": "https://arxiv.org/abs/2605.25874v1",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/meituan-longcat/WBench"
     },
     {
       "paperId": "2605.25620v1",
@@ -3190,7 +3190,7 @@
       "paper_url": "https://arxiv.org/abs/2605.24004v1",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/pku-smart-city/source_code"
     },
     {
       "paperId": "2605.19341v1",
@@ -3334,7 +3334,7 @@
       "paper_url": "https://arxiv.org/abs/2605.17537v2",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/XuYuanFei01/ResDreamer"
     },
     {
       "paperId": "2605.17522v1",
@@ -3514,7 +3514,7 @@
       "paper_url": "https://arxiv.org/abs/2605.16457v3",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/snu-mllab/Identifiable-Token-Correspondence"
     },
     {
       "paperId": "2605.15618v1",
@@ -3574,7 +3574,7 @@
       "paper_url": "https://arxiv.org/abs/2605.15391v1",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/ostadabbas/PanoWorld"
     },
     {
       "paperId": "2605.15185v1",
@@ -3658,7 +3658,7 @@
       "paper_url": "https://arxiv.org/abs/2605.13740v1",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/atomresearch/pinductor"
     },
     {
       "paperId": "2605.23972v1",
@@ -3670,7 +3670,7 @@
       "paper_url": "https://arxiv.org/abs/2605.23972v1",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/FeisalAlaswad/FLUX-RL-Agent"
     },
     {
       "paperId": "2605.18847v1",
@@ -3730,7 +3730,7 @@
       "paper_url": "https://arxiv.org/abs/2605.12289v1",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/opendilab/LightZero"
     },
     {
       "paperId": "2605.12255v1",
@@ -3874,7 +3874,7 @@
       "paper_url": "https://arxiv.org/abs/2605.10564v1",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/hotdogcheesewhite/DeepSight"
     },
     {
       "paperId": "2605.10426v2",
@@ -3886,7 +3886,7 @@
       "paper_url": "https://arxiv.org/abs/2605.10426v2",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/AFARI-Research/CoWorld-VLA"
     },
     {
       "paperId": "2605.10347v2",
@@ -3946,7 +3946,7 @@
       "paper_url": "https://arxiv.org/abs/2605.09241v1",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/intcomp/Sub-JEPA"
     },
     {
       "paperId": "2605.09131v1",
@@ -3982,7 +3982,7 @@
       "paper_url": "https://arxiv.org/abs/2605.08732v2",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/hdnndh/Latent-Geometry-Beyond-Search-Amortizing-Planning-in-World-Models"
     },
     {
       "paperId": "2605.08578v1",
@@ -4054,7 +4054,7 @@
       "paper_url": "https://arxiv.org/abs/2605.07326v1",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/wuyang98/GEM"
     },
     {
       "paperId": "2605.07288v1",
@@ -4078,7 +4078,7 @@
       "paper_url": "https://arxiv.org/abs/2605.07278v1",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/Guang000/RC-aux"
     },
     {
       "paperId": "2605.07199v1",
@@ -4198,7 +4198,7 @@
       "paper_url": "https://arxiv.org/abs/2605.05138v2",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/astroseger/arc-3-agents-baseline1"
     },
     {
       "paperId": "2605.05092v2",
@@ -4330,7 +4330,7 @@
       "paper_url": "https://arxiv.org/abs/2604.28196v1",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/H-EmbodVis/HERMESV2"
     },
     {
       "paperId": "2604.28185v2",
@@ -4426,7 +4426,7 @@
       "paper_url": "https://arxiv.org/abs/2605.28842v1",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/FastLM/Thoughts-as-Planning"
     },
     {
       "paperId": "2604.23532v1",
@@ -4450,7 +4450,7 @@
       "paper_url": "https://arxiv.org/abs/2604.22748v3",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/matrix-agent/awesome-agentic-world-modeling"
     },
     {
       "paperId": "2604.22152v1",
@@ -4738,7 +4738,7 @@
       "paper_url": "https://arxiv.org/abs/2604.11351v1",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/czs12354-xxdbd/WM-Dagger"
     },
     {
       "paperId": "2604.11302v1",
@@ -4906,7 +4906,7 @@
       "paper_url": "https://arxiv.org/abs/2604.07991v1",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/Thelegendzz/MotionScape"
     },
     {
       "paperId": "2604.07957v1",
@@ -5002,7 +5002,7 @@
       "paper_url": "https://arxiv.org/abs/2604.04707v2",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/OpenDCAI/OpenWorldLib"
     },
     {
       "paperId": "2604.03208v2",
@@ -5146,7 +5146,7 @@
       "paper_url": "https://arxiv.org/abs/2603.29090v1",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/rightnow-ai/hclsm"
     },
     {
       "paperId": "2603.28963v1",
@@ -5230,7 +5230,7 @@
       "paper_url": "https://arxiv.org/abs/2603.25716v2",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/H-EmbodVis/HyDRA"
     },
     {
       "paperId": "2603.25685v1",
@@ -5398,7 +5398,7 @@
       "paper_url": "https://arxiv.org/abs/2603.26741v1",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/F1y1113/LCVN"
     },
     {
       "paperId": "2603.21546v1",
@@ -5518,7 +5518,7 @@
       "paper_url": "https://arxiv.org/abs/2603.19675v2",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/xiaolul2/DynFlowDrive"
     },
     {
       "paperId": "2603.19201v2",
@@ -5542,7 +5542,7 @@
       "paper_url": "https://arxiv.org/abs/2603.18464v3",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/distanceLu/AcceRL"
     },
     {
       "paperId": "2603.18266v1",
@@ -5566,7 +5566,7 @@
       "paper_url": "https://arxiv.org/abs/2603.18202v2",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/NM512/r2dreamer"
     },
     {
       "paperId": "2603.17808v2",
@@ -5590,7 +5590,7 @@
       "paper_url": "https://arxiv.org/abs/2603.17652v1",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/jiangchaokang/VectorWorld"
     },
     {
       "paperId": "2603.17375v1",
@@ -5698,7 +5698,7 @@
       "paper_url": "https://arxiv.org/abs/2603.14392v2",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/511205787/WestWorld"
     },
     {
       "paperId": "2603.14039v1",
@@ -5950,7 +5950,7 @@
       "paper_url": "https://arxiv.org/abs/2603.07799v1",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/AIGeeksGroup/MWM"
     },
     {
       "paperId": "2603.07562v1",
@@ -5962,7 +5962,7 @@
       "paper_url": "https://arxiv.org/abs/2603.07562v1",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/thibault-wch/Brain-GBM-world-model"
     },
     {
       "paperId": "2603.07545v1",
@@ -6022,7 +6022,7 @@
       "paper_url": "https://arxiv.org/abs/2603.07039v1",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/legel/deepearth"
     },
     {
       "paperId": "2603.06987v1",
@@ -6058,7 +6058,7 @@
       "paper_url": "https://arxiv.org/abs/2603.06331v2",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/FofGofx/WorldCache"
     },
     {
       "paperId": "2603.05438v1",
@@ -6250,7 +6250,7 @@
       "paper_url": "https://arxiv.org/abs/2603.00466v1",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/ABU121111/DreamWorld"
     },
     {
       "paperId": "2603.00376v3",
@@ -6490,7 +6490,7 @@
       "paper_url": "https://arxiv.org/abs/2602.19285v1",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/DD0922/MRI-Contrast-Enhancement-Kinetics-World-Model"
     },
     {
       "paperId": "2602.19128v2",
@@ -6754,7 +6754,7 @@
       "paper_url": "https://arxiv.org/abs/2602.12373v2",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/antman9914/Policy4OOD"
     },
     {
       "paperId": "2602.12218v1",
@@ -6802,7 +6802,7 @@
       "paper_url": "https://arxiv.org/abs/2602.11882v1",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/suraj-ranganath/DINO-MBQuant"
     },
     {
       "paperId": "2602.11758v2",
@@ -6826,7 +6826,7 @@
       "paper_url": "https://arxiv.org/abs/2602.11389v2",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/galilai-group/cjepa"
     },
     {
       "paperId": "2602.11291v2",
@@ -6886,7 +6886,7 @@
       "paper_url": "https://arxiv.org/abs/2602.10884v1",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/mengtan00/ResWorld.git"
     },
     {
       "paperId": "2602.10717v1",
@@ -6910,7 +6910,7 @@
       "paper_url": "https://arxiv.org/abs/2602.10480v3",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/tianyi-lab/NeSyS"
     },
     {
       "paperId": "2602.10390v1",
@@ -6970,7 +6970,7 @@
       "paper_url": "https://arxiv.org/abs/2602.10090v3",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/Snowflake-Labs/agent-world-model"
     },
     {
       "paperId": "2602.10044v1",
@@ -7006,7 +7006,7 @@
       "paper_url": "https://arxiv.org/abs/2602.09856v1",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/AMAP-ML/Code2World"
     },
     {
       "paperId": "2602.09022v1",
@@ -7078,7 +7078,7 @@
       "paper_url": "https://arxiv.org/abs/2602.08032v2",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/leor-c/horizon-imagination"
     },
     {
       "paperId": "2602.08025v2",
@@ -7090,7 +7090,7 @@
       "paper_url": "https://arxiv.org/abs/2602.08025v2",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/CSU-JPG/MIND"
     },
     {
       "paperId": "2602.07854v3",
@@ -7162,7 +7162,7 @@
       "paper_url": "https://arxiv.org/abs/2602.06521v1",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": "https://github.com/liulin815/DriveWorld-VLA.git"
     },
     {
       "paperId": "2602.06508v2",
@@ -7402,7 +7402,7 @@
       "paper_url": "https://arxiv.org/abs/2602.02110v1",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/huawei-noah/noah-research"
     },
     {
       "paperId": "2602.02002v1",
@@ -7522,7 +7522,7 @@
       "paper_url": "https://arxiv.org/abs/2602.01536v1",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/Say2L/UniDWM"
     },
     {
       "paperId": "2602.01270v1",
@@ -7702,7 +7702,7 @@
       "paper_url": "https://arxiv.org/abs/2601.19336v1",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/MarquisDarwin/EAWM"
     },
     {
       "paperId": "2601.18620v1",
@@ -7930,7 +7930,7 @@
       "paper_url": "https://arxiv.org/abs/2601.08955v2",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/loyiv/ITP"
     },
     {
       "paperId": "2601.07964v1",
@@ -8170,7 +8170,7 @@
       "paper_url": "https://arxiv.org/abs/2512.24497v3",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/facebookresearch/jepa-wms"
     },
     {
       "paperId": "2512.24329v1",
@@ -8206,7 +8206,7 @@
       "paper_url": "https://arxiv.org/abs/2512.23676v1",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/Princeton-AI2-Lab/Web-World-Models"
     },
     {
       "paperId": "2512.23541v1",
@@ -8230,7 +8230,7 @@
       "paper_url": "https://arxiv.org/abs/2512.23180v3",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/dtc111111/GaussianDWM"
     },
     {
       "paperId": "2512.23162v4",
@@ -8434,7 +8434,7 @@
       "paper_url": "https://arxiv.org/abs/2512.14014v1",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/jacklishufan/MobileWorld"
     },
     {
       "paperId": "2512.13821v2",
@@ -8746,7 +8746,7 @@
       "paper_url": "https://arxiv.org/abs/2512.05809v1",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/chandar-lab/visa-for-mindjourney"
     },
     {
       "paperId": "2512.05361v1",
@@ -8986,7 +8986,7 @@
       "paper_url": "https://arxiv.org/abs/2512.01119v1",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/Bluefin-Tuna/WISER"
     },
     {
       "paperId": "2512.00883v3",
@@ -9454,7 +9454,7 @@
       "paper_url": "https://arxiv.org/abs/2511.05963v4",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/JaydenTeoh/NextLat"
     },
     {
       "paperId": "2511.04646v1",
@@ -9586,7 +9586,7 @@
       "paper_url": "https://arxiv.org/abs/2511.00423v3",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/molumitu/BOOM_MBRL"
     },
     {
       "paperId": "2510.27607v3",
@@ -9814,7 +9814,7 @@
       "paper_url": "https://arxiv.org/abs/2510.19654v2",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/6550Zhao/Policy-World-Model"
     },
     {
       "paperId": "2510.19430v3",
@@ -9862,7 +9862,7 @@
       "paper_url": "https://arxiv.org/abs/2510.19195v4",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/wm-research/Dream4Drive"
     },
     {
       "paperId": "2510.18315v1",
@@ -9934,7 +9934,7 @@
       "paper_url": "https://arxiv.org/abs/2510.16732v3",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/Li-Zn-H/AwesomeWorldModels"
     },
     {
       "paperId": "2510.16729v3",
@@ -10042,7 +10042,7 @@
       "paper_url": "https://arxiv.org/abs/2510.12560v2",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/SEU-zxj/CoIRL-AD"
     },
     {
       "paperId": "2510.12312v2",
@@ -10126,7 +10126,7 @@
       "paper_url": "https://arxiv.org/abs/2510.08713v2",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/F1y1113/UniWM"
     },
     {
       "paperId": "2510.08398v4",
@@ -10342,7 +10342,7 @@
       "paper_url": "https://arxiv.org/abs/2509.24948v6",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/amap-cvlab/world-env"
     },
     {
       "paperId": "2509.24804v1",
@@ -10354,7 +10354,7 @@
       "paper_url": "https://arxiv.org/abs/2509.24804v1",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/Ultraman-Tiga1/DyMoDreamer"
     },
     {
       "paperId": "2509.24527v1",
@@ -10438,7 +10438,7 @@
       "paper_url": "https://arxiv.org/abs/2509.21797v3",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/tsinghua-fib-lab/MoWM"
     },
     {
       "paperId": "2509.21790v1",
@@ -10450,7 +10450,7 @@
       "paper_url": "https://arxiv.org/abs/2509.21790v1",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/tsinghua-fib-lab/Longscape"
     },
     {
       "paperId": "2509.21657v2",
@@ -10618,7 +10618,7 @@
       "paper_url": "https://arxiv.org/abs/2509.13095v3",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/zhaozijie2022/seqwm"
     },
     {
       "paperId": "2509.12437v1",
@@ -10690,7 +10690,7 @@
       "paper_url": "https://arxiv.org/abs/2509.07945v3",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/opendilab/LightZero"
     },
     {
       "paperId": "2509.04731v3",
@@ -10726,7 +10726,7 @@
       "paper_url": "https://arxiv.org/abs/2509.07996v3",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/worldbench/awesome-3d-4d-world-models"
     },
     {
       "paperId": "2509.03956v1",
@@ -11002,7 +11002,7 @@
       "paper_url": "https://arxiv.org/abs/2508.02159v2",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/hggforget/PIGDreamer"
     },
     {
       "paperId": "2508.01922v1",
@@ -11194,7 +11194,7 @@
       "paper_url": "https://arxiv.org/abs/2507.10539v1",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/ulab-uiuc/GWM"
     },
     {
       "paperId": "2507.09462v1",
@@ -11350,7 +11350,7 @@
       "paper_url": "https://arxiv.org/abs/2507.04002v2",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/lynn-yu/NRSeg"
     },
     {
       "paperId": "2507.03298v1",
@@ -11386,7 +11386,7 @@
       "paper_url": "https://arxiv.org/abs/2507.00917v3",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/NJU3DV-LoongGroup/Embodied-World-Models-Survey"
     },
     {
       "paperId": "2507.00603v1",
@@ -11398,7 +11398,7 @@
       "paper_url": "https://arxiv.org/abs/2507.00603v1",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/ucaszyp/World4Drive"
     },
     {
       "paperId": "2506.24113v1",
@@ -11410,7 +11410,7 @@
       "paper_url": "https://arxiv.org/abs/2506.24113v1",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/Kevin-thu/Epona"
     },
     {
       "paperId": "2506.23919v3",
@@ -11434,7 +11434,7 @@
       "paper_url": "https://arxiv.org/abs/2506.23468v2",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/Feliciaxyao/NavMorph"
     },
     {
       "paperId": "2506.23434v2",
@@ -11458,7 +11458,7 @@
       "paper_url": "https://arxiv.org/abs/2506.23135v1",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/tsinghua-fib-lab/RoboScape"
     },
     {
       "paperId": "2506.23126v4",
@@ -11482,7 +11482,7 @@
       "paper_url": "https://arxiv.org/abs/2506.23074v1",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/yzheng97/CDAL"
     },
     {
       "paperId": "2506.23032v2",
@@ -11554,7 +11554,7 @@
       "paper_url": "https://arxiv.org/abs/2506.19842v1",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/April-Yz/ManiGaussian_Bimanual"
     },
     {
       "paperId": "2506.18897v2",
@@ -11650,7 +11650,7 @@
       "paper_url": "https://arxiv.org/abs/2506.13260v1",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/synsin0/COME"
     },
     {
       "paperId": "2506.13138v3",
@@ -12070,7 +12070,7 @@
       "paper_url": "https://arxiv.org/abs/2505.20922v2",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/breez3young/DIMA"
     },
     {
       "paperId": "2505.20425v2",
@@ -12082,7 +12082,7 @@
       "paper_url": "https://arxiv.org/abs/2505.20425v2",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/raktimgg/osvi-wm"
     },
     {
       "paperId": "2505.20171v1",
@@ -12250,7 +12250,7 @@
       "paper_url": "https://arxiv.org/abs/2505.12705v2",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/NVIDIA/GR00T-Dreams"
     },
     {
       "paperId": "2505.10819v4",
@@ -12286,7 +12286,7 @@
       "paper_url": "https://arxiv.org/abs/2505.09694v2",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/AgibotTech/EWMBench"
     },
     {
       "paperId": "2505.11528v6",
@@ -12478,7 +12478,7 @@
       "paper_url": "https://arxiv.org/abs/2504.21024v2",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/Tencent/SelfEvolvingAgent"
     },
     {
       "paperId": "2504.18576v2",
@@ -12514,7 +12514,7 @@
       "paper_url": "https://arxiv.org/abs/2504.13820v1",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/LeapLabTHU/CheXWorld"
     },
     {
       "paperId": "2504.13643v1",
@@ -12538,7 +12538,7 @@
       "paper_url": "https://arxiv.org/abs/2504.13065v1",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/LeapLabTHU/EchoWorld"
     },
     {
       "paperId": "2504.12299v1",
@@ -12694,7 +12694,7 @@
       "paper_url": "https://arxiv.org/abs/2504.01941v2",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/liyingyanUCAS/WoTE"
     },
     {
       "paperId": "2504.00131v1",
@@ -12802,7 +12802,7 @@
       "paper_url": "https://arxiv.org/abs/2503.17109v2",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/Pter61/predicir"
     },
     {
       "paperId": "2503.16034v2",
@@ -12826,7 +12826,7 @@
       "paper_url": "https://arxiv.org/abs/2503.15875v1",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/xiaomi-mlab/mila.github.io"
     },
     {
       "paperId": "2503.15168v1",
@@ -12850,7 +12850,7 @@
       "paper_url": "https://arxiv.org/abs/2503.13952v2",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/Li-Zn-H/SimWorld"
     },
     {
       "paperId": "2503.13814v1",
@@ -12862,7 +12862,7 @@
       "paper_url": "https://arxiv.org/abs/2503.13814v1",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/Cimy-wang/FusDreamer"
     },
     {
       "paperId": "2503.13587v2",
@@ -12874,7 +12874,7 @@
       "paper_url": "https://arxiv.org/abs/2503.13587v2",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/dk-liang/UniFuture"
     },
     {
       "paperId": "2503.12531v1",
@@ -13126,7 +13126,7 @@
       "paper_url": "https://arxiv.org/abs/2503.02904v2",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/bhattarailab/Surgical-Vision-World-Model"
     },
     {
       "paperId": "2503.00713v3",
@@ -13258,7 +13258,7 @@
       "paper_url": "https://arxiv.org/abs/2502.11537v4",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/leor-c/Simulus"
     },
     {
       "paperId": "2502.10498v2",
@@ -13270,7 +13270,7 @@
       "paper_url": "https://arxiv.org/abs/2502.10498v2",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/LMD0311/Awesome-World-Model"
     },
     {
       "paperId": "2502.10012v2",
@@ -13366,7 +13366,7 @@
       "paper_url": "https://arxiv.org/abs/2502.01366v2",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/thuml/TrajWorld"
     },
     {
       "paperId": "2502.00622v4",
@@ -13438,7 +13438,7 @@
       "paper_url": "https://arxiv.org/abs/2501.14729v3",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/LMD0311/HERMES"
     },
     {
       "paperId": "2501.14174v5",
@@ -13594,7 +13594,7 @@
       "paper_url": "https://arxiv.org/abs/2412.19505v2",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/YvanYin/DrivingWorld"
     },
     {
       "paperId": "2412.18607v1",
@@ -13678,7 +13678,7 @@
       "paper_url": "https://arxiv.org/abs/2412.10373v1",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/zuosc19/GaussianWorld"
     },
     {
       "paperId": "2412.09627v1",
@@ -13690,7 +13690,7 @@
       "paper_url": "https://arxiv.org/abs/2412.09627v1",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/wzzheng/Doe"
     },
     {
       "paperId": "2412.09600v1",
@@ -13702,7 +13702,7 @@
       "paper_url": "https://arxiv.org/abs/2412.09600v1",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/huang-yh/Owl"
     },
     {
       "paperId": "2412.08410v2",
@@ -13750,7 +13750,7 @@
       "paper_url": "https://arxiv.org/abs/2412.07375v3",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/Aria-Zhangjl/StoryWeaver"
     },
     {
       "paperId": "2412.06486v1",
@@ -13834,7 +13834,7 @@
       "paper_url": "https://arxiv.org/abs/2411.17027v1",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/zhanghm1995/D2-World"
     },
     {
       "paperId": "2411.16075v2",
@@ -13882,7 +13882,7 @@
       "paper_url": "https://arxiv.org/abs/2411.14499v4",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/tsinghua-fib-lab/World-Model"
     },
     {
       "paperId": "2411.12671v1",
@@ -14194,7 +14194,7 @@
       "paper_url": "https://arxiv.org/abs/2410.11448v2",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/NJU-RL/Meta-DT"
     },
     {
       "paperId": "2410.10738v1",
@@ -14314,7 +14314,7 @@
       "paper_url": "https://arxiv.org/abs/2410.02253v2",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/SCP-CN-001/ramble"
     },
     {
       "paperId": "2410.12822v2",
@@ -14374,7 +14374,7 @@
       "paper_url": "https://arxiv.org/abs/2409.15730v1",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/Sephirex-X/LatentDriver"
     },
     {
       "paperId": "2409.14216v1",
@@ -14386,7 +14386,7 @@
       "paper_url": "https://arxiv.org/abs/2409.14216v1",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/NACLab/robust-active-inference"
     },
     {
       "paperId": "2409.14084v2",
@@ -14578,7 +14578,7 @@
       "paper_url": "https://arxiv.org/abs/2407.11965v2",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/Urban-World/UrbanWorld"
     },
     {
       "paperId": "2407.04942v2",
@@ -14662,7 +14662,7 @@
       "paper_url": "https://arxiv.org/abs/2406.19320v1",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/vmicheli/delta-iris"
     },
     {
       "paperId": "2407.00118v1",
@@ -14794,7 +14794,7 @@
       "paper_url": "https://arxiv.org/abs/2406.10667v2",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/opendilab/LightZero"
     },
     {
       "paperId": "2406.08862v1",
@@ -14830,7 +14830,7 @@
       "paper_url": "https://arxiv.org/abs/2406.08481v2",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/BraveGroup/LAW"
     },
     {
       "paperId": "2406.08407v3",
@@ -14902,7 +14902,7 @@
       "paper_url": "https://arxiv.org/abs/2405.20180v1",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/torchipeppo/transformers-and-slot-encoding-for-wm"
     },
     {
       "paperId": "2405.18418v3",
@@ -15034,7 +15034,7 @@
       "paper_url": "https://arxiv.org/abs/2405.09111v2",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/ucd-dare/CarDreamer"
     },
     {
       "paperId": "2405.06263v2",
@@ -15046,7 +15046,7 @@
       "paper_url": "https://arxiv.org/abs/2405.06263v2",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/bit1029public/HRSSM"
     },
     {
       "paperId": "2405.05956v2",
@@ -15106,7 +15106,7 @@
       "paper_url": "https://arxiv.org/abs/2405.03520v2",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/GigaAI-research/General-World-Models-Survey"
     },
     {
       "paperId": "2404.18896v2",
@@ -15118,7 +15118,7 @@
       "paper_url": "https://arxiv.org/abs/2404.18896v2",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/IcarusWizard/AIME-NoB"
     },
     {
       "paperId": "2404.18202v2",
@@ -15130,7 +15130,7 @@
       "paper_url": "https://arxiv.org/abs/2404.18202v2",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/DCDmllm/WorldGPT"
     },
     {
       "paperId": "2404.17350v1",
@@ -15250,7 +15250,7 @@
       "paper_url": "https://arxiv.org/abs/2403.10967v2",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/sai-prasanna/dreaming_of_many_worlds"
     },
     {
       "paperId": "2403.10875v1",
@@ -15442,7 +15442,7 @@
       "paper_url": "https://arxiv.org/abs/2402.05643v5",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/leor-c/REM"
     },
     {
       "paperId": "2402.05290v2",
@@ -15586,7 +15586,7 @@
       "paper_url": "https://arxiv.org/abs/2402.03326v1",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/JonathanCollu/Slot-Structured-World-Models"
     },
     {
       "paperId": "2401.00057v1",
@@ -15670,7 +15670,7 @@
       "paper_url": "https://arxiv.org/abs/2312.02019v1",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/argmax-ai/aime"
     },
     {
       "paperId": "2311.17918v1",
@@ -15706,7 +15706,7 @@
       "paper_url": "https://arxiv.org/abs/2311.16038v1",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/wzzheng/OccWorld"
     },
     {
       "paperId": "2311.13549v1",
@@ -15802,7 +15802,7 @@
       "paper_url": "https://arxiv.org/abs/2310.18534v3",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/ALRhub/MTS3"
     },
     {
       "paperId": "2310.17330v1",
@@ -15934,7 +15934,7 @@
       "paper_url": "https://arxiv.org/abs/2310.00344v3",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/thuml/HarmonyDream"
     },
     {
       "paperId": "2309.17080v1",
@@ -16054,7 +16054,7 @@
       "paper_url": "https://arxiv.org/abs/2308.07234v1",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/chaytonmin/UniWorld"
     },
     {
       "paperId": "2308.05701v2",
@@ -16102,7 +16102,7 @@
       "paper_url": "https://arxiv.org/abs/2307.07176v3",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/PKU-Alignment/SafeDreamer"
     },
     {
       "paperId": "2307.02427v2",
@@ -16222,7 +16222,7 @@
       "paper_url": "https://arxiv.org/abs/2305.18499v2",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/thuml/ContextWM"
     },
     {
       "paperId": "2305.15260v4",
@@ -16522,7 +16522,7 @@
       "paper_url": "https://arxiv.org/abs/2301.04783v3",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/robin-karlsson0/predictive-world-models"
     },
     {
       "paperId": "2301.04104v2",
@@ -16666,7 +16666,7 @@
       "paper_url": "https://arxiv.org/abs/2209.00588v2",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/eloialonso/iris"
     },
     {
       "paperId": "2208.04892v1",
@@ -16774,7 +16774,7 @@
       "paper_url": "https://arxiv.org/abs/2206.04384v3",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/TsuTikgiau/ValueMemoryGraph"
     },
     {
       "paperId": "2206.01474v1",
@@ -16966,7 +16966,7 @@
       "paper_url": "https://arxiv.org/abs/2112.02817v2",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/ED2-source-code/ED2"
     },
     {
       "paperId": "2111.01587v1",
@@ -17170,7 +17170,7 @@
       "paper_url": "https://arxiv.org/abs/2010.02302v1",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/htdt/lwm"
     },
     {
       "paperId": "2010.02193v4",
@@ -18754,7 +18754,7 @@
       "paper_url": "https://arxiv.org/abs/2606.08737v1",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/LYFCLOUDFAN/Dream-Tac"
     },
     {
       "paperId": "2606.02027v1",
@@ -18814,7 +18814,7 @@
       "paper_url": "https://arxiv.org/abs/2606.00054v1",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/AaronFengZY/HumanCentricToVLA-Survey"
     },
     {
       "paperId": "2605.14504v2",
@@ -19054,7 +19054,7 @@
       "paper_url": "https://arxiv.org/abs/2602.05557v1",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/swingaxe/piratr"
     },
     {
       "paperId": "2601.19839v1",
@@ -19246,7 +19246,7 @@
       "paper_url": "https://arxiv.org/abs/2508.13073v2",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/JiuTian-VL/Large-VLM-based-VLA-for-Robotic-Manipulation"
     },
     {
       "paperId": "2506.14198v1",
@@ -19282,7 +19282,7 @@
       "paper_url": "https://arxiv.org/abs/2505.09305v5",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/jackyzengl/EIIR"
     },
     {
       "paperId": "2505.06861v2",
@@ -19354,7 +19354,7 @@
       "paper_url": "https://arxiv.org/abs/2412.15109v1",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/OpenRobotLab/Seer"
     },
     {
       "paperId": "2412.02331v2",
@@ -19414,7 +19414,7 @@
       "paper_url": "https://arxiv.org/abs/2410.01440v6",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": "https://github.com/Singularity0104/equilibrium-planner"
     },
     {
       "paperId": "2407.12197v2",

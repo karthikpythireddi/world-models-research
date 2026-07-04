@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+# root papers.json is a build artifact — server reads it locally,
+# deploy recreates it on the Space from data/papers.json
+/papers.json
