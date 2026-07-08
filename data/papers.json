@@ -20123,8 +20123,140 @@
       "venue": "",
       "citations": 0,
       "code_url": null
+    },
+    {
+      "paperId": "2607.06559v1",
+      "title": "RynnWorld-4D: 4D Embodied World Models for Robotic Manipulation",
+      "abstract": "Robotic manipulation in the open world requires not only recognizing what a scene looks like, but also anticipating how its 3D structure moves under interaction. We argue that synchronized RGB, depth, and optical flow, namely RGB-DF, provide a physically grounded representation that captures the underlying 4D dynamics of a scene. Compared to 2D pixel videos, this multi-modal synergy aligns visual appearance with geometric structure and temporal motion, creating a representation space significantly closer to the low-level end-effector actions demanded by robotic systems, thereby narrowing the gap between world prediction and policy learning. Building on this insight, we introduce RynnWorld-4D, a generative model that co-produces future RGB frames, depth maps, and optical flow from a single RGB-D image and a language instruction within one unified diffusion process. This 4D world model features a tri-branch architecture that integrates cross-modal attention with frame-wise 3D RoPE, ensuring that appearance, geometry, and motion evolve consistently. To supply training data at scale, we curate Rynn4DDataset 1.0, a massive dataset of over 254.4 million frames across egocentric human and robotic manipulation videos with high-quality pseudo-labels for depth and optical flow. We further propose RynnWorld-4D-Policy, an inverse dynamics head that consumes the internal 4D representations of RynnWorld-4D in a single forward pass, bypassing expensive multi-step denoising, to output robot actions in a closed-loop manner. Experiments show that RynnWorld-4D produces temporally and spatially coherent 4D predictions, and that RynnWorld-4D-Policy achieves state-of-the-art performance on real-world dexterous bimanual manipulation tasks, particularly excelling in tasks demanding spatial precision and temporal coordination.",
+      "year": 2026,
+      "pub_date": "2026-07-07T17:58:15Z",
+      "authors": "Haoyu Zhao, Xingyue Zhao, Siteng Huang +3",
+      "paper_url": "https://arxiv.org/abs/2607.06559v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": "https://github.com/alibaba-damo-academy/RynnWorld-4D"
+    },
+    {
+      "paperId": "2607.06558v1",
+      "title": "RynnWorld-Teleop: An Action-Conditioned World Model for Digital Teleoperation",
+      "abstract": "Scaling robot learning requires massive, diverse trajectory data, yet collection is currently bottlenecked by physical teleoperation, where every demonstration binds operator time to specific hardware and workspaces. We introduce digital teleoperation, a paradigm that decouples data collection from physical constraints by replacing the real robot with a generative world model. In this framework, an operator's hand-pose stream drives a robot-centric generative world model to synthesize high-fidelity egocentric videos from a single reference image. The recorded pose stream serves as an embodiment-agnostic action label transferable to any target robot via standard retargeting, yielding complete state-action trajectories for imitation learning independent of physical hardware. We instantiate this paradigm in RynnWorld-Teleop, a system that integrates depth-aware skeletal conditioning, progressive human-to-robot training on a video Diffusion Transformer, and streaming autoregressive distillation. This pipeline compresses the generative process into a single-pass inference, enabling 40+ FPS, real-time interactive generation on a single H100 GPU. Policies trained exclusively on RynnWorld-Teleop-generated data achieve effective zero-shot Sim2Real transfer across dexterous and diverse bimanual tasks. Moreover, augmenting real-world datasets with our digitally teleoperated data consistently improves success rates, demonstrating that RynnWorld-Teleop serves as a high-fidelity, scalable data engine for the next generation of robotic agents.",
+      "year": 2026,
+      "pub_date": "2026-07-07T17:58:11Z",
+      "authors": "Haoyu Zhao, Xingyue Zhao, Hangyu Li +6",
+      "paper_url": "https://arxiv.org/abs/2607.06558v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": "https://github.com/alibaba-damo-academy/RynnWorld-Teleop"
+    },
+    {
+      "paperId": "2607.06401v1",
+      "title": "A Definition and Roadmap for World Models",
+      "abstract": "World models -- internal simulators that learn the structure and dynamics of an environment -- have become one of the most actively debated concepts in AI. From model-based reinforcement learning and video generation to embodied robotics and ultimately, physical AI, researchers across AI subfields are building systems that they call \"world models\", yet there is no consensus on what a world model fundamentally is, what it should predict, or how it should be built. This perspective article provides a scientific definition of world models, discussions of their key technical aspects, and a staged roadmap for developing effective world models.",
+      "year": 2026,
+      "pub_date": "2026-07-07T15:31:32Z",
+      "authors": "Xinyuan Chen, Haoyu Guo, Shi Guo +10",
+      "paper_url": "https://arxiv.org/abs/2607.06401v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2607.06216v1",
+      "title": "MoWorld: A Flash World Model",
+      "abstract": "The future of World Models depends not only on scaling model capability, but also on scaling practicality and inference efficiency. High-frame-rate inference enables responsive perception, planning, and control in real-world autonomous systems. To this end, we present MoWorld, a cost-effective yet high-performance Flash World Model with an end-to-end framework spanning data generation, pre-training, distillation, and efficient inference, enabling up to 50 FPS real-time interaction with cinematic visual quality without the need of high-end GPUs. To enable large-scale real-world deployment, MoWorld jointly optimizes model capability and cost throughout the entire development pipeline. Specifically, unlike existing approaches that primarily rely on large-scale video corpora, MoWorld is built upon a scalable 3D-native data engine accumulated from our large-scale 3D vision and generative modeling pipeline, enabling the efficient construction of geometrically consistent training data across diverse real-world and synthetic environments. Based on this foundation, a curriculum cross-frame pre-training strategy for stable and scalable World Model learning, an efficient denoising-step distillation algorithm to reduce diffusion training cost, and a mixed-precision parallel inference framework for low-cost real-time deployment. MoWorld is the first real-time interactive World Model built on the Neural Processing Unit (NPU) and can achieves up to 50 FPS in such the devices, enabling practical and efficient deployment at scale. Comprehensive evaluations demonstrate that MoWorld achieves leading performance; notably, its average inference cost is only 30\\%-50\\% of that of existing World Models, providing a practical foundation for large-scale real-world applications of World Models. We also demonstrate diverse applications of MoWorld.",
+      "year": 2026,
+      "pub_date": "2026-07-07T12:41:19Z",
+      "authors": "Team Moxin, Deyi Ji, Tianrun Chen +26",
+      "paper_url": "https://arxiv.org/abs/2607.06216v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2607.05966v1",
+      "title": "Imagined Rollouts are Kinematic, Not Dynamic: A Diagnosis of Long-Horizon World-Model Failure",
+      "abstract": "Long-horizon failure in world models is conventionally attributed to compounding error, a generic framing that does not distinguish what kind of error compounds. We propose a kinematic-vs-dynamic reframing: world models tend to imagine kinematically rather than dynamically. We operationalize this as the imagined Kinematic-Consistency Error, a per-step diagnostic that measures how far a rollout departs from a closed-form kinematic null, paired with a perturbation protocol that tests whether iKCE responds when physical conditions cross a regime boundary. We instantiate the diagnostic on a released DreamerV3 checkpoint trained on DMC walker-walk, where imagined iKCE runs roughly two orders of magnitude above that of matched real-physics rollouts. Across a friction sweep that crosses the gait-collapse boundary, the model's iKCE stays statistically flat even as the trained policy's reward collapses through the same range, providing the kinematic-not-dynamic signature. The diagnostic distinguishes kinematic from dynamic imagination at horizons longer than the embodiment's gait period.",
+      "year": 2026,
+      "pub_date": "2026-07-07T08:02:58Z",
+      "authors": "Finn Rasmus Sch\u00e4fer, Korbinian Moller, Yuan Gao +3",
+      "paper_url": "https://arxiv.org/abs/2607.05966v1",
+      "venue": "RSS Robot World Model",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2607.05577v1",
+      "title": "Narrative World Model: Narratology-Grounded Writer Memory for Long-Form Fiction",
+      "abstract": "Long-form fiction writers need memory that answers multi-hop questions about evolving story state: who knows a secret and when they learned it, whether an event preceded the narration that revealed it, whether a setup paid off, and how a relationship shifted. General-purpose retrieval and agent-memory systems represent entities and facts but not the narratological structure these questions turn on, so they surface the wrong evidence or none at all. We introduce the Narrative World Model (NWM), a writer-memory system that pairs a narratology-grounded typed temporal-state graph with query-conditioned hybrid retrieval. To measure memory rather than the answerer, we read every system through a single held-constant Opus 4.8 reader over only that system's chapter-safe evidence, on a reproducible public corpus and a validated multi-hop benchmark, and we compare against the strongest existing temporal-knowledge-graph agent-memory framework, Graphiti/Zep (Rasmussen et al., 2025). NWM substantially and significantly outperforms this baseline on multi-hop narratological QA across both corpora, and far exceeds GraphRAG and flat retrieval. The advantage is representational rather than an artifact of extraction: it survives rebuilding the baseline with NWM's own extractor, and traces to its narratology-grounded structure and query-conditioned retrieval, not to graph size or extractor quality.",
+      "year": 2026,
+      "pub_date": "2026-07-06T19:23:52Z",
+      "authors": "Mohammad Saifullah, Thomas Kornmaier, Taaha Kazi +3",
+      "paper_url": "https://arxiv.org/abs/2607.05577v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2607.05352v2",
+      "title": "Multiplayer Interactive World Models with Representation Autoencoders",
+      "abstract": "We introduce the first multiplayer world model for highly dynamic environments governed by complex physical interactions. Whereas single-player world models treat the other agents as part of the environment, ours conditions on the action streams of multiple agents, learning to attribute changes in the scene to the correct player and to stay coherent under arbitrary combinations of their actions. We study this problem in the game of Rocket League, where players compete and cooperate under fast, tightly coupled dynamics. Trained on 10,000 hours of gameplay collected with publicly available bots, our 5-billion-parameter latent diffusion model generates four-player matches in real time, producing 20 frames per second on a single Nvidia B200 GPU. Although trained only on short clips, its rollouts stay stable far beyond the training horizon: distributional quality holds steady out to five minutes, the longest horizon we measure, and in practice we observe rollouts continuing for hours with no sign of collapse. We systematically investigate the central design choices: the video codec, the generative objective, and the multiplayer conditioning scheme. In addition, we characterize how behavior changes with model and data scale, including the capabilities that emerge and the failure modes that persist. We further develop targeted evaluations that probe the model's physical understanding rather than visual appearance alone. To support continued research on multiplayer world models, we release our dataset, our full training and inference codebase, and a live demo.",
+      "year": 2026,
+      "pub_date": "2026-07-06T17:31:52Z",
+      "authors": "Anthony Hu, V\u00e1clav Volhejn, Adrien Ramanana Rahary +24",
+      "paper_url": "https://arxiv.org/abs/2607.05352v2",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2606.28757v2",
+      "title": "A Physics-Grounded Benchmark for Multi-Agent Dynamics in World Models",
+      "abstract": "Generative world models hold immense promise as scalable simulators for autonomous systems, particularly for synthesizing rare but safety-critical multi-agent interactions, such as vehicle collisions. However, current evaluation paradigms index heavily on visual fidelity and semantic alignment, leaving a critical blind spot: they cannot reliably quantify whether generated dynamics actually obey the fundamental physical laws required for reliable simulation. Assessing this physical plausibility is inherently difficult due to a lack of physical metrics and the challenge of extracting metric-scale kinematics from uncalibrated video rollouts. To bridge this gap, we introduce CrashTwin, a physics-grounded evaluation framework designed to stress-test the physical trustworthiness of world models. CrashTwin couples a diverse dataset of multi-agent collision scenarios, comprising 25K controllable synthetic and 12K in-the-wild real-world collision sequences with a novel calibration-free reconstruction pipeline, enabling the recovery of 3D physical attributes directly from world model rollouts. We propose a diagnostic suite that systematically evaluates three dimensions: spatio-temporal consistency, momentum and kinetic energy conservation, and world-dynamics integrity. Extensive benchmarking of state-of-the-art models reveals a crucial insight: high perceptual quality frequently masks severe physical violations during complex interactions. By quantitatively exposing these failure modes, CrashTwin provides a vital diagnostic tool for developing physically grounded world models capable of reliable real-world simulation.",
+      "year": 2026,
+      "pub_date": "2026-06-27T06:13:35Z",
+      "authors": "Nuo Chen, Lulin Liu, Zihao Li +12",
+      "paper_url": "https://arxiv.org/abs/2606.28757v2",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2606.19990v2",
+      "title": "Reward as An Agent for Embodied World Models",
+      "abstract": "While RL has become a promising tool for refining world models, existing methods largely rely on conservative rollouts near the training distribution, limiting exploration, behavioral diversity, and richer dynamic discovery. In this work, we challenge this conservative paradigm. We argue that the core limitation is not exploration itself, but the lack of reliable verification strategies to support broader exploration. Without reliable verification, expanded exploration becomes highly susceptible to reward hacking, where policies exploit imperfect rewards without achieving genuine improvement. To evaluate this motivation, we instantiate our method in embodied world models, where physical plausibility, and task completion provide a rigorous testbed for scalable RL under complex dynamics. On the verification side, we introduce Reward as an Agent, an agentic reward framework that actively evaluates generated behaviors to provide robust reward signals and mitigate reward hacking under distribution shifts. On the exploration side, we introduce Dynamic-Aware Rollout Diversification through DynDiff-GRPO, which explicitly expands action-space exploration to diversify trajectories, broaden state-action coverage, and encourage richer embodied behaviors beyond conservative rollout regimes. By unifying Reward as an Agent with DynDiff-GRPO, we enable RL on a more reliable reward foundation with substantially diversified sampling, effectively mitigating reward hacking while yielding significant accuracy gains across multiple open-source world models, thereby demonstrating that broader exploration can scale successfully when grounded in robust verification.",
+      "year": 2026,
+      "pub_date": "2026-06-18T09:29:30Z",
+      "authors": "Pu Li, Zhigang Lin, Qiang Wu +3",
+      "paper_url": "https://arxiv.org/abs/2606.19990v2",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2607.06501v1",
+      "title": "Hypothesis-driven Model Expansion under Uncertainty for Open-World Robot Planning",
+      "abstract": "We consider an open-world planning setting in which service robots must operate in unknown environments with incomplete knowledge of objects and actions. Traditional closed-world approaches with pre-programmed knowledge bases fail when robots encounter unexpected situations and tasks, posing a fundamental challenge for autonomous knowledge expansion in human environments. In this work, we propose an open-world planning framework that enables robots to automatically generate, verify, and update hypotheses about their abstract world models. Our key insight is to explicitly maintain uncertainty-aware knowledge expansion and integrate hypothesis verification into goal-reaching planning. The framework leverages foundation models to generate initial hypotheses over states and transitions, and applies automated planning to produce action sequences that jointly address hypothesis verification and task execution. Through iterative execution and refinement, the robot expands its knowledge by incorporating verification feedback from the foundation models when hypotheses prove incorrect. Extensive experiments in simulated and real-world environments demonstrate that our framework enables autonomous knowledge expansion and effective operation in open-world settings. These results indicate that integrating uncertainty-aware model expansion from robot foundation models with planning advances the practical deployment of household service robots.",
+      "year": 2026,
+      "pub_date": "2026-07-07T17:02:09Z",
+      "authors": "Anxing Xiao, Hanbo Zhang, Tianrun Hu +1",
+      "paper_url": "https://arxiv.org/abs/2607.06501v1",
+      "venue": "RSS",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2603.20182v4",
+      "title": "IndoorR2X: Indoor Robot-to-Everything Coordination with LLM-Driven Planning",
+      "abstract": "Although robot-to-robot (R2R) communication improves indoor scene understanding beyond what a single robot can achieve, R2R alone cannot overcome partial observability without substantial exploration overhead or scaling team size. In contrast, many indoor environments already include low-cost Internet of Things (IoT) sensors (e.g., cameras) that provide persistent, building-wide context beyond onboard perception. We therefore introduce IndoorR2X, a benchmark and simulation framework for Large Language Model (LLM)-driven multi-robot task planning with Robot-to-Everything (R2X) perception and communication in indoor environments. IndoorR2X integrates observations from mobile robots and static IoT devices to construct a global semantic state that supports scalable scene understanding, reduces redundant exploration, and enables high-level coordination through LLM-based planning. IndoorR2X provides configurable simulation environments, sensor layouts, robot teams, and task suites to systematically evaluate semantic-level coordination strategies. Extensive experiments across diverse settings demonstrate that IoT-augmented world modeling improves multi-robot efficiency and reliability, and we highlight key insights and failure modes for advancing LLM-based collaboration between robot teams and indoor IoT sensors. Project page: https://fandulu.github.io/IndoorR2X_project_page/.",
+      "year": 2026,
+      "pub_date": "2026-03-20T17:57:26Z",
+      "authors": "Fan Yang, Soumya Teotia, Shaunak A. Mehta +8",
+      "paper_url": "https://arxiv.org/abs/2603.20182v4",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
     }
   ],
-  "last_updated": "2026-07-07T12:03:56.445197Z",
-  "total": 1677
+  "last_updated": "2026-07-08T11:19:11.113011Z",
+  "total": 1688
 }
