@@ -20363,8 +20363,56 @@
       "venue": "",
       "citations": 0,
       "code_url": null
+    },
+    {
+      "paperId": "2607.09185v1",
+      "title": "Causally Debiased Latent Action Model for Embodied Action Conditioned World Models",
+      "abstract": "Action-conditioned world models (ACWMs) aim to simulate future observations conditioned on embodied actions, offering a promising foundation for robot planning, policy evaluation, and data augmentation. However, learning controllable ACWMs requires large-scale action-labeled data, which remains costly to collect in the real world. Latent action models (LAMs) mitigate this bottleneck by inferring latent actions from unlabeled videos, but existing LAMs are typically trained with reconstruction-only objectives and therefore entangle action-relevant dynamics with action-irrelevant visual factors such as backgrounds and untouched objects. In this work, we identify this action-irrelevant bias as a key obstacle to controllable ACWMs and introduce evaluation metrics to measure latent-action bias, action following, and robustness. We propose CD-LAM, a causally debiased framework for LAM-based ACWMs. CD-LAM introduces three efficient fine-tuning objectives: embodiment-centric reconstruction, action-centric contrastive learning, and latent space calibration, which together encourage embodiment-focused, action-aware, and calibrated non-collapsed latent action representations. Experiments on 2B and 14B ACWM backbones show that CD-LAM substantially improves latent-action controllability, downstream robot-action following, visual fidelity, and adaptation efficiency, requiring only 6k fine-tuning steps and more than 12$\\times$ fewer robot-action adaptation updates than the baseline.",
+      "year": 2026,
+      "pub_date": "2026-07-10T08:20:27Z",
+      "authors": "Yufan Wei, Kun Zhou, Lingjun Mao +9",
+      "paper_url": "https://arxiv.org/abs/2607.09185v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2607.08894v1",
+      "title": "GATS: Graph-Augmented Tree Search with Layered World Models for Efficient Agent Planning",
+      "abstract": "Large Language Model (LLM) agents have shown promise in multi-step planning tasks, but existing approaches like LATS (Language Agent Tree Search) and ReAct rely heavily on LLM inference during planning, leading to high computational costs and stochastic behavior. We present \\textbf{GATS} (Graph-Augmented Tree Search), a planning framework that combines systematic UCB1-based tree search with a layered world model to eliminate LLM calls during inference while achieving superior planning performance. Our three-layer world model integrates: (L1) exact symbolic action matching, (L2) statistics learned from execution logs, and (L3) LLM-based prediction for unknown actions. On synthetic planning tasks with branching paths and dead-ends, GATS achieves \\textbf{100\\% success rate} compared to 92 % for LATS and 64\\% for ReAct. On a comprehensive stress test spanning 12 challenging scenarios -- including coding workflows, web navigation, and long-horizon tasks -- GATS maintains \\textbf{100\\% success} while LATS drops to 88.9 % and ReAct to 23.9%. GATS requires \\textbf{zero LLM calls per task} during planning (vs. 37 per task for LATS) and produces deterministic plans with zero variance across runs. Our results demonstrate that systematic search with learned world models can substantially outperform LLM-guided exploration for agent planning.",
+      "year": 2026,
+      "pub_date": "2026-07-09T19:34:29Z",
+      "authors": "Maureese Williams, Dymitr Nowicki",
+      "paper_url": "https://arxiv.org/abs/2607.08894v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2607.03198v2",
+      "title": "Reduced-Order Models: The Mother of World Models",
+      "abstract": "World models -- compressed latent representations of an environment that support action-conditioned prediction and planning -- are typically presented as a product of modern self-supervised learning. This paper argues that the functional anatomy of a world model was independently developed, deployed, and formally analyzed decades earlier in the model-order-reduction (MOR) and control literature, under different names and for a different purpose: the real-time operation of physical systems. We trace the anatomy across three communities. Low-dimensional models of turbulence built on proper orthogonal decomposition (POD) supplied latent dynamics learned from data of a chaotic environment; eigenface methods in early computer vision supplied the encoder-decoder half, including a primitive runtime validity check; and measurement-based POD frameworks for facility thermal control assembled the complete loop -- POD coefficients as latent state, parametric dependence on actuator setpoints as action conditioning, modal reconstruction as decoding, and, critically, a priori analytical error bounds as a verification layer that certified when the model's predictions could be trusted in closed loop. We then examine what each tradition possesses that the other lacks: MOR contributes verification, physical grounding, and extreme data efficiency; learned world models contribute nonlinear representation, transferability, and horizon. We argue that the outstanding obstacle to deploying world models in systems that cannot fail -- power, thermal, process control -- is not predictive fidelity but verifiability, and we outline a research agenda for physics-grounded, verifiable world models that unifies the two lineages.",
+      "year": 2026,
+      "pub_date": "2026-07-03T11:05:06Z",
+      "authors": "Rajat Ghosh",
+      "paper_url": "https://arxiv.org/abs/2607.03198v2",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2605.12920v3",
+      "title": "Embodied Multi-Agent Coordination by Aligning World Models Through Dialogue",
+      "abstract": "Effective collaboration between embodied agents requires more than acting in a shared environment; it demands communication grounded in each agent's evolving understanding of the world. When agents can only partially observe their surroundings, coordination without communication is provably hard, but communication can, in principle, bridge this gap by allowing agents to share observations and align their world models. In this work, we examine whether LLM-based embodied agents actually realize the ability to communicate. We extend PARTNR, a benchmark for collaborative household robotics, with a natural-language dialogue channel that enables two agents with partial observability to communicate during task execution. To evaluate whether dialogue leads to genuine world-model alignment rather than superficial coordination, we propose a framework for measuring world-model alignment defined over per-agent world graphs: observation convergence (do private world models align over time?), information novelty (do messages convey what the partner lacks?), and belief-sensitive messaging (do agents model what their partner knows?). Our experiments across three LLMs reveal that dialogue reduces action conflicts 40 to 83 percentage points but degrades task success relative to silent coordination. Using our metrics, we characterize the gap between superficial coordination and genuine world-model alignment, and identify where current models fall on this spectrum. Project Website: https://uiuc-conversational-ai-lab.github.io/partnr-dial-wmd/",
+      "year": 2026,
+      "pub_date": "2026-05-13T02:48:14Z",
+      "authors": "Vardhan Dongre, Dilek Hakkani-T\u00fcr",
+      "paper_url": "https://arxiv.org/abs/2605.12920v3",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
     }
   ],
-  "last_updated": "2026-07-12T10:47:01.547615Z",
-  "total": 1697
+  "last_updated": "2026-07-13T12:18:45.018806Z",
+  "total": 1701
 }
