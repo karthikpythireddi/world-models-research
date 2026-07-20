@@ -13330,7 +13330,7 @@
       "paper_url": "https://arxiv.org/abs/2502.05907v3",
       "venue": "",
       "citations": 0,
-      "code_url": null
+      "code_url": ""
     },
     {
       "paperId": "2502.04728v2",
@@ -13342,7 +13342,7 @@
       "paper_url": "https://arxiv.org/abs/2502.04728v2",
       "venue": "TMLR2025",
       "citations": 0,
-      "code_url": null
+      "code_url": ""
     },
     {
       "paperId": "2502.01591v3",
@@ -20927,8 +20927,80 @@
       "venue": "",
       "citations": 0,
       "code_url": null
+    },
+    {
+      "paperId": "2607.15901v1",
+      "title": "DSWorld: A Data Science World Model for Efficient Autonomous Agents",
+      "abstract": "Despite strong capabilities in data understanding and decision-making, autonomous data science agents still heavily rely on trial-and-error workflows that involve expensive computation. This bottleneck motivates models that can anticipate the effects of data science operations before real execution. In this paper, we introduce the concept of Data Science World Model, which model the data science execution environment by predicting environment state transitions conditioned on current workflow states and candidate operations. We further propose DSWorld, a practical framework that combines structured state construction, cost-aware routing, lightweight real execution, and an LLM-based simulator for expensive operations. To support training, we construct an 8K-scale transition trajectory dataset and introduce Reflective World Model Optimization, an error-aware reinforcement learning strategy for improving transition prediction. Experiments show that DSWorld accelerates RL-based agent training by approximately $14\\times$ and search-based inference by approximately $3$-$6\\times$ while maintaining competitive performance, and outperforms the strongest LLM baseline by 35.6% on transition prediction tasks. The code is available at https://anonymous.4open.science/r/DSWorld.",
+      "year": 2026,
+      "pub_date": "2026-07-17T12:14:55Z",
+      "authors": "Zherui Yang, Fan Liu, Hao Liu",
+      "paper_url": "https://arxiv.org/abs/2607.15901v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2607.15898v1",
+      "title": "Orbis 2: A Hierarchical World Model for Driving",
+      "abstract": "Current world models operate at a single level of abstraction, with most prioritizing perceptual fidelity while lacking the spatial reasoning and semantic understanding required for real-world downstream tasks. We present a hierarchical driving world model that factorizes future prediction across two levels operating at distinct temporal and abstraction scales: a high-level predictor that forecasts coarse scene structure over extended temporal horizons, and a low-level generator that produces detailed predictions conditioned on the high-level output. This decomposition yields high perceptual fidelity while also capturing strong spatial and semantic representations. We further show that pretraining with a diffusion forcing objective yields substantially richer internal representations than the standard teacher forcing objective, while teacher forcing -- predicting only the next frame from clean context -- produces more stable autoregressive rollouts. We therefore introduce a generic two-stage training paradigm that pretrains the model with diffusion forcing and fine-tunes with teacher forcing, combining the representational benefits of the former with the rollout stability of the latter. Our approach achieves state-of-the-art results across the standard suite of driving world model evaluations on established benchmarks, including long-horizon generation fidelity, steering responsiveness evaluated on counterfactual scenarios, and internal representation quality. Project page with code, demo, checkpoints and qualitative results: https://lmb-freiburg.github.io/orbis2.github.io/",
+      "year": 2026,
+      "pub_date": "2026-07-17T12:12:33Z",
+      "authors": "Sudhanshu Mittal, Arian Mousakhan, Silvio Galesso +4",
+      "paper_url": "https://arxiv.org/abs/2607.15898v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2607.15550v1",
+      "title": "SeerGuard: A Safety Framework for Mobile GUI Agents via World Model Prediction",
+      "abstract": "Mobile graphical user interface (GUI) agents have demonstrated remarkable capabilities in automating complex tasks, yet they introduce critical safety risks where a single erroneous action can lead to irreversible consequences. Existing safety mechanisms are primarily reactive, lacking the ability to assess risks before execution. In this paper, we introduce SeerGuard, a consequence-aware safety framework designed to mitigate these risks through pre-execution instruction-level screening and action-level risk assessment. Specifically, the action-level assessment analyzes agent-proposed actions within current GUI states, anticipating likely outcomes to identify risks before they are executed. To enable these capabilities, we construct a unified safety-augmented world model (SAWM) via multi-task learning, integrating semantic next-state prediction with safety risk assessment. Extensive experiments demonstrate that SeerGuard generalizes effectively across diverse mobile GUI agents. On Qwen3-VL-8B-Instruct, it increases the safety-utility score from $0.191$ to $0.596$ at $\u03c9=0.8$ and reduces the risk-cost score from $0.347$ to $0.130$ at $\u03b1=0.8$. Further analyses on our SAWM validate the effectiveness of the instruction-level screening, alongside the capability of action risk assessment and next-state prediction.",
+      "year": 2026,
+      "pub_date": "2026-07-17T01:45:54Z",
+      "authors": "Xue Yu, Bo Yuan, Pengshuai Yang +3",
+      "paper_url": "https://arxiv.org/abs/2607.15550v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2607.15439v1",
+      "title": "Do Coding Agents Need Executable World Models, Simplification, and Verification to Solve ARC-AGI-3?",
+      "abstract": "Our previous ARC-AGI-3 agent bundled executable world modeling, scheduled simplification, and exact replay verification, leaving unclear which idea accounted for its performance. We address this attribution question with four nested Codex-based agents: a textual baseline; a flexible-interface executable world model without replay verification; the same executable model with scheduled simplification; and a fixed-interface verification treatment that retains simplification and requires exact reproduction of recorded observations. The main study evaluates all four agents with gpt-5.4 and gpt-5.5 at high and xhigh reasoning effort on the public ARC-AGI-3 games. Exploratory follow-ups evaluate the textual and verification variants with gpt-5.6-sol at xhigh and max. The most robust result is that every agent variant improves with a stronger model and with greater reasoning effort. Within each model-effort setting, differences among variants are smaller than anticipated, while the effects of individual components vary across settings. Requiring a persistent executable deliverable is not universally beneficial: the textual variant outperforms the flexible-interface executable variant in both gpt-5.5 settings. Simplification improves performance in three of the four model-effort settings, with the weakest setting as the only exception. The complete verification treatment ranks first in all four settings, although it uses substantially more resources. In the gpt-5.6-sol follow-up, the verification variant fully solves every public game at both reasoning efforts, achieves about 99% RHAE, and uses fewer than half the total actions of the human baseline. Because the model postdates these games and held-out performance remains untested, this result should be interpreted as saturation of the public set only.",
+      "year": 2026,
+      "pub_date": "2026-07-16T20:18:59Z",
+      "authors": "Sergey Rodionov",
+      "paper_url": "https://arxiv.org/abs/2607.15439v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2510.22204v3",
+      "title": "Human-Inspired Neuro-Symbolic World Modeling and Logic Reasoning for Interpretable Safe UAV Landing Site Assessment",
+      "abstract": "Reliable assessment of safe landing sites in unstructured environments is essential for deploying Unmanned Aerial Vehicles (UAVs) in real-world applications such as delivery, inspection, and surveillance. Existing learning-based approaches often degrade under covariate shift and offer limited transparency, making their decisions difficult to interpret and validate on resource-constrained platforms. We present NeuroSymLand, a neuro-symbolic framework for marker-free UAV landing site safety assessment that explicitly separates perception-driven world modeling from logic-based safety reasoning. A lightweight segmentation model incrementally constructs a probabilistic semantic scene graph encoding objects, attributes, and spatial relations. Symbolic safety rules, synthesized offline via large language models with human-in-the-loop refinement, are executed directly over this world model at runtime to perform white-box reasoning, producing ranked landing candidates with human-readable explanations of the underlying safety constraints. Across 72 simulated and hardware-in-the-loop landing scenarios, NeuroSymLand achieves 61 successful assessments, outperforming four competitive baselines, which achieve between 37 and 57 successes. Qualitative analysis highlights its superior interpretability and transparent reasoning, while deployment incurs negligible edge overhead. Our results suggest that combining explicit world modeling with symbolic reasoning can support accurate, interpretable, and edge-deployable safety assessment in mobile systems, as demonstrated through UAV landing site assessment.",
+      "year": 2025,
+      "pub_date": "2025-10-25T08:08:04Z",
+      "authors": "Weixian Qian, Tianyi Yang, Sebastian Schroder +5",
+      "paper_url": "https://arxiv.org/abs/2510.22204v3",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2607.15620v1",
+      "title": "AEGIS: Assay-Aware Protocol Validation and Runtime Monitoring for Open-Source Liquid Handling Robots",
+      "abstract": "Self-driving laboratories increasingly rely on low-cost liquid handlers such as the Opentrons OT-2, which ship without the pressure-based aspiration monitoring of Hamilton or Tecan systems and are typically run open-loop. Two failure modes go undetected: protocols that are syntactically valid but violate assay-specific invariants (e.g., tip reuse between a PCR template and a no-template control), and physical execution failures (partial dispense, air bubbles, missing tips) at runtime. We present AEGIS, a two-layer guardian for both. Layer 1 pairs a curated machine-readable assay rule database with an LLM that reasons over OT-2 Python code, reaching an adjusted F1 of 0.97 on a 24-protocol benchmark across five assay families and beating rules-only and LLM-only ablations across five backends; a free open-weight model ties the best proprietary one, so no paid API is required. Layer 2 fits a PCA world model to YOLO-cropped four-frame pipette trajectories; under a leakage-free leave-one-plate-out evaluation it reaches average precision 0.89 and operating-point F1 0.71 (AUROC 0.80), a deployment-faithful number that matches the live demonstration, and we characterize the small-pipette (p20) resolution limit (F1 0.47). A live demonstration on a physical OT-2 (five replicates per condition) catches planted no-tip failures deterministically and partial dispense on coloured dyes, with an always-VLM self-vote gate lifting partial-dispense recall to 5/5; transparent water is a principled limit of any front-view-only monitor, which AEGIS surfaces as low-confidence VLM reasoning rather than a wrong verdict. Cascade triage holds VLM cost near $1.63 per plate versus $10.33 for an always-VLM baseline. AEGIS is open source and, to our knowledge, the first system to unify pre-flight assay-aware validation with runtime visual monitoring for an open-source liquid handler.",
+      "year": 2026,
+      "pub_date": "2026-07-17T04:39:04Z",
+      "authors": "Priyanka V. Setty, Arvind Ramanathan, Ian Foster +1",
+      "paper_url": "https://arxiv.org/abs/2607.15620v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
     }
   ],
-  "last_updated": "2026-07-19T10:47:11.445540Z",
-  "total": 1744
+  "last_updated": "2026-07-20T11:57:39.441903Z",
+  "total": 1750
 }
