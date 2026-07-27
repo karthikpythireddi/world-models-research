@@ -21407,8 +21407,128 @@
       "venue": "UNLP 2026",
       "citations": 0,
       "code_url": null
+    },
+    {
+      "paperId": "2607.22535v1",
+      "title": "Robot-Factored World Models via Robot Rendering",
+      "abstract": "Action-conditioned video world models predict future observations from an initial observation and an action signal. In robotics, actions influence future observations through two distinct processes: they are first realized into robot motion by the robot body and controller, and the scene then responds through contact and object motion. Conditioning directly on action commands asks the world model to learn the realization process itself, while conditioning on logged future states leaks the interaction outcomes it is meant to predict. We propose robot-factored world models, which move two robot-specific factors outside the world model. First, action realization: each command is rolled through the robot's own controller and kinematics into a deployment-available nominal trajectory, a middle signal that avoids both action-realization learning and future-state leakage. Second, robot rendering: this nominal trajectory is rendered through the robot URDF, factoring the robot's geometry, kinematics, and appearance out of the model and into explicit rendered robot geometry. To resolve depth ambiguity, we pair end-effector depth with scene depth, giving geometric cues for contact and occlusion beyond image-plane overlap. Together, camera-aware static RGB/depth context and rendered robot geometry form a shared visual world-model interface that stays consistent across viewpoints and robot embodiments, so the model sees the action only as visible robot geometry and learns how objects respond to it. Our experiments show that the rendered interface outperforms vector-conditioned baselines and generalizes to unseen robot embodiments at inference. We further demonstrate that our model generates robot manipulation videos from human demonstrations by retargeting and rendering the hand motion as robot geometry.",
+      "year": 2026,
+      "pub_date": "2026-07-24T17:59:57Z",
+      "authors": "Byungjun Kim, Taeksoo Kim, Hyunsoo Cha +1",
+      "paper_url": "https://arxiv.org/abs/2607.22535v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2607.22530v1",
+      "title": "ViTacWorld: Scaling Visuo-Tactile World Models for Contact-Rich Robot Manipulation",
+      "abstract": "Contact-rich robot manipulation requires physical interaction cues that are often invisible to cameras, making tactile sensing essential for robust control. However, scaling visuo-tactile robot learning remains difficult because real tactile interaction data are expensive to collect, hardware-dependent, and limited in task and scene diversity. We present ViTacWorld, an action-conditioned visuo-tactile world model for scalable contact-rich robot manipulation. ViTacWorld leverages public real tactile datasets and a constructed simulation environment to scale visuo-tactile-action data, exploiting the fact that tactile signals are directly grounded in physical contact and can exhibit a smaller simulation-to-real gap than purely visual observations. The model is first pretrained with large-scale real and simulated visuo-tactile trajectories, and then finetuned with real-world policy rollouts to better match downstream manipulation behaviors. Given robot actions, ViTacWorld predicts temporally aligned visual observations and tactile feedback, enabling visuo-tactile-action rollout generation. To the best of our knowledge, ViTacWorld is the first framework that uses a world model for robot visuo-tactile-action trajectory generation and policy evaluation. It serves two roles: synthesizing rollouts to improve downstream tactile policies, and evaluating policies by predicting action-conditioned visuo-tactile outcomes under controlled action sequences. Experiments on contact-rich manipulation tasks show that ViTacWorld generates physically meaningful rollouts, improves policy performance through scalable data augmentation, and enables action-conditioned policy evaluation. Project page: https://vitacworld.github.io/",
+      "year": 2026,
+      "pub_date": "2026-07-24T17:59:33Z",
+      "authors": "Yunao Huang, Shiyu Sang, Haotao Lu +5",
+      "paper_url": "https://arxiv.org/abs/2607.22530v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2607.22430v1",
+      "title": "On the Identifiability of Controlled World Models",
+      "abstract": "Learning world models that infer environment dynamics from high-dimensional observations and predict outcomes under candidate actions is central to planning and control. Joint-Embedding Predictive Architectures (JEPAs) provide a compelling framework for learning such models in representation space. Recent action-conditioned extensions perform promisingly in visual control and latent-space planning, but leave a fundamental question unresolved: when does controlled latent prediction identify both the underlying state and the controlled dynamics? This is challenging under nonlinear observations and behavior policies with limited conditional action variation, where state-dependent evolution and action effects can be statistically confounded. We establish a joint identifiability theory for controlled world models with Gaussian latent states under state-dependent Gaussian behavior policies. We identify two policy-dependent conditions: spectral separation of the predictable signal governs representation identifiability, while non-degenerate conditional action variation governs transition identifiability. We prove that when both conditions hold, every global minimizer of the JEPA objective identifies the latent state and controlled transition up to an orthogonal transformation. We further derive quantitative bounds on representation and transition identifiability under approximate optimization. Finally, we construct predictor perturbations along weakly excited action directions whose counterfactual-to-on-policy error ratio is the inverse transition-identifiability margin, revealing the cost of limited action coverage. Experiments across nonlinear observation maps and behavior policies corroborate the theory and demonstrate implications for transition identifiability, counterfactual prediction, and goal-conditioned latent planning.",
+      "year": 2026,
+      "pub_date": "2026-07-24T15:49:12Z",
+      "authors": "Xiangteng Zhang, Yang Guan, Bo Zhang +2",
+      "paper_url": "https://arxiv.org/abs/2607.22430v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2607.22000v1",
+      "title": "Music-JEPA: Learning a World Model of Sound from Action",
+      "abstract": "Joint Embedding Predictive Architectures (JEPA) have recently emerged as a paradigm for learning world models by predicting latent representations, offering a promising direction for self-supervised learning. While initial attempts have applied JEPA to the music domain, it remains unclear how such frameworks can naturally support the formation of a world model for music. In this work, we propose to learn a world model of piano sound using JEPA by framing music as an action-conditioned system: the audio is treated as the state, and the pianoroll as the instrument action. Given a current audio state and an action, the model predicts the resulting future audio state, mirroring how humans learn musical sound through interaction. The model is trained in a fully offline setting using paired audio-pianoroll data, without environment interaction. Experiments show that the learned model captures the relationships between musical actions and their resulting sound. The resulting representations support downstream tasks, including beat tracking, composer identification, and key estimation, and enable piano transcription via planning, by searching for actions that best explain a target sound.",
+      "year": 2026,
+      "pub_date": "2026-07-24T05:59:30Z",
+      "authors": "Ziyu Wang, Kun Fang, Yann LeCun",
+      "paper_url": "https://arxiv.org/abs/2607.22000v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2607.21918v1",
+      "title": "Action-Conditioned World Model for Goal Plane Probe Guidance in Robotic Ultrasound",
+      "abstract": "We present an action-conditioned world model framework for goal plane probe guidance in robotic ultrasound, with a focus on neck ultrasound scanning. Autonomous ultrasound tasks often require large numbers of probe-motion trajectories for training, but collecting high-quality demonstrations is labor-intensive and explicit simulators are difficult to build because ultrasound appearance depends on contact, tissue deformation, and view-dependent acoustic artifacts. We address this problem with a two-stage model-based learning pipeline. First, a latent conditional diffusion world model predicts future ultrasound observations from recent context frames, probe motions and temporal offset. Second, a goal-conditioned temporal transformer predicts ordered probe motions and is fine-tuned using rewards from the frozen world model. Experiments on the self-collected dataset show that the world model preserves action-dependent anatomical structure on target-directed scans. In real-world closed loop experiments, the framework achieves success rates of 70.0\\% for carotid guidance and 65.0\\% for thyroid guidance. These results demonstrate the potential of learned ultrasound dynamics for training goal-directed robotic probe navigation.",
+      "year": 2026,
+      "pub_date": "2026-07-24T02:48:13Z",
+      "authors": "Siqi Fan, Mingcong Chen, Ran Liu +5",
+      "paper_url": "https://arxiv.org/abs/2607.21918v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2607.21910v1",
+      "title": "TRW: TRACE-RealWorld---An Auditable Consistency Contract for World Models as Materialized Views",
+      "abstract": "TRACE-RealWorld addresses a core data-management problem: maintaining an actionable materialized view over a continuously changing physical world when reads of the base state are priced, delayed, heterogeneous, and fallible. Its data-management contributions are a commitment-level validity abstraction for materialized predictions; consequence-conditioned adaptive view maintenance; transaction-style, dependency-scoped compensation for commitments invalidated after authorization; and append-only provenance supporting exact replay. The work builds directly on materialized-view maintenance, adaptive stream synchronization, transaction recovery, sagas, data freshness, and provenance. The end-to-end Flood-SAR evaluation treats sensing as physical data acquisition and measures freshness, verification cost, stale reads, recovery scope, restoration failure, and replayability through six pre-registered questions with held-out seeds. The contribution is therefore not a new predictive model, but a consistency, recovery, and accountability contract for deploying learned world representations as operational data systems.",
+      "year": 2026,
+      "pub_date": "2026-07-24T02:31:10Z",
+      "authors": "Edward Y. Chang",
+      "paper_url": "https://arxiv.org/abs/2607.21910v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2607.21686v1",
+      "title": "Persistent Computational State: A Session-Centric Runtime for Generative World Models",
+      "abstract": "Generative world models are increasingly driven as simulators: a planner forks a state, rolls out futures, backtracks, and returns to a visited viewpoint. Recent benchmarks establish that current video world models fail this usage, and attribute it to the model, prescribing new architectures and training objectives. We show this attribution is incomplete, and for an important class of models simply wrong. Snapshotting the state the runtime already holds -- an observation plus RNG state, a memory bank, or a windowed KV context, by architecture -- and restoring it after a genuine excursion reproduces the never-left continuation byte-identically on all three; corrupting only the RNG degrades it. The capability was never missing: request-centric serving discarded it, inheriting from language-model serving the assumption that runtime state is recomputable -- but world-model state carries a non-recomputable kernel. We define Persistent Computational State (PCS), the minimal non-recomputable state that must survive across requests, show it can be discovered by measurement, and build a session-centric runtime over it. Checkpoint and restore cost 0.012 ms against a 1.85 s generation step; resident sessions become host- rather than device-bounded (measured to 1,024); and world memory must be evicted by relevance to the return, not recency -- the inverse of LLM practice.",
+      "year": 2026,
+      "pub_date": "2026-07-23T14:39:46Z",
+      "authors": "Zhen Lin",
+      "paper_url": "https://arxiv.org/abs/2607.21686v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2607.19190v3",
+      "title": "Agentic Real2Sim: Physics-based World Modeling with Vision-Language Agents",
+      "abstract": "Real-to-sim conversion for robotic interaction with objects remains labor-intensive because it requires more than visual reconstruction: a streamlined real2sim process must recover scene geometries and object states, infer physical parameters, and assemble actors, objects, cameras, poses, and trajectories into a runnable physical simulation. Today this process still depends on manual tuning of visual foundation models, mesh cleanup, coordinate-frame alignment, and brittle workflow glue across visual perception tools and simulators. We introduce \\textit{Agentic Real2Sim}, a framework for generalized physical world modeling with vision-language agents, converting a real-world recording of object-robot interaction into a simulatable episodic twin which preserves observations, geometries, robot interactions, and object states. We evaluate Agentic Real2Sim on rigid-object manipulation, deformable-object interaction, and humanoid motion scenes, spanning domains that are usually handled by separate Real2Sim pipelines, marking a first step toward scalable conversion. The framework's agentic decisions can be driven by an open-weight VLM backend at a small fraction of the cost of frontier models, while attaining comparable conversion success rate. We aim to use the resulting real-world-aligned twins for downstream robotics tasks, specifically policy learning and evaluation. The project site is available at https://agentic-real2sim.github.io/.",
+      "year": 2026,
+      "pub_date": "2026-07-21T15:23:38Z",
+      "authors": "Guanxiong Chen, Qianjun Xia, Jiawei Peng +21",
+      "paper_url": "https://arxiv.org/abs/2607.19190v3",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2606.10135v4",
+      "title": "BiWM: Advancing Open-Source Interactive Video World Models with Bidirectional Autoregression",
+      "abstract": "Interactive video world models commonly convert bidirectional video generators into causal autoregressive systems through control fine-tuning, autoregressive training, causal initialization, and few-step distillation. This pipeline is costly, while frozen causal histories accumulate errors that degrade long-horizon fidelity and controllability. We present BiWM, the first open-source full-stack training framework for bidirectional autoregressive video world models. BiWM retains full attention within each generated chunk and requires only two stages: camera/action-control fine-tuning and few-step Distribution Matching Distillation (DMD). Both stages converge within a few hundred optimizer steps on 8 H200 GPUs. The framework supports Wan2.1-T2V-1.3B, Wan2.2-TI2V-5B, HunyuanVideo-1.5-TI2V-8B, and LTX-2.3-22B, together with real-world camera control, pluggable long-history compression, and optional low-bit deployment. Supervised and forward-KL anchors mitigate DMD mode collapse and preserve scene dynamics. BiWM provides a compact, reproducible path from pretrained bidirectional video models to interactive, controllable, and efficient world models.",
+      "year": 2026,
+      "pub_date": "2026-06-08T20:08:41Z",
+      "authors": "Shaohao Rui, Xiaofeng Mao, Zhanyu Zhang +6",
+      "paper_url": "https://arxiv.org/abs/2606.10135v4",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2606.03159v2",
+      "title": "NVIDIA OmniDreams: Real-Time Generative World Model for Closed-Loop Autonomous Vehicle Simulation",
+      "abstract": "As autonomous vehicle capabilities advance, the safe evaluation of driving policies in long-tail scenarios remains a critical bottleneck. In closed-loop simulation, the driving policy model actively interacts with the environment, where its actions dynamically update the simulator state and directly influence the next set of generated sensor observations. While recent reconstruction-based neural simulators offer photorealism, they are fundamentally constrained by their initial captured data and struggle to generalize to highly dynamic or novel scenes. To overcome these limitations, we introduce OmniDreams, a foundation generative world model mid- and post-trained from the Cosmos diffusion model to autoregressively generate action-conditioned videos in real time. By leveraging the rich visual priors of Cosmos and mid- and post-training on 21k hours of driving scenarios, OmniDreams synthesizes complex, unobserved phenomena that are hard for traditional simulators to capture, such as extreme weather and unpredictable dynamic agent behaviors. Crucially, it autoregressively conditions its photorealistic sensor generation on past frames, the current simulator state, and immediate driving actions. Deployed in a closed-loop system with the Alpamayo 1 policy model and AlpaSim orchestrator, OmniDreams acts as a highly responsive, reactive environment, providing a scalable and comprehensive solution for training and evaluating next-generation autonomous driving policies. We additionally show preliminary results indicating that a world-action model (WAM) post-trained from OmniDreams achieves strong performance on the Physical AI Autonomous Vehicles NuRec dataset, surpassing the VLA-based Alpamayo 1.5 research policy model while using only 1/5 the total parameters. These results highlight the potential for a real-time world model like OmniDreams to also serve as a backbone for policy architectures.",
+      "year": 2026,
+      "pub_date": "2026-06-02T05:11:05Z",
+      "authors": " NVIDIA,  :, Aarti Basant +32",
+      "paper_url": "https://arxiv.org/abs/2606.03159v2",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
     }
   ],
-  "last_updated": "2026-07-26T10:57:22.165011Z",
-  "total": 1784
+  "last_updated": "2026-07-27T12:37:38.815019Z",
+  "total": 1794
 }
