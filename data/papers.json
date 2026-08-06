@@ -22355,8 +22355,68 @@
       "venue": "",
       "citations": 0,
       "code_url": null
+    },
+    {
+      "paperId": "2608.05070v1",
+      "title": "HelloWorld: Enabling Socially Interactive Characters in Video World Models",
+      "abstract": "Despite the remarkable recent progress of video world models, social interaction between users and the characters within these worlds remains unsupported. To fill this gap, we present HelloWorld, a video world model that enables social interaction with in-world characters. With a single button press, users can prompt the on-screen character to respond toward the camera, e.g., turning to the viewer, waving, nodding, or speaking a short greeting. To make these interactions natural, we propose a self-distillation pipeline that finetunes the video generation model on data synthesized by itself. Each synthesized clip contains both social interactions and camera motion, allowing the model to learn camera-pose conditioning without degrading interaction quality. At inference, we further introduce a training-free module that determines when the interaction occurs. Upon a button press, it modulates the cross-attention masks of the DiT so that the interaction-related text prompt attends only to the frames within the press window, temporally localizing the character's response. We further build HelloWorldBench, a 400-sample benchmark with three social interaction metrics alongside three conventional metrics, for evaluation. Experiments demonstrate that HelloWorld surpasses a variety of baselines in interaction quality, while maintaining state-of-the-art picture aesthetics and camera-pose following. Project page: https://github.com/AlayaLab/HelloWorld",
+      "year": 2026,
+      "pub_date": "2026-08-05T17:14:19Z",
+      "authors": "Liangyang Ouyang, Ruicong Liu, Xuangeng Chu +2",
+      "paper_url": "https://arxiv.org/abs/2608.05070v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": "https://github.com/AlayaLab/HelloWorld"
+    },
+    {
+      "paperId": "2608.04964v1",
+      "title": "WorldCycle: Self-Verifiable Reinforcement Learning for Long-Horizon Video World Models",
+      "abstract": "Interactive video world models are essential for long-horizon planning and exploration, yet they suffer from compounding errors. Post-training methods such as reinforcement learning (RL) can improve these models, but they hit a verification bottleneck: for arbitrary action sequences, no ground-truth future state exists to measure long-term drift. Our key insight is that reversible action cycles make this verification possible: a sequence composed with its inverse must analytically return to the initial state, yielding annotation-free supervision on long-horizon correctness. Building on this, we introduce WorldCycle, a self-verifiable RL framework that constructs closed action cycles and their repeated executions from ordinary action sequences, and optimizes two complementary rewards: a spatial closure reward enforcing symmetry between mirrored forward and reverse segments, and a temporal consistency reward aligning states across repeated cycle executions. These rewards force the model to learn actions as consistent state operators rather than memorized temporal patterns, and extend naturally to out-of-distribution composite action cycles that the base model handles poorly. We further release CycleBench, a diagnostic benchmark for state-returning ability under complex action structures. WorldCycle reduces state returning drift by up to 44% and lifts composite-action accuracy nearly 4x over the base model, providing a vital foundation for physically grounded world models.",
+      "year": 2026,
+      "pub_date": "2026-08-05T15:34:47Z",
+      "authors": "Bohai Gu, Yueyang Yuan, Taiyi Wu +9",
+      "paper_url": "https://arxiv.org/abs/2608.04964v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2608.04653v1",
+      "title": "Overcoming Statistical Bias in Action-Controllable World Models",
+      "abstract": "Action-conditioned world models aim to predict how visual environments evolve under an agent's actions. Yet future frames are often highly predictable from visual inertia and recurring motion patterns alone. This creates a shortcut: models can fit the data by exploiting statistical biases without making their visible dynamics meaningfully depend on the action. As a result, different actions may produce similar futures, while motion may persist even under zero action. The key question is how to reduce reliance on statistical shortcuts from dominating action-conditioned prediction. We argue that action control requires more than injecting action features; it requires enforcing consistency under counterfactual changes to actions and observations. Based on this insight, we introduce CoCo, a Counterfactual Consistency framework to enhance action controllability through two complementary constraints. Multi-step counterfactual consistency constrains reference, inverse-action, and zero-action rollouts, while action-spatial counterfactual consistency enforces consistent predictions under mirrored scenes and transformed actions. Together, they reduce reliance on statistical shortcuts from substituting for action-dependent dynamics. We further introduce Action Response Consistency (ARC) and Drift Energy (DE) to assess action controllability, together with Mini-SSMB for same-state, multi-action counterfactual evaluation. On Mini-SSMB, our full model achieved ARC_inv of 0.412 and ARC_ref of 0.483, while reducing DE by 17.07% relative to the baseline. On VP2 visual planning, it achieves the highest average success rate among SOTA models, at 73.1%. Experiments on BAIR and RoboNet further show that these gains preserve video prediction quality and transfer across model settings.",
+      "year": 2026,
+      "pub_date": "2026-08-05T10:10:36Z",
+      "authors": "Yuhong Shi, Zhenhao Chu, Jie Wei +3",
+      "paper_url": "https://arxiv.org/abs/2608.04653v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2608.04378v1",
+      "title": "Helping Music Co-Creation Agents 'Listen' Well: Hierarchical Self-Supervised World Models for Understanding and Generation",
+      "abstract": "Collaborative music agents need internal representations rich enough to support both understanding and generation, yet flexible enough for a workflow where the human retains agency. We present a hierarchical self-supervised ``world model'' for symbolic music: a 2.55M-parameter Swin V2 encoder trained on MIDI piano-roll images with JEPA-style objectives (pitch- and time-shift equivariance, masked embedding prediction, and a distributional regularizer), using no labels and no music-theory vocabulary. Probing the frozen embeddings shows that the level at which a musical property becomes decodable tracks its musical time scale: phrase boundaries are read off the coarsest levels, note density and harmonic detail off the finest. Temporal and phrase structure emerge from the self-supervised objectives alone, while harmonic content must be asked for; a small chord-supervision head raises joint chord recovery from .18 to .54, and key detection, which is never supervised, from .16 to .70. Following the Representation AutoEncoder paradigm, a conditional flow-matching model stands in for a trained decoder, flowing in pixel space from PCA-reduced conditioning: it reproduces a target window at pixel F1 $0.996$, and the same per-level conditioning dropout that controls how far variations stray also enables graphical prompting for masked inpainting with no inpainting-specific sampler. The pipeline runs on CPU producing a suggestion in $2.8$ s, or $0.6$ s on Apple MPS, which we demonstrate in a live interactive demo. In concert with an LLM-based brain, these capabilities supply the core of a collaborative music creation agent in service of, rather than in place of, human agency.",
+      "year": 2026,
+      "pub_date": "2026-08-05T02:38:20Z",
+      "authors": "Scott H. Hawley",
+      "paper_url": "https://arxiv.org/abs/2608.04378v1",
+      "venue": "NeurIPS 2026",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2604.21686v2",
+      "title": "WorldMark: A Unified Benchmark Suite for Interactive Video World Models",
+      "abstract": "Unlike text- or image-driven video generation, an interactive world model is driven by actions: the user acts, and the world responds. Two obstacles stand in the way of fair and comprehensive evaluation. First, models take actions in incompatible formats---captions, camera trajectories, action functions---so no shared protocol has been established. Second, while existing benchmarks have advanced world memory and visual quality, action following is reduced to trajectory or direction error, which collapses a whole path into one number: not how quickly the world reacts to a command switch, nor how cleanly it moves along the commanded axis. WorldMark removes both obstacles. Per-model adapters translate a shared WASD-style vocabulary into each model's native control format, so ten heterogeneous models receive semantically identical instructions across 500 standardized cases spanning styles, viewpoints, and difficulty tiers; a new model costs one adapter. On this common ground we characterize action dynamics through a control-systems lens---direction accuracy, direction purity, response latency, and motion stability, each resolved per axis---alongside suites for world memory and visual quality. Together they expose differences existing protocols cannot see: the fastest responders are often the least stable, a trade-off no single action metric captures; per-axis resolution reveals models that follow translation almost perfectly while barely responding to rotation; the model with the best perceptual and aesthetic quality ranks last in translational direction accuracy and latency; and stylized scenes cost every model global consistency while leaving action dynamics largely intact. We will release all data, evaluation code, and model outputs.",
+      "year": 2026,
+      "pub_date": "2026-04-23T13:50:47Z",
+      "authors": "Xiaojie Xu, Zhengyuan Lin, Kang He +5",
+      "paper_url": "https://arxiv.org/abs/2604.21686v2",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
     }
   ],
-  "last_updated": "2026-08-05T11:34:21.159312Z",
-  "total": 1863
+  "last_updated": "2026-08-06T11:35:32.816778Z",
+  "total": 1868
 }
