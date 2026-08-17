@@ -13354,7 +13354,7 @@
       "paper_url": "https://arxiv.org/abs/2502.01591v3",
       "venue": "ICML 2025",
       "citations": 0,
-      "code_url": ""
+      "code_url": null
     },
     {
       "paperId": "2502.01366v2",
@@ -23495,8 +23495,80 @@
       "venue": "",
       "citations": 0,
       "code_url": null
+    },
+    {
+      "paperId": "2608.14125v1",
+      "title": "Traj-LeWM: Path-Aware World-Model Planning via Latent Trajectory Cost",
+      "abstract": "LeWM is a lightweight visual world model that learns latent dynamics end-to-end from pixels and ranks candidate action sequences by the distance between their predicted endpoints and the goal. However, LeWM has two limitations. First, during training, it learns local next-step transitions without evaluating complete trajectories relative to the task goal. Second, during planning, it ranks candidates solely by predicted endpoint distance. Because model predictions may differ from actual execution outcomes, the candidate whose predicted endpoint is closest to the goal may not perform best when executed in the environment. The evolution of the complete predicted trajectory can therefore provide complementary information beyond endpoint distance. To address these limitations, we propose Traj-LeWM, which retains LeWM's local-dynamics objective and endpoint score while introducing a goal-conditioned latent trajectory cost (LTC) that aggregates trajectory-level information as a complementary signal. During training, LTC-based trajectory-preference supervision complements next-step prediction in shaping the shared representation. During planning, LTC is combined with endpoint distance to incorporate intermediate-path information into candidate ranking. With joint endpoint-plus-LTC scoring, Traj-LeWM outperforms LeWM on Push-T, OGBench-Cube, Reacher, and Two-Room by $3$, $14$, $7$, and $7$ percentage points, respectively. Controlled experiments and ablations further verify the complementary roles of trajectory-level representation shaping and path-aware candidate ranking.",
+      "year": 2026,
+      "pub_date": "2026-08-14T09:32:38Z",
+      "authors": "Xiaodi Huang, Ziyi Ding, Jingtian Wan +6",
+      "paper_url": "https://arxiv.org/abs/2608.14125v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2608.14022v1",
+      "title": "ForgeWM: Progressive Causal Training for Few-Step Action-Conditioned Video World Models",
+      "abstract": "Action-conditioned video world models require low-latency causal generation and reliable responses to game-native controls. Although causal distillation enables one- or few-step video synthesis, extending it to interactive world models remains challenging, as discrete keyboard states and continuous mouse motion must remain aligned with temporally compressed latent chunks during causal training and autoregressive rollout. We introduce ForgeWM, a progressive framework that transforms a bidirectional action-conditioned video generator into efficient few-step world models through domain adaptation, teacher-forced causal training, causal consistency distillation, and on-policy distribution matching with a bidirectional teacher. The resulting budget-specialized students operate at steady-state denoising budgets of 1, 2, and 4 steps. ForgeWM further supports a dual-path deployment protocol combining latency-critical interaction with optional replay-time refinement, where the one-step student re-noises and refines its saved draft. On paired Minecraft trajectories, ForgeWM leads the evaluated systems in Imaging Quality, reference-aligned motion-profile agreement, action-sign accuracy, and mouse-control accuracy, while achieving the lowest reference LPIPS; the same four-stage recipe transfers to gamepad-controlled FPS gameplay. Replay-time refinement matches four-step reference quality while remaining roughly three times closer to the experienced trajectory than regeneration from noise. These results demonstrate ForgeWM's effectiveness for controllable few-step video generation.",
+      "year": 2026,
+      "pub_date": "2026-08-14T07:13:34Z",
+      "authors": "Xinye Li, Lingshuai Lin, Lei Wang +8",
+      "paper_url": "https://arxiv.org/abs/2608.14022v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2608.13901v1",
+      "title": "Ontology-Grounded World Models for Failure Diagnosis and Closed-Loop Repair in Physical AI Systems",
+      "abstract": "EV-WM represents candidate quality with feature and event scores, but these scores do not explicitly record an unmet task predicate, a route label for an available correction mechanism, or a post-correction acceptance result. We present Onto-EV-WM, an ontology-grounded diagnosis and verification-gated correction interface layered above EV-WM rather than a replacement world-model architecture. The implemented task-local TBox defines entity types, predicate signatures, and constraints; source-specific grounding maps predicted or simulator-observed states to task ABoxes; and deterministic rules retain each missing predicate and its arguments when assigning a route label. Learned or heuristic proposers remain separate from this symbolic interface; native task predicates determine acceptance, and the bounded protocol determines whether a failed verification is retried. In the aligned PointMaze evaluation, EV-WM and Onto-EV-WM both report 94% success, with mean final-state distances of 0.90573 and 0.61177, respectively; the separately budgeted search reaches 100% success. On LIBERO-Goal, the ontology represents failed task conditions as typed records, retains their predicate arguments, and associates them with the declared source/joint correction route and predicate-gated acceptance; the complete configuration reports 93.8% corrected-window success on seed 0 and 94.05 +- 0.30% across four evaluation-sampling seeds. On the fixed 10,030-task LIBERO-Plus registry, Onto-EV-WM succeeds on 8,526 tasks (85.00%), with suite-level success rates of 65.98% for LIBERO-10, 91.39% for LIBERO-Goal, and 91.38% for both LIBERO-Object and LIBERO-Spatial. These numbers report the performance of the complete ontology-grounded configurations under the tested simulator protocols; an ontology-only causal share is not measured separately, and real-robot recovery is not evaluated.",
+      "year": 2026,
+      "pub_date": "2026-08-14T03:13:57Z",
+      "authors": "Kailin Wang, Haoxiang Jie, Yaoyuan Yan +2",
+      "paper_url": "https://arxiv.org/abs/2608.13901v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2608.13678v1",
+      "title": "hint$^2$: Hierarchical World Models for Inference-Time Temporal Logic Guidance",
+      "abstract": "A central goal of robot learning is to enable robots to execute rich instructions specified at runtime. Large-scale language-conditioned policies have made substantial progress toward this goal, yet still struggle with temporal structure and safety constraints. Linear Temporal Logic (LTL) provides a powerful language to express complex, non-Markovian instructions. However, guiding learned manipulation policies toward LTL satisfaction remains challenging because modern policies generate short-horizon action chunks and replan in closed loop, while almost all LTL specifications are evaluated over long-horizon trajectories. In this paper, we introduce hint$^2$, a method for guiding short-horizon policies toward satisfying complex LTL specifications at inference time using hierarchical world models. Our key idea is to derive two separate guidance objectives using each world model's abstraction level. A high-level model predicts future action-induced transitions in task-relevant atomic propositions to guide progress through the LTL automaton, while a low-level dynamics model predicts immediate state evolution for accurate local safety guidance. Our results show that hint$^2$ overcomes the limitations of current LTL-guided diffusion methods, outperforms existing inference-time steering methods in CALVIN, and successfully completes instructions with complex liveness and safety constraints more elegantly than language-conditioned alternatives. Finally, we demonstrate that hint$^2$ can handle complex instructions on a real UR5e manipulator.",
+      "year": 2026,
+      "pub_date": "2026-08-13T18:22:08Z",
+      "authors": "Moritz Zoellner, Anastasios Manganaris, Ahmed H. Qureshi +1",
+      "paper_url": "https://arxiv.org/abs/2608.13678v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2608.13552v2",
+      "title": "PlayWorld: Benchmarking World Models with Agent Players over Long-Horizon Objectives",
+      "abstract": "Video world models simulate future states conditioned on current observations and user actions. Recent systems have demonstrated impressive video consistency and action controllability over long sequences. However, fairly comparing these interactive models remains challenging. In practice, a human player typically evaluates a world model by pursuing long-horizon objectives through interaction. For example, a user may turn around 360 degrees to see whether the environment remains consistent, or walk into the water and inspect whether realistic water ripples are generated. The action sequence required to achieve the same objective may vary substantially between models, making fixed action-conditioned evaluation unsuitable for cross-model comparison. To address this, we employ multi-modal Agent Players to interact with world models toward specified long-horizon objectives. Building on this paradigm, we introduce PlayWorld, a benchmark providing 171 scenarios, each with a specified objective. To evaluate performance thoroughly, we assess models along four core dimensions: geometry consistency, interaction fidelity, out-of-sight evolution, and insight evolution. In addition, we incorporate basic ability metrics for video quality and controllability. Experiments across nine state-of-the-art world models reveal that current models remain unreliable on long-horizon interactive objectives, particularly in maintaining spatial consistency and persistent state evolution. Code and data are available at https://github.com/kxding/PlayWorld.",
+      "year": 2026,
+      "pub_date": "2026-08-13T17:59:30Z",
+      "authors": "Kaixin Ding, Xi Chen, Minghong Cai +9",
+      "paper_url": "https://arxiv.org/abs/2608.13552v2",
+      "venue": "",
+      "citations": 0,
+      "code_url": "https://github.com/kxding/PlayWorld"
+    },
+    {
+      "paperId": "2606.28455v2",
+      "title": "Event-Conditioned Diagnostics of Kinematic, Contact, and Object-Permanence Fields in Passive Object-State World Models",
+      "abstract": "World models can predict future physical states, but prediction accuracy alone does not explain how physical information is organized and used inside their latent dynamics. We introduce a controlled diagnostic protocol for studying event-conditioned latent physical structure in passive object-state world models. The protocol tests whether hidden representations encode event-regime information, whether event contexts reweight non-exclusive physical field readouts, and whether field-aligned representational components have functional consequences for prediction. Using a balanced controlled-generator dataset with free-motion, collision, and occlusion events, we evaluate recurrent, attention-based, and latent state-space transition models under a fixed-horizon forecasting setup. The models learn useful predictive dynamics and their hidden states support reliable event-regime readout. Event contexts systematically reweight kinematic, contact, and object-permanence field readouts: free motion is kinematic-dominant, collision combines kinematic and contact structure, and occlusion combines motion-related and object-permanence structure. Time-aligned and directional-consistency analyses further show phase-related shifts in field emphasis. Finally, fixed-horizon projection causal field effect (CFE) shows that suppressing field-aligned directions can degrade event-relevant prediction, with strongest evidence for contact-aligned structure in collision-contact windows and more qualified evidence for object-permanence-aligned structure in hard-occlusion hidden windows. These results support event-conditioned organization and fixed-horizon functional sensitivity of latent physical fields, while not implying explicit physical modules, isolated causal circuits, or context-invariant sliding-window generalization.",
+      "year": 2026,
+      "pub_date": "2026-06-26T10:11:59Z",
+      "authors": "Yang Liu, Yuming Chen",
+      "paper_url": "https://arxiv.org/abs/2606.28455v2",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
     }
   ],
-  "last_updated": "2026-08-16T09:40:13.696516Z",
-  "total": 1958
+  "last_updated": "2026-08-17T09:56:52.983065Z",
+  "total": 1964
 }
