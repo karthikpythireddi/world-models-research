@@ -23927,8 +23927,140 @@
       "venue": "",
       "citations": 0,
       "code_url": null
+    },
+    {
+      "paperId": "2608.19085v1",
+      "title": "DA-WAM: Decision-Aligned Future Latents for Driving World Models",
+      "abstract": "Anticipating how scenes evolve under ego actions is fundamental to safe autonomous driving, yet the full potential of world models for decision-making remains unrealized. The critical challenge lies in ensuring that future modeling is not merely predictive, but decision-informative: the predicted future must directly shape which trajectory is selected. Existing approaches decouple future representation learning from planning optimization, or share predicted states across trajectory candidates, thereby diluting the action-specific consequences that ought to guide selection. To bridge this gap, we propose DA-WAM, a framework that unifies predictive representation learning, action-conditioned future modeling, and trajectory scoring under a single decision-making objective. DA-WAM maintains predictive supervision throughout planner optimization via an online encoder and a stable momentum target, allowing future representations to co-evolve with the driving task. An action-conditioned predictor generates a distinct future latent state per trajectory candidate, which is then evaluated by a future-latent-conditioned factorized scorer. For the expert-matched trajectory, the predicted future latent is supervised by the observed future representation, while safety-critical hard negatives provide additional supervision near planning boundaries. Extensive experiments on NAVSIM-v1 and NAVSIM-v2 demonstrate state-of-the-art performance, while ablations and diagnostic analyses validate the key components.",
+      "year": 2026,
+      "pub_date": "2026-08-19T16:33:02Z",
+      "authors": "Ruiguo Zhong, Benshan Ma, Xiaolong Chen +5",
+      "paper_url": "https://arxiv.org/abs/2608.19085v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2608.18746v1",
+      "title": "Decision-Metric Alignment in Latent World Models: Diagnostics and Action-Conditioned Objectives for MPC Planning",
+      "abstract": "JEPA-style latent world models can use Euclidean distance to a goal latent as the cost for model-predictive control (MPC). Strong decoding of task variables, however, does not guarantee that this particular cost ranks candidate action sequences by real task progress. We call the latter property \\emph{decision-metric alignment}. We introduce Plan-Real Spearman, which measures latent--real rank agreement on random plans, and CEM-stage Spearman, which measures the same agreement as cross-entropy-method (CEM) search concentrates its proposal. We analyze sufficient conditions under which latent distance preserves real-cost rankings, identifying encoder distortion, terminal rollout error, and candidate margins as the controlling quantities. Guided by the observed empirical alignment gap, DA-LeWM augments LeWM with inverse-dynamics and demonstration-conditioned goal-action heads. Across all our experiments, DA-LeWM accelerates convergence and achieves higher online success than LeWM, while probe scores remain similar. These results show that action-conditioned objectives improve the geometry used by Euclidean-cost, CEM-based latent MPC.",
+      "year": 2026,
+      "pub_date": "2026-08-19T09:56:39Z",
+      "authors": "Jiawei Wang, Ke Rui, Yushen Zuo +2",
+      "paper_url": "https://arxiv.org/abs/2608.18746v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2608.18669v1",
+      "title": "Reinforced Planning with Latent World Models",
+      "abstract": "Humans solve complex problems by constructing plans and mentally simulating their outcomes with an internal model of the world. Machine learning has produced world models that similarly predict the outcomes of action sequences, but the improvement of candidate plans still isn't fully learned. Current planners are either hand-designed, distilled from a hand-designed optimizer, or learned only to inform an amortized policy rather than to revise the plan itself. We introduce the Reinforced Planning, a method based on the idea that search can be learned by reinforcing good search rules into a neural planner. Our implementation RP1 learns both how to evaluate imagined outcomes through a critic, as well as how to improve multi-step plans through an optimizer trained fully offline from imagined world-model roll-outs. To our knowledge, RP1 is the first method to fully learn how to improve multi-step plans. Furthermore, it can be trained independently of and attached to any pretrained latent world model. Across visual navigation, arm reaching, and robotic manipulation on two world-model backbones, RP1 substantially outperforms hand-designed search algorithms, reaching near-perfect success in several settings while using $1,000 \\times$ less world-model rollouts and being up to $67 \\times$ faster than the strongest alternative under concurrent planner inference.",
+      "year": 2026,
+      "pub_date": "2026-08-19T08:21:28Z",
+      "authors": "Armin Sommer, Jannik Schilling",
+      "paper_url": "https://arxiv.org/abs/2608.18669v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2608.18647v1",
+      "title": "Progressive Experience Fusion for Multi-Task World Model Control in Endovascular Navigation",
+      "abstract": "Autonomous endovascular navigation could support the delivery of mechanical thrombectomy to underserved areas, but controllers must navigate long, multi-stage paths across varying vascular anatomies. This study investigates Progressive Experience Fusion (PEF) to train a multi-task TD-MPC2 controller. We additionally evaluate a heuristic that changes the Model Predictive Path Integral planning horizon using residual action-sequence dispersion, and fine-tuning in a patient-specific simulation. Across five subtasks in ten known training anatomies with held-out targets, PEF achieved a mean success rate of 74%, compared with 37% for Soft Actor-Critic (p < 0.001) and 65% for base TD-MPC2 (p = 0.053). A PEF controller with adaptive-horizon planning trained on 30 vasculatures achieved a mean success rate of 90% in ten held-out vasculatures. The PEF agent successfully transferred to an unseen in vitro stroke patient vasculature under fluoroscopy, achieving a mean path ratio improvement from 63% to 80% with fine-tuning (p < 0.001), following 40x103 fine-tuning steps (corresponding to approximately 107 min of clinical inter-hospital transfer time). This work represents a proof of concept for multi-vasculature training and patient-specific adaptation, while further validation is required before clinical deployment.",
+      "year": 2026,
+      "pub_date": "2026-08-19T07:51:50Z",
+      "authors": "Harry Robertshaw, Maxence Boels, Nikola Fischer +4",
+      "paper_url": "https://arxiv.org/abs/2608.18647v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2608.18484v1",
+      "title": "Partition the Support, Reconstruct the Residual: Training-Free Sparse Attention for Video Generation and World Models",
+      "abstract": "Training-free block-sparse attention can accelerate video transformers, but row-wise attention concentration does not by itself specify an executable sparse operator. Queries sharing a block route may have poorly overlapping supports, while retained attention mass alone does not determine the post-softmax error from skipped interactions. We show that partition geometry affects both pooled support and the predictability of the remaining residual from the sparse output. We introduce SparsePR, which combines Response-Coupled Partitioning with Probe-Fitted Residual Reconstruction. Sampled-query key responses form paired K/V groups, whose centroids induce query-response coordinates for shared routing. A small set of exact query rows then calibrates a call-specific affine correction from the sparse output within the output subspace observed in the probe residuals. Across four heterogeneous video generation and world models, SparsePR consistently reduces attention-reconstruction error. Ablations show that probe fitting accounts for most of this reduction, while response-coupled partitioning lowers hard-drop error and improves reconstruction under a finite probe budget. SparsePR preserves generation quality at 22.0-26.0% realized executed-pair density while achieving 1.48x-2.61x end-to-end speedups. Project page: https://pardistaghavi.github.io/SparsePR-website/",
+      "year": 2026,
+      "pub_date": "2026-08-19T03:16:09Z",
+      "authors": "Pardis Taghavi, Reza Langari, Gaurav Pandey",
+      "paper_url": "https://arxiv.org/abs/2608.18484v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2608.18234v1",
+      "title": "GigaBrain-WBC-0.5: A Behavior World Model for Robust Whole-Body Control with Environment Interaction",
+      "abstract": "Whole-body motion tracking policies turn a humanoid into a robust control interface: the teleoperator---or an upstream model---only supplies a coarse movement intent, while the low-level policy keeps the robot balanced and physically feasible. Existing trackers deliver this interface only on flat ground: trained in empty scenes, they never learn how contact with terrain and objects reshapes their dynamics, and they attempt to teach the policy to balance under any command by continually enlarging the reference-motion corpus, which stops working once feasible behaviors become environment-dependent. We present GigaBrain-WBC-0.5, the first Behavior World Model (BWM) for humanoid whole-body control. Rather than a purely reactive tracker, we train a causal Transformer to jointly predict its next action, next state, and the distribution over its next latent behavior command, so the network that acts also models how the environment shapes what it can do next. An automatic terrain-annotation pipeline recovers full 3D contact geometry from retargeted motion, enabling terrain annotation at the scale of existing motion datasets. The predicted distribution is reused at deployment to detect implausible commands online and retract them onto learned behaviors, so the robot attempts tasks in a \"best-effort\" manner. The result is a unified policy that takes real-time command, interacts with environment, and stays robust to implausible commands, falls, and disturbances. GigaBrain-WBC-0.5 achieves the highest success rate across all four regimes among three large-scale tracker baselines: 81.3% on terrain interaction (4.3x the strongest baseline), 83.1% under implausible commands, and 99.3% fall recovery (16.8x the strongest baseline). Hardware trials show robust interaction under missing supports and disturbances; the Unitree G1 checkpoint transfers to the Maker L01 robot with simple fine-tuning.",
+      "year": 2026,
+      "pub_date": "2026-08-18T18:21:36Z",
+      "authors": "Ziyang Cheng, Tianshu Tang, Jinxin Lan +17",
+      "paper_url": "https://arxiv.org/abs/2608.18234v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2608.15156v2",
+      "title": "Low-Rank Dynamics-Effective Latent Carriers for Counterfactual Rollout in Learned World Models",
+      "abstract": "World models may predict the future without making clear which parts of their hidden state actually drive those predictions. We ask whether a small, directly addressable hidden-state change can place a learned world model on the intended counterfactual trajectory and then let the model continue that future on its own. We study a recurrent world model with a 192-dimensional hidden state in a controlled two-object, two-dimensional collision environment. For a bounded family of local velocity edits, we first verify that the model can natively represent and roll out the edited future. We then construct candidate low-rank carriers from training-only factual-to-counterfactual hidden differences and learn a map from the factual state and requested edit to carrier coefficients. On the registered rank grid, rank 4 is the smallest tested rank that satisfies the full development-panel criteria. A single rank-4 patch at the anchor is sufficient to redirect a 12-step autonomous rollout, with no future observations, teacher forcing, or repeated correction. The frozen procedure satisfies the preregistered replication rule across independently trained checkpoints and remains usable across nearby intervention times. Random equal-norm, wrong-object, and wrong-time controls do not explain the effect. A position-edit stress test provides a negative contrast: the intended position patch can pass the raw rollout criteria, but no-patch and random controls can pass the same criteria, and wrong-object specificity is not established. Thus, successful editing alone is not enough. We use dynamics-effective to describe an intervention that changes the model's future computation in a sustained and target-specific way under autonomous rollout. The rank-4 result identifies a compact intervention interface for the tested velocity-edit family, not a closed four-dimensional state or an intrinsic state dimension.",
+      "year": 2026,
+      "pub_date": "2026-08-15T10:13:37Z",
+      "authors": "Yang Liu, Yuming Chen",
+      "paper_url": "https://arxiv.org/abs/2608.15156v2",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2607.04546v2",
+      "title": "Mask2Real-WM: Segmentation Masks as a Sim-to-Real Bridge for Controllable Dexterous World Models",
+      "abstract": "Action-conditioned world models allow robots to predict the future consequences of candidate actions without additional physical interaction, supporting policy evaluation, planning, and data augmentation. We present Mask2Real-WM, a two-stage action-conditioned world model for dexterous manipulation that decouples pixel prediction into a dynamics model and a rendering model. The dynamics model predicts future segmentation masks from past masks and 23-DoF action sequences. The rendering model maps the predicted masks to photorealistic RGB using a ControlNet-augmented Stable Video Diffusion backbone. The smaller sim-to-real gap in segmentation space enables the dynamics model to benefit from large-scale pretraining on over 50 h of synthetic simulation data, followed by fine-tuning on fewer than 2.5 h of real demonstrations. Experiments on a dexterous pick-and-place benchmark show that mask conditioning and simulation pretraining are both required for per-DoF action controllability across all 23 degrees of freedom. In contrast, monolithic baselines capture broad hand and end-effector trajectories but do not reliably reflect fine-grained, per-joint action effects.",
+      "year": 2026,
+      "pub_date": "2026-07-05T23:29:23Z",
+      "authors": "Riccardo O. Feingold, Davide Liconti, Chenyu Yang +1",
+      "paper_url": "https://arxiv.org/abs/2607.04546v2",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2607.00836v6",
+      "title": "From World Models to World Action Models: A Concise Tutorial for Robotics",
+      "abstract": "Rather than providing an exhaustive survey, this paper presents a concise tutorial on world models and world action models for robotics. After reading the tutorial, readers should have a clear understanding of what constitutes a \"world\", how world models and world action models are defined, and what roles they play within robotic AI systems. The tutorial also develops a unified perspective for comparing representative approaches, such as World Labs' spatial intelligence models, Yann LeCun's JEPA framework, and NVIDIA's Cosmos platform, and clarifies how these models differ in their representations, predictive capabilities, and interaction mechanisms.",
+      "year": 2026,
+      "pub_date": "2026-07-01T11:56:54Z",
+      "authors": "Xiaoxiong Zhang, Xiong Zeng, Wei Zhang",
+      "paper_url": "https://arxiv.org/abs/2607.00836v6",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2606.13840v4",
+      "title": "Multi-Agent Embodied Autonomous Driving (MAEAD): From V2X Information Exchange to Shared World Models",
+      "abstract": "Autonomous driving is shifting from isolated vehicle intelligence toward multi-agent embodied systems that share perception, infer intent, and coordinate action under uncertainty. This survey examines this transition through the lens of Shared World Models (SWMs): predictive cross-agent representations maintained across vehicles, infrastructure, and other traffic participants. We review approximately 400 publications covering vehicle-to-everything (V2X) communication, collaborative perception, inter-agent cognition, cooperative planning, end-to-end cooperative driving, and simulation and data engines for closed-loop validation. The organizing question is how exchanged observations become aligned state, intent-aware interaction, and coordinated downstream action. Across the surveyed literature, evaluation remains concentrated in simulation, curated benchmarks, and offline protocols. Foundation-model-based coordination also lacks verifiable real-time safety guarantees in open traffic. These gaps motivate key research priorities for multi-agent embodied autonomous driving (MAEAD): verifiable shared-state maintenance, robust intent and plan alignment, and safe coordinated action under communication and computing constraints in real-world deployment. We maintain an open-source project to continuously track the latest developments at https://github.com/dl-m9/Multi-Agent-Embodied-Autonomous-Driving.",
+      "year": 2026,
+      "pub_date": "2026-06-11T19:10:13Z",
+      "authors": "Senkang Hu, Zhengru Fang, Yihang Tao +3",
+      "paper_url": "https://arxiv.org/abs/2606.13840v4",
+      "venue": "",
+      "citations": 0,
+      "code_url": "https://github.com/dl-m9/Multi-Agent-Embodied-Autonomous-Driving"
+    },
+    {
+      "paperId": "2512.02473v3",
+      "title": "WorldPack: Dynamic Frame Compression for Long-context Video World Modeling",
+      "abstract": "Video world models have attracted significant attention for their ability to produce high-fidelity future visual observations conditioned on past observations and navigation actions. However, achieving temporally and spatially consistent generation over long horizons remains an open challenge: existing approaches either compress past frames without explicitly accounting for 3D viewpoint geometry or retrieve only a handful of spatially relevant frames without increasing the total amount of retained history. In this paper, we propose WorldPack, a video world model that introduces spatially-aware compressed memory to address both limitations simultaneously. The key insight is that compression rates should not be uniform or temporally determined, but should instead be dynamically allocated based on 3D spatial relevance to the current viewpoint. WorldPack achieves this through two tightly coupled mechanisms: trajectory packing, which fits substantially more historical frames into a fixed-length context through hierarchical frame compression, and geometric selection, which leverages camera pose information and field-of-view overlap to assign lower compression to spatially important frames and higher compression to less relevant ones. Together, these mechanisms expand the effective context from 4 to 22 frames with moderate computational overhead: trajectory packing increases diffusion-model inference time by 16%, while FoV-based geometric selection introduces an additional cost. We evaluate WorldPack on LoopNav, a Minecraft benchmark for long-horizon spatial consistency, and conduct comprehensive experiments on the RECON, real-world navigation dataset, across multiple metrics. WorldPack outperforms strong baselines, including Oasis, Mineworld, DIAMOND, and NWM, with pronounced gains on spatial reasoning tasks that require recall of distant observations.",
+      "year": 2025,
+      "pub_date": "2025-12-02T07:06:23Z",
+      "authors": "Yuta Oshima, Yusuke Iwasawa, Masahiro Suzuki +2",
+      "paper_url": "https://arxiv.org/abs/2512.02473v3",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
     }
   ],
-  "last_updated": "2026-08-19T09:46:35.972447Z",
-  "total": 1994
+  "last_updated": "2026-08-20T09:48:24.917942Z",
+  "total": 2005
 }
