@@ -24155,8 +24155,104 @@
       "venue": "",
       "citations": 0,
       "code_url": "https://github.com/UNIC-Lab/L4V-AAV"
+    },
+    {
+      "paperId": "2608.21114v1",
+      "title": "CIVA: Critic-Induced Value-Subspace Attacks on Visual World-Model Agents",
+      "abstract": "Visual world-model agents such as DreamerV3 act through a recurrent latent state rather than a single observation, which weakens frame-wise observation attacks and makes their perturbations vary sharply over time under a strict per-frame perturbation constraint. We study white-box, causal, online attacks on such agents and propose Critic-Induced Value-Subspace Attacks (\\textbf{CIVA}). Our key observation is that, along a rollout, critic-guided perturbations concentrate in a low-dimensional subspace induced by the victim's own critic. Based on this observation, CIVA first probes the frozen victim offline with critic-guided PGD and extracts a low-rank value-subspace by SVD. At test time, it optimizes only the subspace coefficients, smooths them with an exponential moving average (EMA), and maps them back to pixels. This design attacks value-sensitive recurrent dynamics while keeping the online optimization cheap and temporally coherent. Extensive experiments on DMC walker walk, Atari Pong, and Crafter show that CIVA consistently outperforms five recent methods; on DMC walker walk, it achieves the largest reward drop of 26.07\\% while keeping temporal variation low, with TempAbs of 0.646.",
+      "year": 2026,
+      "pub_date": "2026-08-21T13:58:56Z",
+      "authors": "Jiancheng Wang, Mingli Zhu, Tong Zhang +4",
+      "paper_url": "https://arxiv.org/abs/2608.21114v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2608.21075v1",
+      "title": "AudioWorldSim: Realistic Binaural Audio Datasets For World Models",
+      "abstract": "This technical report presents AudioWorldSim, an open-source platform designed to generate realistic binaural audio datasets and advance research in audio-based machine learning, particularly world models. Built as a custom extension of Meta's SoundSpaces 2.0 platform, AudioWorldSim leverages their comprehensive acoustics framework, but focuses on the automatic rollout of random agent navigations, as well as implements crucial fixes to how continuous sound is composed. AudioWorldSim is made publicly available to the research community at https://github.com/Luizerko/AudioWorldSim to facilitate reproducibility.",
+      "year": 2026,
+      "pub_date": "2026-08-21T13:17:06Z",
+      "authors": "Luis Vitor Zerkowski, Luiz Velho",
+      "paper_url": "https://arxiv.org/abs/2608.21075v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": "https://github.com/Luizerko/AudioWorldSim"
+    },
+    {
+      "paperId": "2608.20936v1",
+      "title": "Graph-Operator World Models for Morphology-Parameter Generalization in Continuous Control",
+      "abstract": "World models for continuous control are commonly trained for a fixed physical system and can degrade when known morphology parameters such as link lengths, masses, damping, and actuation change. Existing approaches often provide these parameters as conditioning information, but leave unspecified which part of the learned transition should remain reusable and which part should change with morphology. We propose Graph-Operator World Models (GraphOp-WM), a structured world model for generalization across unseen morphology parameters within related articulated robot families. GraphOp-WM represents bodies and their kinematic relations as an attributed graph and factorizes each transition into a morphology-independent local dynamics basis and a morphology-conditioned structured operator. The operator combines node-local modulation, kinematic-tree coupling, and a low-rank global correction, while architectural information separation, basis normalization, and paired-morphology supervision encourage static morphology dependence to be carried by the operator pathway. Graph-level readout and edge-wise action representations provide a compatible interface for reward, value, and TD-MPC-style planning. We further define controlled MuJoCo parameter splits covering interpolation, extrapolation, and held-out compositions of link geometry, mass, damping, and actuation parameters in Hopper, Walker2d, and HalfCheetah.",
+      "year": 2026,
+      "pub_date": "2026-08-21T10:01:46Z",
+      "authors": "Xu Yang, Yiqin Yang, Qianchuan Zhao",
+      "paper_url": "https://arxiv.org/abs/2608.20936v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2608.20709v1",
+      "title": "ResiliFlow: An Open Transport World Model for Infrastructure Perception and Disaster Resilience",
+      "abstract": "Transport resilience work is often split across separate data preparation scripts, network models, simulation tools, image inspection systems and reports. This fragmentation makes it difficult to move from an observation to a tested and reviewable decision. We introduce ResiliFlow, an open transport world model concept and an implemented platform for infrastructure resilience, response and recovery. The platform connects two workspaces. Disaster Transport Resilience Analysis provides six map-centred functions for critical-road and critical-area identification, recovery prioritisation, disruption routing, resilience testing and scenario simulation. AI-based Transport Infrastructure Perception and Decision Support organises street-level and satellite evidence, detects visible road, footpath and kerb conditions, and prepares these observations for human-reviewed intervention planning. Both workspaces share an eight-step cycle of perception, prediction, model development, verification, execution, decision, feedback and memory. Research Validation records assumptions and checks, while a local Assistant and an optional multi-provider large language model Copilot translate user questions into bounded calls to executable tools. We document the platform architecture, representative mathematical models, interface evidence and computer-vision learning results. Examples show accurate recognition across eight visible-condition classes, while compact error analysis demonstrates how difficult cases guide continued learning. ResiliFlow shows how transport models can become an inspectable, reusable and question-led system rather than a collection of disconnected analyses. The accompanying release is intended to support research collaboration, public scrutiny and extension under institutional review.",
+      "year": 2026,
+      "pub_date": "2026-08-21T03:30:44Z",
+      "authors": "Junxiang Xu, Vinayak Dixit, S. Travis Waller +9",
+      "paper_url": "https://arxiv.org/abs/2608.20709v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2608.07107v2",
+      "title": "MemWM: Memory-Augmented Text-Based World Model",
+      "abstract": "World models are increasingly used to support planning in agents by predicting how environment states evolve in response to agent actions. Yet fluent next-state predictions can still omit task-critical facts, corrupt product attributes, or apply incorrect transition rules. To address such systematic prediction errors, we introduce MemWM, a memory-augmented text-based world model. MemWM uses world memory, a curated memory bank of transition rules, state caches, and hard-to-predict facts, to condition next-state imagination. We evaluate factual state preservation with Structured State Fidelity (SSF), which scores predicted states through benchmark-specific facts and fields. Compared with SFT, memory-augmented training improves SSF by up to 206.3%. In the full planning setting, we keep the policy model frozen and provide policy-side world skill: retrieved task-level skills and step-wise corrective guidance for action selection. Across ALFWorld, WebShop, and ScienceWorld, memory-augmented agents improve downstream success over an SFT-trained world-model agent, with up to a 65.4% relative gain. Sensitivity analyses further show that retrieved memory improves task success and efficiency under different memory and action-budget settings.",
+      "year": 2026,
+      "pub_date": "2026-08-07T11:03:32Z",
+      "authors": "Yujun Wang, Tao Zhang, Jinhe Bi +9",
+      "paper_url": "https://arxiv.org/abs/2608.07107v2",
+      "venue": "EMNLP 2026",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2608.20401v1",
+      "title": "World models of environment, agent and joint agent-environment systems",
+      "abstract": "World models are a central component of model-based reinforcement learning. They are usually discussed in terms of what variables they predict, such as observations, rewards, states, latent or information states. We argue that there is a prior distinction: which channel they model. We consider three cases: the environment channel $O_{:} \\mid A_{:}$, the agent channel $A_{:} \\mid O_{:}$, and the realised joint process $(A, O)_{:}$, equivalently viewed as a channel with no inputs. Using computational mechanics, we define canonical predictive models for these three cases as $\u03b5$-transducers or $\u03b5$-machines. Canonical environment models recover standard predictive state representations, while the other two give analogous notions of canonical models for the agent and the joint system. We then build canonical support-restricted environment and agent models induced by closed-loop coupling, whose predictive equivalences range over continuations supported by the realised interaction. The key structural result is that canonical support-restricted environment states factor through the canonical joint causal states, and their transition structure is induced directly from the joint model; the agent-side construction is dual. Finally, we give a POMDP/controller example in which the unrestricted environment model has infinitely many states while the canonical support-restricted model induced by the coupling is finite. The framework clarifies what different world models are models of, and how coupling and support restriction can change their canonical predictive structure and complexity.",
+      "year": 2026,
+      "pub_date": "2026-07-23T13:35:03Z",
+      "authors": "Manuel Baltieri, Filippo Torresan, Yivan Zhang +2",
+      "paper_url": "https://arxiv.org/abs/2608.20401v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2607.06640v2",
+      "title": "What a World Model Represents Is Three Questions",
+      "abstract": "World models learn task-relevant information through many routes: observation reconstruction, recurrent state, temporal filtering, and explicit task supervision. Different routes can make different variables available. The same variable can also be available through several routes at once. When it is, looking at which route would increase the training loss most if removed does not tell you which route the model actually uses. The questions are reachability, whether a training signal can identify a task-relevant direction; admission, whether that direction is recoverable from the latent; and assignment, which eligible route carries it. We test them in environments with a known set of required coordinates. A direction cannot enter the latent unless some training signal can identify it. Reconstruction, recurrence, or filtering may already recover some of those coordinates; a reward or value head then has no residual direction to admit. For what remains, how many independent predictions the target supplies is how many coordinates install: one through four independent predictions admit one through four directions, including through the value head. Reachability is not admission: a temporal second-moment coefficient can remain absent under next-token prediction when accumulating it is a fraction of a percent of that loss, and a head that predicts the coefficient restores it. Assignment is a different test. Two routes that each carry the same variable when trained alone do not swap the carrier when we reverse which is more costly to remove. A recurrent model trained on a transformer's recorded sequences shows the same pattern. Near the point where the competing route is beginning to clear the probe threshold, independent training runs disagree. What a world model represents is therefore three questions: what information is reachable, what supervision admits, and which competing route carries it.",
+      "year": 2026,
+      "pub_date": "2026-07-07T14:45:17Z",
+      "authors": "Donna Vakalis",
+      "paper_url": "https://arxiv.org/abs/2607.06640v2",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2606.18250v2",
+      "title": "Future Dynamic 3D Reconstruction: Toward 3D World Modeling with Disentangled Ego-Motion",
+      "abstract": "Forecasting the evolution of dynamic environments is crucial for autonomous agents. While generative world models have achieved high photorealism in 2D video synthesis by mixing ego-motion and environmental dynamics within the image plane, they exhibit physical inconsistencies, such as morphing or vanishing objects, especially over long time horizons. In this paper, we propose FR3D, a world-modeling approach that predicts a persistent 3D latent representation for future dynamic 3D reconstruction. Unlike prior works that treat the world as a sequence of image-based features, FR3D explicitly decouples the 3D evolution of the scene from the agent's trajectory, treating the inferred ego-motion as a latent proxy for action. This disentanglement resolves ambiguities between self-motion and world-motion, ensuring geometric consistency into the future. Furthermore, we introduce a teacher-student distillation strategy that leverages the spatial \"common sense\" of off-the-shelf foundation models, leading to robust zero-shot generalization. Extensive experiments demonstrate FR3D's strong performance for future dynamic 3D reconstruction from monocular observations across multiple datasets, even 2 seconds into the future. Project page: https://fr3d-wm.github.io.",
+      "year": 2026,
+      "pub_date": "2026-06-16T17:59:46Z",
+      "authors": "Nils Morbitzer, Jonathan Evers, Artem Savkin +4",
+      "paper_url": "https://arxiv.org/abs/2606.18250v2",
+      "venue": "ICML 2026",
+      "citations": 0,
+      "code_url": null
     }
   ],
-  "last_updated": "2026-08-23T09:42:49.875533Z",
-  "total": 2013
+  "last_updated": "2026-08-24T10:01:54.954739Z",
+  "total": 2021
 }
