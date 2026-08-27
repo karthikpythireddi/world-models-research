@@ -13354,7 +13354,7 @@
       "paper_url": "https://arxiv.org/abs/2502.01591v3",
       "venue": "ICML 2025",
       "citations": 0,
-      "code_url": ""
+      "code_url": null
     },
     {
       "paperId": "2502.01366v2",
@@ -13378,7 +13378,7 @@
       "paper_url": "https://arxiv.org/abs/2502.00622v4",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": null
     },
     {
       "paperId": "2502.00466v2",
@@ -24659,8 +24659,152 @@
       "venue": "",
       "citations": 0,
       "code_url": null
+    },
+    {
+      "paperId": "2608.25927v1",
+      "title": "Code World Model: Coding Agent as World Brain",
+      "abstract": "World models aim to simulate how complex environments evolve under actions and events, yet existing video-based world models primarily learn dynamics from visual observations, which reveal outcomes rather than the underlying knowledge, rules, and mechanisms governing world evolution. This makes it difficult to maintain persistent consequences and support coherent, open-ended evolution. We introduce Code World Model, a framework that separates world evolution from visual realization by combining the reasoning and coding capabilities of language models with the generative priors of video models. A coding agent serves as the world brain, reasoning about events and their consequences and generating executable code to maintain persistent world state and perform rule-consistent evolution. To connect executable state with visual generation, we introduce a proxy representation that encodes frame-wise spatiotemporal constraints and is compiled into a proxy video, which conditions a video model to render high-fidelity visual observations. We further develop data pipelines for constructing aligned proxy-observation pairs from gameplay and real-world videos. After fine-tuning on paired gameplay data, MiniMax-H3 follows proxy-based spatiotemporal specifications from simple interactive worlds built by the coding agent while preserving rich visual details and dynamics. These results demonstrate the potential of combining code for persistent world evolution with video models for flexible visual realization, providing a new path toward open-ended world models.",
+      "year": 2026,
+      "pub_date": "2026-08-26T15:37:33Z",
+      "authors": "Yiwen Chen, Guosheng Lin, Chi Zhang",
+      "paper_url": "https://arxiv.org/abs/2608.25927v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2608.25659v1",
+      "title": "GaussianDream++: Efficient 3D Gaussian World Modeling for Robotic Manipulation",
+      "abstract": "Vision-Language-Action (VLA) policies have advanced language-conditioned robotic manipulation, yet action-imitation objectives provide only weak supervision for metric 3D structure and short-horizon physical evolution. Geometry-enhanced policies mainly improve current-scene grounding, whereas predictive policies often model future dynamics in RGB or latent spaces and may incur substantial deployment cost. GaussianDream demonstrates that training-time current Gaussian reconstruction and future Gaussian prediction provide effective 3D supervision, but its dense VGGT/TGE-based prefix jointly carries state, dynamics, and action-conditioning information. We present \\textbf{\\methodname}, a compact, policy-native extension that inserts \\textbf{World State Tokens} and \\textbf{World Prediction Tokens} directly into the VLA backbone. A training-only \\textbf{World Representation Head} decodes these tokens into a Current World and coupled Future Prediction over shared Gaussian primitives, while static--dynamic factorization preserves persistent structure and focuses residual motion on interaction-relevant regions. At inference, the head, renderer, auxiliary objectives, and VGGT/TGE pathway are removed, leaving only 20 world tokens without online Gaussian decoding or rollout. \\method achieves \\textbf{98.6\\%} on LIBERO and \\textbf{87.8\\%} on LIBERO-Plus, with clear gains under Camera and Layout shifts. Real-robot experiments further improve average success from 29.2\\% to 52.5\\% over reproduced $\u03c0_{0.5}$ while maintaining efficient closed-loop control.",
+      "year": 2026,
+      "pub_date": "2026-08-26T11:41:55Z",
+      "authors": "Yuqing Jiang, Zijian Zhang, Weitao Zhou +8",
+      "paper_url": "https://arxiv.org/abs/2608.25659v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2608.25572v1",
+      "title": "ConfAL-WM: Confidence-Guided Active Learning for Action-Conditioned World Models",
+      "abstract": "Action-conditioned world models have become an important foundation for embodied prediction, planning, and synthetic data generation, but their errors under new task and scene distributions are often concentrated in localized spatiotemporal regions such as robot arms, manipulated objects, contact areas, and occluded objects. This paper presents ConfAL-WM, a confidence-guided active learning framework for post-training embodied world models. Built upon EVAC, we attach a lightweight confidence probe to UNet decoder features and predict dense confidence maps in the latent space. These maps are aggregated into task-, frame-, and patch-level scores, enabling both efficient data selection and localized training enhancement. Our pipeline first retrains the confidence probe and warms up EVAC with a small subset of target-domain data, then performs task-level prescreening to allocate sampling budgets, and finally applies selected-data retraining with optional frame or patch weighted data enhancement. Experiments on RoboTwin2.0 show that confidence-guided selection improves post-training efficiency, while dense frame and patch weighting further enhances prediction quality and embodied trajectory consistency compared with scalar reward, progress, and judge-based scoring baselines. A quick visual overview of this work is available at https://ConfAL-WM.github.io.",
+      "year": 2026,
+      "pub_date": "2026-08-26T09:29:08Z",
+      "authors": "Xiang Liu, Sen Cui, Changshui Zhang",
+      "paper_url": "https://arxiv.org/abs/2608.25572v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2608.25518v1",
+      "title": "Agentic Game Development as a Verifiable Trajectory Data Engine for Scaling World Models",
+      "abstract": "A common strategy for scaling world models is to train on more crawled video with more compute. We argue that this strategy is inefficient: scaling world models also requires a recursive data engine that offers grounded reward signals. The success of code agents illustrates why this matters. As code is executable, compilers and runtimes can provide high-quality rewards for Reinforcement Learning (RL) post-training of LLMs. By contrast, spatial generation still relies largely on fuzzy proxies such as CLIP scores. These signals are fuzzy and biased, making them hard to support RL post-training. Compared with these, game development provides a missing reward environment for spatial world models. A scene encoded by a game engine is an executable world specification: the engine can efficiently check collision, physics, navigability and bounded playability, while the developer provides the global verification signal by judging whether the scene should be accepted. Game development also provides real-world long-horizon trajectory data for RL post-training. We therefore propose Reinforcement Learning with Human-Engine Verification (RLHEV), a post-training paradigm that combines dense engine signals with implicit human acceptance feedback from the development process.",
+      "year": 2026,
+      "pub_date": "2026-08-26T08:28:39Z",
+      "authors": "Pengfei Zhou, Hexin Wang, Zhengfeiyang Zhang +5",
+      "paper_url": "https://arxiv.org/abs/2608.25518v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2608.25017v1",
+      "title": "Rollout-Decoded Reconstruction for Long-Horizon Prediction in Latent World Models",
+      "abstract": "A latent world model trains its decoder on latents anchored to observations, then deploys it on the model's own free-running rollout, hundreds of steps past the last observation. Rollout-Decoded Reconstruction (RDR) closes this gap with a single loss term that free-runs the model during training exactly as evaluation will, decodes every rollout latent, and penalizes reconstruction error against ground truth. The term adds no parameters, costs training-time compute only, and reduces to the standard objective at weight zero, so every comparison in this paper is a one-flag A/B. On the chaotic Kuramoto-Sivashinsky equation, RDR raises valid prediction time (the time to first crossing of normalized error 0.5) from $3.87 \\pm 0.23$ to $6.97 \\pm 0.42$ time units at an identical 193,568 parameters, a $1.80\\times$ improvement confirmed on seeds never used in selection and holding in 10 of 10 preregistered configurations at ratios of 1.71-2.50$\\times$. The results come from a single system; a sweep in which the advantage grows with latent width is descriptive, and control experiments on two classic tasks are preliminary.",
+      "year": 2026,
+      "pub_date": "2026-08-25T18:05:24Z",
+      "authors": "Rishi Shah, Rishav Shrestha",
+      "paper_url": "https://arxiv.org/abs/2608.25017v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2608.23720v2",
+      "title": "Platonic Representation Hypothesis on World Models",
+      "abstract": "World models have demonstrated significant potential for perceiving and simulating complex environments. Despite their strong performance, the fundamental nature of their learned representations remains poorly understood. In this paper, we investigate the Platonic Representation Hypothesis within this domain by proposing the Predictive Consistency Assumption: we posit that the optimization of a shared state transition objective acts as a selective pressure that encourages heterogeneous models to converge toward a shared latent structure. Through systematic experiments with the DINO World Model (DINO-WM), in which we vary visual encoders to create heterogeneous models, we find that capable world models evolve toward geometrically similar internal structures. Moreover, via model stitching, we show that the internal features of one world model can be mapped to another with limited performance degradation, providing evidence of functional compatibility. Our findings suggest that the pursuit of predictive consistency can promote shared, transition-compatible latent structure across world models.",
+      "year": 2026,
+      "pub_date": "2026-08-24T18:08:30Z",
+      "authors": "Wenhow Li, Chengwei MA, Hui Xiong +2",
+      "paper_url": "https://arxiv.org/abs/2608.23720v2",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2607.00836v7",
+      "title": "From World Models to World Action Models: A Concise Tutorial for Robotics",
+      "abstract": "Rather than providing an exhaustive survey, this paper presents a concise tutorial on world models and world action models for robotics. After reading the tutorial, readers should have a clear understanding of what constitutes a \"world\", how world models and world action models are defined, and what roles they play within robotic AI systems. The tutorial also develops a unified perspective for comparing representative approaches, such as World Labs' spatial intelligence models, Yann LeCun's JEPA framework, and NVIDIA's Cosmos platform, and clarifies how these models differ in their representations, predictive capabilities, and interaction mechanisms.",
+      "year": 2026,
+      "pub_date": "2026-07-01T11:56:54Z",
+      "authors": "Xiaoxiong Zhang, Xiong Zeng, Wei Zhang",
+      "paper_url": "https://arxiv.org/abs/2607.00836v7",
+      "venue": "",
+      "citations": 0,
+      "code_url": "https://github.com/clearlab-sustech/WorldModelSurvey"
+    },
+    {
+      "paperId": "2606.05925v2",
+      "title": "Towards World Models in Biomedical Research",
+      "abstract": "A central goal of biomedicine is to understand, predict and ultimately control the dynamic mechanisms by which biological systems respond to perturbations, disease progression and therapeutic intervention. Although foundation models and large language models have accelerated biomedical data interpretation, most current systems remain focused on static pattern recognition rather than prospective simulation of biological futures. Here we propose biomedical world models as a paradigm for AI-driven discovery. These models learn latent representations of molecular, cellular, tissue and clinical states, together with intervention-conditioned dynamics that allow future trajectories to be simulated before actions are taken. We discuss how biomedical world models could function as data engines, environment simulators and scientific planning substrates across applications including virtual cells, organoids, virtual patients and surgical simulation. We outline the data infrastructure, evaluation benchmarks, safety constraints and governance frameworks required. Biomedical world models may provide a foundation for simulation-guided, closed-loop and experimentally actionable biomedical discovery.",
+      "year": 2026,
+      "pub_date": "2026-06-04T09:28:54Z",
+      "authors": "Guangyu Wang, Jingkun Yue, Siqi Zhang +19",
+      "paper_url": "https://arxiv.org/abs/2606.05925v2",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2602.14857v2",
+      "title": "World Models for Policy Refinement in StarCraft II",
+      "abstract": "Large Language Models (LLMs) have recently shown strong reasoning capabilities, motivating their use in complex decision-making environments. StarCraft II (SC2), with its massive state-action space and partial observability, is a challenging testbed. However, existing LLM-based SC2 agents primarily focus on improving the policy itself, leaving the integration of a learnable, action-conditioned dynamics model into the decision loop largely unexplored. In this work, we propose StarWM and StarWM-Agent, and conduct the first systematic study of the learnability and decision utility of player-view, action-conditioned textual world models for SC2. StarWM predicts short-horizon future observations under partial observability. StarWM-Agent integrates StarWM into a lightweight Generate-Simulate-Refine loop for foresight-driven policy refinement. Extensive experiments show that StarWM substantially outperforms zero-shot baselines across multiple dimensions, while StarWM-Agent achieves consistent win-rate gains of 30%, 15%, and 30% against the SC2 built-in AI at Hard (LV5), Harder (LV6), and VeryHard (LV7), respectively. Additional analyses show that our method is complementary to existing history-summarization SC2-agent approaches, with their combination achieving the strongest online performance in our evaluation.",
+      "year": 2026,
+      "pub_date": "2026-02-16T15:51:59Z",
+      "authors": "Yixin Zhang, Ziyi Wang, Yiming Rong +6",
+      "paper_url": "https://arxiv.org/abs/2602.14857v2",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2512.10226v3",
+      "title": "Latent Chain-of-Thought World Modeling for End-to-End Driving",
+      "abstract": "Recent Vision-Language-Action (VLA) models for autonomous driving explore inference-time reasoning as a way to improve driving performance and safety in challenging scenarios. Most prior work uses natural language to express chain-of-thought (CoT) reasoning before producing driving actions. However, text may not be the most efficient representation for reasoning. In this work, we present Latent-CoT-Drive (LCDrive): a model that expresses CoT in a latent language that captures possible outcomes of the driving actions being considered. Our approach unifies CoT reasoning and decision making by representing both in an action-aligned latent space. Instead of natural language, the model reasons by interleaving (1) action-proposal tokens, which use the same vocabulary as the model's output actions; and (2) world model tokens, which are grounded in a learned latent world model and express future outcomes of these actions. We cold start latent CoT by supervising the model's action proposals and world model tokens based on ground-truth future rollouts of the scene. We then post-train with closed-loop reinforcement learning to strengthen reasoning capabilities. On a large-scale end-to-end driving benchmark, LCDrive achieves faster inference, better trajectory quality, and larger improvements from interactive reinforcement learning compared to both non-reasoning and text-reasoning baselines.",
+      "year": 2025,
+      "pub_date": "2025-12-11T02:22:07Z",
+      "authors": "Shuhan Tan, Kashyap Chitta, Yuxiao Chen +8",
+      "paper_url": "https://arxiv.org/abs/2512.10226v3",
+      "venue": "CVPR 2026",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2608.22067v3",
+      "title": "DELE-w0.5: Inferring Action from Future Latent State for Robotic Manipulation",
+      "abstract": "World-Action Models (WAMs) build robot control on video-generation backbones, which jointly predict dense future visual trajectories and robot actions. We argue that video generation is an unnecessary intermediate objective for world-action modeling. For robotic manipulation, the goal of a world model is not to reproduce how the world looks at every intermediate moment, but to predict the state that the world will reach after an action is executed. The intermediate frames only describe the visual transition between physical states, which consumes substantial model capacity and computation, but do not directly specify the physical outcome that the robot action is intended to produce. In this paper, we propose DELE-w0.5, which infers robot actions from predicted future states without relying on video generation. Concretely, DELE-w0.5 infers the action sequence from its corresponding compact future latent state. The future latent state captures the action-relevant physical outcome of robot interaction and serves as an explicit bridge between world modeling and action generation. The core design principle of DELE-w0.5 is to model how the physical world changes under robot actions, rather than how its visual appearance evolves frame by frame. This formulation removes the high-dimensional visual redundancy introduced by dense video representations, and it therefore enables cheaper training and low-latency inference. Across 480 real-robot trials on four long-horizon manipulation tasks, our DELE-w0.5 achieves the best performance among all compared policies, attaining 62.5 overall full-task success and 81.3 macro ordered-stage progress, outperforming the strongest baseline by 47.5 and 30.7 percentage points, respectively.",
+      "year": 2026,
+      "pub_date": "2026-08-22T18:17:36Z",
+      "authors": "Fenghao Lei, Zhixiong Huang, Long Yang +5",
+      "paper_url": "https://arxiv.org/abs/2608.22067v3",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2607.26924v3",
+      "title": "Temporally Centered SIGReg Improves LeWorldModel Representations for Robot Policy Learning",
+      "abstract": "Recent work on LeWorldModel (LeWM) has shown that the Sketched Isotropic Gaussian Regularizer (SIGReg) enables stable end-to-end world model learning from pixels by regularizing the latent representation toward an isotropic Gaussian. While effective for latent-space planning, the representations learned by Raw LeWM are poorly suited for downstream robot policy learning. In this paper, through Monte Carlo analysis, we show that the Raw LeWM objective biases variance allocation toward the temporally persistent component, thereby suppressing the variance of the temporally centered residual. Consistent with this analysis, trained Raw LeWM representations exhibit suppressed residual variation and reduced decodability of robot state and dynamics, particularly gripper dynamics, which are crucial for robotic manipulation. To address this issue, we apply SIGReg to temporally centered residuals rather than to the whole latent representation. This simple change decouples persistent and residual variance allocation while retaining an effective anti-collapse property. On the LIBERO benchmark, our method improves downstream policy success on the Goal suite by 1.66x and raises the average success rate across all suites from 63.6% to 83.8%. Without external pretraining, it also outperforms both Diffusion Policy trained from scratch and the pretrained OpenVLA baseline. These results associate the variance-allocation bias of Raw LeWM with the downstream policy gap, and show that decoupling persistent and residual variation yields representations better suited for downstream robot policy learning.",
+      "year": 2026,
+      "pub_date": "2026-07-29T13:54:52Z",
+      "authors": "Chang Liu, Fei Suo, Yanzhou Jin +4",
+      "paper_url": "https://arxiv.org/abs/2607.26924v3",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
     }
   ],
-  "last_updated": "2026-08-26T09:55:14.093315Z",
-  "total": 2055
+  "last_updated": "2026-08-27T19:52:19.496839Z",
+  "total": 2067
 }
