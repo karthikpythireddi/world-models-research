@@ -13210,7 +13210,7 @@
       "paper_url": "https://arxiv.org/abs/2502.16230v1",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": null
     },
     {
       "paperId": "2502.13200v1",
@@ -13222,7 +13222,7 @@
       "paper_url": "https://arxiv.org/abs/2502.13200v1",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": null
     },
     {
       "paperId": "2502.13092v2",
@@ -13234,7 +13234,7 @@
       "paper_url": "https://arxiv.org/abs/2502.13092v2",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": null
     },
     {
       "paperId": "2502.11663v1",
@@ -13246,7 +13246,7 @@
       "paper_url": "https://arxiv.org/abs/2502.11663v1",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": null
     },
     {
       "paperId": "2502.11537v4",
@@ -13282,7 +13282,7 @@
       "paper_url": "https://arxiv.org/abs/2502.10012v2",
       "venue": "AAAI 2026",
       "citations": 0,
-      "code_url": ""
+      "code_url": null
     },
     {
       "paperId": "2502.09297v5",
@@ -13294,7 +13294,7 @@
       "paper_url": "https://arxiv.org/abs/2502.09297v5",
       "venue": "ICML 2025",
       "citations": 0,
-      "code_url": ""
+      "code_url": null
     },
     {
       "paperId": "2502.07591v2",
@@ -13306,7 +13306,7 @@
       "paper_url": "https://arxiv.org/abs/2502.07591v2",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": null
     },
     {
       "paperId": "2502.07309v1",
@@ -13318,7 +13318,7 @@
       "paper_url": "https://arxiv.org/abs/2502.07309v1",
       "venue": "ICLR 2025",
       "citations": 0,
-      "code_url": ""
+      "code_url": null
     },
     {
       "paperId": "2502.05907v3",
@@ -13330,7 +13330,7 @@
       "paper_url": "https://arxiv.org/abs/2502.05907v3",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": null
     },
     {
       "paperId": "2502.04728v2",
@@ -13342,7 +13342,7 @@
       "paper_url": "https://arxiv.org/abs/2502.04728v2",
       "venue": "TMLR2025",
       "citations": 0,
-      "code_url": ""
+      "code_url": null
     },
     {
       "paperId": "2502.01591v3",
@@ -25511,8 +25511,152 @@
       "venue": "",
       "citations": 0,
       "code_url": null
+    },
+    {
+      "paperId": "2609.02886v1",
+      "title": "SolarWM: Open Data and Scalable Training for Long-Horizon Video World Models",
+      "abstract": "We introduce SolarWM, a fully open foundation for building interactive video world models from data preparation through long-horizon inference. Training across heterogeneous data sources and video backbones is challenging: datasets differ in temporal scale, camera geometry, visual quality, motion, and captioning styles, while video generators use distinct representations and architectures. Naive data mixing and model-specific implementations therefore produce inconsistent supervision and make results difficult to reproduce and compare. SolarWM addresses this coupling with a reconfigurable multi-source data engine and a backbone-native adaptation framework. The engine converts 1.43 million canonical clips from 10 datasets into a unified, frame-aligned contract covering visual observations, metric camera geometry, captions, quality metadata, selection decisions, and provenance, while decoupling source processing from mixture construction. Under shared camera-conditioning, training, and inference interfaces, we instantiate four 5B--33B models based on Wan2.2, LTX-2.5, and MiniMax-H3 while preserving their native representations and objectives. A unified three-stage recipe combines bidirectional adaptation, teacher-forced autoregressive initialization, and distribution matching distillation. The resulting causal models enable real-time interaction over rollouts ranging from minutes to hours after being trained on only 5s sequences. By releasing the resulting data, pipeline, recipes, weights, and framework, SolarWM provides a reproducible and extensible foundation for interactive world-model research.",
+      "year": 2026,
+      "pub_date": "2026-09-02T17:59:41Z",
+      "authors": "Junchao Huang, Guian Fang, Shengju Qian +15",
+      "paper_url": "https://arxiv.org/abs/2609.02886v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2609.02885v1",
+      "title": "Discriminative World Models for Web Agents",
+      "abstract": "Recent web agents use world models for test-time action selection by sampling candidate actions, predicting the resulting web states, and ranking them with a ranker model or a Process Reward Model (PRM). These world models are typically trained via supervised next-state prediction to generate fixed representations like HTML or AXTree snapshots. However, this objective is misaligned with the downstream ranker, which relies on predicted states being discriminative across candidates to accurately score them. To address this, we introduce predicted-state matching, a training objective where the predicted representation must distinguish the true resulting state from those reached by alternative actions. We train these models using a branching web-agent dataset derived from WebArena Go-Browse trajectories, where every decision point contains multiple alternative actions and their resulting states. Experiments on our held-out predicted-state matching benchmark show that our approach outperforms world models trained with supervised next-state prediction. We further show that our approach improves PRM-style action ranking on WebPRMBench compared with action-only PRMs and PRMs augmented with supervised-next-state world models. Finally, on WebArena-Lite, using our world model for test-time action selection improves end-to-end task success. Our project page is available at: https://dhruvpendharkar.github.io/dwm/.",
+      "year": 2026,
+      "pub_date": "2026-09-02T17:59:40Z",
+      "authors": "Kelvin Li, Dhruv Pendharkar, Anish Pahilajani +6",
+      "paper_url": "https://arxiv.org/abs/2609.02885v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2609.02811v1",
+      "title": "Do Better Imagined Rollouts Mean Better Robot Control? A Controlled Study of World-Model Evaluation Under Feedback",
+      "abstract": "Predictive models are increasingly used in robotics for state estimation, planning, control, and policy evaluation, yet they are often judged by open-loop prediction accuracy over a fixed horizon. In closed-loop operation, a robot repeatedly acts, receives new measurements, updates its state estimate, and recomputes control. We study this difference in a differential-drive path-tracking task with biased odometry and intermittent landmark sensing. Six state estimators are evaluated across 24 sensing conditions using trajectory replay, a 20-step measurement-free rollout, and closed-loop tracking. Replay position RMSE correlates more strongly with closed-loop cross-track RMSE than rollout error (Spearman rho = 0.923 vs. 0.774) and selects a different estimator from the closed-loop optimum in 5/24 conditions, compared with 18/24 for the rollout metric. We then vary rollout horizon and measurement-update interval. With H=20, rank agreement decreases from rho = 0.916 with measurements at every step to rho = 0.774 with no measurements. A horizon-update grid shows that long prediction horizons remain informative when regular corrections are retained, whereas long rollouts without correction can produce rankings that differ substantially from closed-loop behavior. We also test recurrent estimators trained on longer sensing outages. This improves the EKF-anchored models under combined sensing degradation, reducing GRU-EKF cross-track RMSE from 1.72 m to 1.06 m, but the gain is not consistent across isolated outages or estimator architectures. These results show that predictive-model evaluation in robotics should specify both prediction horizon and measurement-update schedule. For models used in feedback, offline rollouts are most informative when their sensing and correction pattern reflects closed-loop operation. Code is available at https://github.com/rdharini2001/Robot_World_Model",
+      "year": 2026,
+      "pub_date": "2026-09-02T16:52:30Z",
+      "authors": "Dharini Raghavan, Amritpal Singh",
+      "paper_url": "https://arxiv.org/abs/2609.02811v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": "https://github.com/rdharini2001/Robot_World_Model"
+    },
+    {
+      "paperId": "2609.02542v1",
+      "title": "World-Model-Augmented Visual Locomotion for Humanoids on Foothold-Constrained Terrain",
+      "abstract": "Foothold-constrained terrain is characterized by sparse, discontinuous, or geometrically restricted feasible foot contacts, as encountered on stepping stones, across gaps, and on narrow stair treads. On such terrain, a single misstep often leaves little room to recover, so policies that base foot-placement decisions primarily on the immediately visible terrain are prone to failure. We ask whether a learned predictive summary of near-future observations and rewards can provide the anticipatory information required in such settings. We present World-Model-Augmented Visual Locomotion (WM-LOCO), which jointly trains a recurrent world model and a PPO policy. Conditioned on proprioception and a single onboard depth image, the world model produces a predictive recurrent feature that guides the policy, without explicit foothold labels. In simulation, WM-LOCO succeeds on gaps and stepping stones where a matched baseline fails completely, and matches the baseline's success rate on stairs while improving stride efficiency and reducing pelvis acceleration. We deploy the same policy onboard a physical Unitree G1 humanoid using onboard proprioception and a single depth stream; it traverses all three terrain classes with an average success rate of 93.3%.",
+      "year": 2026,
+      "pub_date": "2026-09-02T12:57:01Z",
+      "authors": "Yuxi Liu, Lijun Han, Ziming Wang +3",
+      "paper_url": "https://arxiv.org/abs/2609.02542v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2609.02046v1",
+      "title": "Modeling What Changes: Sparse, Residual World Models for Object-Centric Manipulation",
+      "abstract": "Monolithic world models predict the entire next state at every step, spending capacity re-predicting the static majority of a scene and injecting error into it. We ask whether explicitly modeling change (a per-object change gate plus a residual delta head that perturbs only the objects the gate flags) is a more effective and interpretable bias for physical prediction and control. On a MuJoCo tabletop pushing benchmark scaling from 3 to 8 objects, the sparse/residual model predicts next-state poses 2.5 to 4.6 times more accurately than a dense multilayer perceptron at 8.6 to 11.1 times fewer parameters, sustains change-detection F1 of 0.80 to 0.87 where the dense baseline is degenerate, transfers across object counts with zero retraining (99.4 percent F1 retention), and reaches about 90 percent of its full-data accuracy with a quarter of the data. In autoregressive rollout it compounds far less error, hugging the no-motion floor while the dense model drifts. Finally, inside a sampling-based planner, prediction-only models fail (though a true-simulator oracle solves the task with the identical planner, confirming the planner is sound), but once featurized and trained for the states a planner visits, the sparse model begins to plan (0.23 plus or minus 0.06 success over three seeds) while the dense monolith stays at zero at every seed. Modeling what changes, rather than re-predicting the whole world, is a simple, effective bias for object-centric physical AI; code, data generators, and all checkpoints will be released upon publication.",
+      "year": 2026,
+      "pub_date": "2026-09-02T03:20:09Z",
+      "authors": "Param Thakkar, Parsika Paresh Shah, Manisha Sushant Gote",
+      "paper_url": "https://arxiv.org/abs/2609.02046v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2609.01861v1",
+      "title": "Belief-Calibrated Optimization: An Explicit World Model for Agentic Optimization",
+      "abstract": "The performance of an LLM agent depends on the scaffold around a frozen model. A common way to improve that scaffold is to use a coding agent as an optimizer: it reads current scores and traces and iteratively edits the source, producing a new candidate each round. Each edit is chosen according to a belief about how the environment will respond: what went wrong, and which change should help. That belief is typically implicit. It lives in the coding agent's reasoning on the current call, or remains latent in its parameters, rather than as something written down. Later calls therefore see scores and traces, but they do not use that belief. We introduce Belief-Calibrated Optimization (BCO), a method that writes that belief down as a persistent in-context document and continually revises that document as new candidates are evaluated. The resulting document is a world model: the current account of how the environment responds to edits. Added to an otherwise standard loop, BCO reaches a higher train passrate than a matched control that lacks only the world model, on five benchmarks spanning memory QA, tool-use QA, code-as-action app agents, and terminal agents. The gap remains on every held-out split, which is not used to select the candidate. After a target-model swap, in which the frozen model is replaced and the scaffold is not, the selected BCO scaffold leads on the tasks we test, except where context-window overruns leave it unfinished. An offline ablation then asks whether that gap comes from what the world model says. A fresh predictor given the accumulated document forecasts how the environment will respond more accurately than predictors given either no document or a same-form copy whose content has been falsified. The comparison indicates that the document carries reusable information in its content, not only in its form.",
+      "year": 2026,
+      "pub_date": "2026-09-01T20:47:04Z",
+      "authors": "Yuhan Chen, Zhihua Tian, Mahavir Dabas +7",
+      "paper_url": "https://arxiv.org/abs/2609.01861v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2608.23863v3",
+      "title": "DreamLedger: Where to Refuse World-Model Imagination Using Execution-Settled Credit",
+      "abstract": "World-model predictions increasingly inform robot actions, yet instantaneous, model-internal reliability signals do not record where comparable imagination has failed. DreamLedger treats reliability as a persistent deployment object: execution-settled credit indexed by condition, region, and horizon, queried before use. Predictions consumed by the planner become claims settled against arriving reality without manual labels. Credit gates consumption; tickets and replayable logs preserve auditability. Persistent credit changes where the gate refuses rather than what the model gets wrong: 69% of denials occur in cells with prior failures, episode-local resets triple off-target denials in healthy conditions, and persistent credit halves burned imagination under localized recurrent degradation, at the cost of task completion. At matched refusal volume, every arm that removes the books or their persistence raises the per-spend burn rate, while a rate-matched random gate reduces task success without a burn-rate advantage in the healthy regimes; in a degraded regime with collapsed completion, random refusal regains a burn-rate advantage. We evaluate three simulated domains, unmodified DreamerV3, TD-MPC2, and V-JEPA 2-AC mounts, and a real Franka. Paired quadrotor evaluation shows credit gating reduces burned imagination by 62% (95% CI 43-81%) versus blind consumption. Settlement-grounded calibration yields moderate, seed-consistent operating points. In manipulation, the ledger completes +5.4pp more tasks than rate-matched random refusal, while trading success for verification against the no-books verifier (probes 0.55 vs. 1.00 at success 0.90 vs. 0.93). The trust layer spans decoder-, latent-, and token-space interfaces. On hardware, a failure loop is re-priced online, at 5 cm all counterfactual refusals land on the lowest-credit class, and all 1,062 registered spends replay from audit logs.",
+      "year": 2026,
+      "pub_date": "2026-08-24T22:12:10Z",
+      "authors": "Xianyao Li, Ruitong Tian, Rui Min +2",
+      "paper_url": "https://arxiv.org/abs/2608.23863v3",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2607.15550v3",
+      "title": "SeerGuard: A Safety Framework for Mobile GUI Agents via World Model Prediction",
+      "abstract": "Mobile graphical user interface (GUI) agents have demonstrated remarkable capabilities in automating complex tasks, yet they introduce critical safety risks because a single erroneous action can lead to irreversible consequences. Existing safety mechanisms are primarily reactive, lacking the ability to assess risks before execution. In this paper, we introduce SeerGuard, a consequence-aware safety framework designed to mitigate these risks through pre-execution instruction-level screening and action-level risk assessment. Specifically, the action-level assessment analyzes agent-proposed actions within current GUI states, anticipating likely outcomes to identify risks before they are executed. To enable these capabilities, we construct a unified safety-augmented world model (SAWM) via multi-task learning, integrating semantic next-state prediction with safety risk assessment. Extensive experiments demonstrate that SeerGuard generalizes effectively across diverse mobile GUI agents. On Qwen3-VL-8B-Instruct, it increases the safety-utility score from $0.191$ to $0.596$ at $\u03c9=0.8$ and reduces the risk-cost score from $0.347$ to $0.135$ at $\u03b1=0.8$. Further analyses on our SAWM validate the effectiveness of the instruction-level screening, alongside the capability of action risk assessment and next-state prediction.",
+      "year": 2026,
+      "pub_date": "2026-07-17T01:45:54Z",
+      "authors": "Xue Yu, Bo Yuan, Kailin Zhao +3",
+      "paper_url": "https://arxiv.org/abs/2607.15550v3",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2609.01608v1",
+      "title": "WMLLM: Self-Evolving Optimization Agents via Predict-Then-Act World Modeling",
+      "abstract": "Black-box optimization problems remain challenging because of large, weakly structured, and high-dimensional search spaces. Existing methods often suffer from poor sample efficiency because they rely on direct candidate generation or trial-and-error refinement. A natural way to improve search efficiency is to use world modeling, which can help identify promising optimization directions before costly evaluation. Large language models can predict the outcomes of these candidates with nontrivial accuracy because of their implicit knowledge. Motivated by this observation, we propose WMLLM, a self-evolving optimization-agent framework based on predict-then-act world modeling. The agent first predicts promising directions and then acts to generate candidates. Combined with agentic multi-turn refinement, population-based search, and reinforcement learning, WMLLM refines both its implicit world model and its optimization strategy during search. Experiments on black-box optimization tasks, especially multi-objective molecular optimization, show that WMLLM improves sample efficiency and final optimization performance. On the multi-objective molecular optimization benchmark, WMLLM achieves state-of-the-art results under a limited evaluation budget.",
+      "year": 2026,
+      "pub_date": "2026-06-02T15:10:30Z",
+      "authors": "Zhongzheng Li, Qingsong Ran, Shikun Feng +5",
+      "paper_url": "https://arxiv.org/abs/2609.01608v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2605.07326v2",
+      "title": "GEM: Generating LiDAR World Model via Deformable Mamba",
+      "abstract": "World models, which simulate environmental dynamics and generate sensor observations, are gaining increasing attention in autonomous driving. However, progress in LiDAR-based world models has lagged behind those built on camera videos or occupancy data, primarily due to two core challenges: the inherent disorder of LiDAR point clouds and the difficulty of distinguishing dynamic objects from static structures. To address these issues, we propose GEM: a Generative LiDAR world model that leverages deformable mamba architecture, significantly improving fidelity and imaginative capability. Specifically, leveraging the structural similarity between sequential laser scanning and Mamba's processing mechanism, we first tokenize LiDAR sweeps into compact representations via a custom LiDAR scene tokenizer. After unsupervised disentanglement of tokenized features via a dynamic-static separator, a tri-path deformable Mamba is introduced to perform selective scanning and adaptive gating fusion over the disentangled features, leading to enhanced spatial-temporal understanding of the world evolution. Optionally, a planner and a BEV layout controller can be integrated to explore the model's capability for autonomous rollout and its potential to generate ``what-if\" scenarios. Extensive experiments show that GEM achieves state-of-the-art performances across diverse benchmarks and evaluation settings, demonstrating its superiority and effectiveness. Project page: https://github.com/wuyang98/GEM.",
+      "year": 2026,
+      "pub_date": "2026-05-08T06:32:12Z",
+      "authors": "Yang Wu, Zhaojiang Liu, Qiang Meng +5",
+      "paper_url": "https://arxiv.org/abs/2605.07326v2",
+      "venue": "",
+      "citations": 0,
+      "code_url": "https://github.com/wuyang98/GEM"
+    },
+    {
+      "paperId": "2604.13824v2",
+      "title": "Beyond State Consistency: Behavior Consistency in Text-Based World Models",
+      "abstract": "World models have been emerging as critical components for assessing the consequences of actions generated by interactive agents in online planning and offline evaluation. In text-based environments, world models are typically evaluated and trained with single-step metrics such as Exact Match, aiming to improve the similarity between predicted and real-world states, but such metrics have been shown to be insufficient for capturing actual agent behavior. To address this issue, we introduce a new behavior-aligned training paradigm aimed at improving the functional consistency between the world model and the real environment. This paradigm focuses on optimizing a tractable step-level metric named Behavior Consistency Reward (BehR), which measures how much the likelihood of a logged next action changes between the real state and the world-model-predicted state under a frozen Reference Agent. Experiments on WebShop and TextWorld show that BehR-based training improves long-term alignment in several settings, with the clearest gains in WebShop and less movement in near-ceiling regimes, while preserving or improving single-step prediction quality in three of four settings. World models trained with BehR also achieve lower false positives in offline surrogate evaluation and show modest but encouraging gains in inference-time lookahead planning.",
+      "year": 2026,
+      "pub_date": "2026-04-15T12:56:45Z",
+      "authors": "Youling Huang, Guanqiao Chen, Junchi Yao +8",
+      "paper_url": "https://arxiv.org/abs/2604.13824v2",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2512.24497v4",
+      "title": "What Drives Success in Physical Planning with Joint-Embedding Predictive World Models?",
+      "abstract": "A long-standing challenge in AI is to develop agents capable of solving a wide range of physical tasks and generalizing to new, unseen tasks and environments. A popular recent approach involves training a world model from state-action trajectories and subsequently use it with a planning algorithm to solve new tasks. Planning is commonly performed in the input space, but a recent family of methods has introduced planning algorithms that optimize in the learned representation space of the world model, with the promise that abstracting irrelevant details yields more efficient planning. In this work, we characterize models from this family as JEPA-WMs and investigate the technical choices that make algorithms from this class work. We propose a comprehensive study of several key components with the objective of finding the optimal approach within the family. We conducted experiments using both simulated environments and real-world robotic data, and studied how the model architecture, the training objective, and the planning algorithm affect planning success. We combine our findings to propose a model that outperforms two established baselines, DINO-WM and V-JEPA-2-AC, in both navigation and manipulation tasks. Code, data and checkpoints are available at https://github.com/facebookresearch/jepa-wms.",
+      "year": 2025,
+      "pub_date": "2025-12-30T22:50:03Z",
+      "authors": "Basile Terver, Tsung-Yen Yang, Jean Ponce +2",
+      "paper_url": "https://arxiv.org/abs/2512.24497v4",
+      "venue": "",
+      "citations": 0,
+      "code_url": "https://github.com/facebookresearch/jepa-wms"
     }
   ],
-  "last_updated": "2026-09-02T13:34:04.233086Z",
-  "total": 2126
+  "last_updated": "2026-09-03T13:33:21.230770Z",
+  "total": 2138
 }
