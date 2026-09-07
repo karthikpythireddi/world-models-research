@@ -13354,7 +13354,7 @@
       "paper_url": "https://arxiv.org/abs/2502.01591v3",
       "venue": "ICML 2025",
       "citations": 0,
-      "code_url": ""
+      "code_url": null
     },
     {
       "paperId": "2502.01366v2",
@@ -13378,7 +13378,7 @@
       "paper_url": "https://arxiv.org/abs/2502.00622v4",
       "venue": "",
       "citations": 0,
-      "code_url": ""
+      "code_url": null
     },
     {
       "paperId": "2502.00466v2",
@@ -25871,8 +25871,68 @@
       "venue": "",
       "citations": 0,
       "code_url": null
+    },
+    {
+      "paperId": "2609.04911v1",
+      "title": "TourPhysics: Bringing Physics to World Models for Exploration and Manipulation from a Single Image",
+      "abstract": "Interactive visual world models must distinguish observation from physical intervention. Camera motion reveals new surfaces, whereas intervention changes object motion, contact, and deformation. Current video world models are largely driven by appearance priors and often lose physical or spatial consistency over long horizons. We present TourPhysics, an online framework initialized from a single image and a declarative physical configuration. TourPhysics extends PhysOmni, our ACM Multimedia 2026 work, from finite physics-grounded video synthesis to persistent exploration and manipulation. TourPhysics combines deterministic simulation with video generation while assigning separate roles to simulator state, geometric evidence, generator controls, and appearance memory. For each action, the simulator computes a finite physical and camera trajectory before the corresponding observation is generated. Accepted observations publish the terminal state and update the appearance memory and subsequent generator controls, while the committed state and simulator geometry remain fixed throughout synthesis and retry. We further separate the simulator geometry used for projection and visibility from the relative depth used to condition the generator. A reference-anchored memory retrieves accepted static appearance through geometric cross-view correspondence and incorporates it through a bounded residual that reverts to the native path when no valid correspondence exists. On simulator-defined camera tours and object manipulations, TourPhysics follows prescribed camera and object trajectories more closely than the evaluated baselines, preserves the input scene, and reduces appearance drift during long-horizon revisits.",
+      "year": 2026,
+      "pub_date": "2026-09-04T09:15:03Z",
+      "authors": "Xin Zhang, Yabo Chen, Zixuan Duan +4",
+      "paper_url": "https://arxiv.org/abs/2609.04911v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2609.04851v1",
+      "title": "Coupled Control and Wireless World Models for Resilient Remote Robotic Control",
+      "abstract": "Remote robotic systems operating over wireless networks must maintain reliable control despite limited communication resources, changing channel conditions, and environmental disturbances.However, continuously transmitting high-dimensional sensory observations, such as camera images, increases communication overhead and energy consumption while reducing robustness under unreliable connectivity.To address these challenges, this paper proposes a resilient communication-aware remote robotic control framework based on coupled control and wireless Joint Embedding Predictive Architecture (JEPA) world models that jointly capture robot dynamics and wireless channel evolution from visual observations and a combination of raw and structured radio frequency (RF) representations based on spectrograms and Persistence Images(PIs).The learned latent representations enable predictive communication scheduling by jointly forecasting future robot states and wireless conditions, thereby reducing unnecessary uplink transmissions while maintaining reliable control performance.Furthermore, an adaptive resilience mechanism detects latent prediction discrepancies and efficiently adapts perception embeddings to accommodate wireless and visual environmental changes without retraining the complete control policy.The proposed framework is evaluated in a synchronized Gazebo-Robot Operating System (ROS)-Sionna robot-wireless simulation environment under diverse wireless propagation and perception perturbations.Experimental results demonstrate significant improvements in communication efficiency, robustness, and resilience while maintaining navigation performance compared with conventional Proportional Integral Derivative (PID), model-free Deep Q-Network (DQN), and predictive approaches based on Vision Transformers(ViTs).",
+      "year": 2026,
+      "pub_date": "2026-09-04T08:09:55Z",
+      "authors": "H. P. Madushanka, Sumudu Samarakoon, Mehdi Bennis",
+      "paper_url": "https://arxiv.org/abs/2609.04851v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2609.04264v1",
+      "title": "Spectral-Target Physical Latent Structuring for JEPA-Style World Models",
+      "abstract": "Latent world models have become increasingly popular as a method to predict and plan in latent space rather than pixel space. Recent architectures, such as LeWorldModel (LeWM), jointly train the encoder and predictor using regularization techniques like SIGReg to prevent representation collapse. Even with such regularization preventing representation collapse, we identify a new world model failure mode of \\textit{physical representation laziness}, particularly noted in highly dynamic environments. For these lazy cases, the learned latent states do not collapse but nonetheless fail to represent key physical properties, causing ubiquitous downstream planning failure. To resolve this issue, we propose training-time auxiliary supervision with a lightweight \"Fourier auxiliary head\", which enforces physically-informed structuring of the latent space with no additional inference-time cost and can be generalized to any environment. Experimentally, we show that the auxiliary head substantially improves planning success rates in dynamic environments where the baseline LeWM exhibits physical representation laziness. It also leads to modest improvements in other environments, even when the baseline does not exhibit physical representation laziness. We further observe superior planning performance being accompanied by higher latent space correlations with key physical properties, indicating both the ability of our method to physically structure latent states and the potential planning-side benefit to the learned representation being physically structured. We also see in low-data regimes, auxiliary supervision is particularly impactful in increasing success rate. These findings support the use of our Fourier auxiliary head method to improve both overall success rate and data efficiency, while avoiding representation laziness in latent world models.",
+      "year": 2026,
+      "pub_date": "2026-09-02T18:05:06Z",
+      "authors": "Penghao Zhu, Salvatore Penachio, Kaustav Mukherjee +1",
+      "paper_url": "https://arxiv.org/abs/2609.04264v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2607.15142v3",
+      "title": "Improving Weak World Models Behind Strong Agents in Atari Pong",
+      "abstract": "Strong world-model agents frequently contain weak world models. We study this agent-world-model gap by reproducing five visual world-model agents in Atari Pong: DreamerV3, DIAMOND, TWISTER, Simulus, and STORM, with performance comparable to the reported results, and independently evaluating their frozen world models. First, closed-loop rollout diagnosis qualitatively inspects visual trajectories generated by each frozen model under an independently trained policy. All five models exhibit clear visual or dynamical failures, including ball disappearance, incorrect motion, and invalid ball-paddle interactions. Second, under native zero-shot model-based reinforcement learning (MBRL), a new policy is trained entirely within the frozen model from scratch using the agent's native RL procedure, without real-environment training. When evaluated in the real environment, these policies substantially underperform the reproduced agents: DreamerV3 (-5.5 to -20.9), DIAMOND (19.7 to -9.6), TWISTER (17.7 to -13.3), Simulus (20.8 to -11.6), and STORM (18.7 to -21.0), where -21 is the minimum Pong return. This gap also extends broadly across Atari100K. Motivated by the ball-related rollout failures in Pong, we propose Concept-Guided Spatial Regularization (CGSReg), an auxiliary reconstruction loss on task-critical concept regions. We evaluate it under a more challenging pixel-space zero-shot MBRL setting, where policies learn directly from images generated by the frozen world model. Ball-region CGSReg improves pixel-space zero-shot MBRL in DreamerV3, DIAMOND, TWISTER, and Simulus, and also improves closed-loop rollouts in the first three; STORM shows no clear improvement.",
+      "year": 2026,
+      "pub_date": "2026-07-16T15:46:44Z",
+      "authors": "Yukuan Lu, Zaishuo Xia, Weyl Lu +1",
+      "paper_url": "https://arxiv.org/abs/2607.15142v3",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2603.25685v2",
+      "title": "Persistent Robot World Models: Stabilizing Multi-Step Rollouts via Reinforcement Learning",
+      "abstract": "Action-conditioned robot world models generate future video frames of the manipulated scene given a robot action sequence, offering a promising alternative for simulating tasks that are difficult to model with traditional physics engines. However, these models are optimized for short-term prediction and break down when deployed autoregressively: each predicted clip feeds back as context for the next, causing errors to compound and visual quality to rapidly degrade. We address this through the following contributions. First, we introduce a reinforcement learning (RL) post-training scheme that trains the world model on its own autoregressive rollouts rather than on ground-truth histories. We achieve this by adapting a recent contrastive RL objective for diffusion models to our setting and show that its convergence guarantees carry over exactly. Second, we design a training protocol that generates and compares multiple candidate variable-length futures from the same rollout state, reinforcing higher-fidelity predictions over lower-fidelity ones. Third, we develop efficient, multi-view visual fidelity rewards that combine complementary perceptual metrics across camera views and are aggregated at the clip level for dense, low-variance training signal. Fourth, we show that our approach establishes a new state-of-the-art for rollout fidelity on the DROID dataset, outperforming the strongest baseline on all metrics (e.g., LPIPS reduced by 14% on external cameras, SSIM improved by 9.1% on the wrist camera), winning 98% of paired comparisons, and achieving an 80% preference rate in a blind human study.",
+      "year": 2026,
+      "pub_date": "2026-03-26T17:36:08Z",
+      "authors": "Jai Bardhan, Patrik Drozdik, Josef Sivic +1",
+      "paper_url": "https://arxiv.org/abs/2603.25685v2",
+      "venue": "ECCV 2026",
+      "citations": 0,
+      "code_url": null
     }
   ],
-  "last_updated": "2026-09-06T13:07:20.804763Z",
-  "total": 2156
+  "last_updated": "2026-09-07T15:04:43.408823Z",
+  "total": 2161
 }
