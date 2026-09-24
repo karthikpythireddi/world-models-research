@@ -55,6 +55,13 @@
     <!-- Main -->
     <main class="main">
       <header class="topbar">
+        <nav class="view-tabs" id="view-tabs">
+          <button class="view-tab active" data-view="papers">Papers</button>
+          <button class="view-tab" data-view="digests">Digest</button>
+          <button class="view-tab" data-view="comparisons">Comparisons</button>
+          <button class="view-tab" data-view="recipes">Recipes</button>
+          <button class="view-tab" data-view="audits">Code audits</button>
+        </nav>
         <div class="search-wrap">
           <span class="search-icon">⌕</span>
           <input type="text" id="search" placeholder="Search papers, authors, abstracts…" autocomplete="off" />
@@ -72,9 +79,16 @@
       <div id="papers-grid" class="papers-grid"></div>
       <div id="loading" class="loading"><div class="spinner"></div><p>Fetching papers…</p></div>
       <div id="empty" class="empty hidden">No papers match your filters.</div>
+
+      <section id="research-view" class="research-view hidden">
+        <div id="report-list" class="report-list"></div>
+        <article id="report-body" class="report-body"></article>
+      </section>
     </main>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"></script>
   <script src="app.js"></script>
   <!-- Visitor analytics: sign up at goatcounter.com and replace YOUR_SITE with your site code -->
   <script data-goatcounter="https://YOUR_SITE.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
