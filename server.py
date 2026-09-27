@@ -4,26 +4,14 @@ from fastapi.responses import JSONResponse
 import json
 from pathlib import Path
 
-TOPICS = {
-    "Robot Navigation":        ["navigation", "path planning", "mobile robot", "localization", "mapping", "slam"],
-    "Autonomous Driving":      ["autonomous driving", "self-driving", "vehicle", "traffic", "waymo", "nuplan", "carla"],
-    "Reinforcement Learning":  ["reinforcement learning", " rl ", "policy", "reward", "q-learning", "actor-critic", "ppo", "sac"],
-    "Video Generation":        ["video generation", "video prediction", "future frame", "video diffusion", "video synthesis"],
-    "3D Scene Modeling":       ["nerf", "3d scene", "scene reconstruction", "point cloud", "occupancy", "gaussian splatting"],
-    "Physics & Dynamics":      ["physics", "dynamics", "rigid body", "fluid", "contact", "mujoco", "isaac"],
-    "Planning & Control":      ["planning", "model predictive", "mpc", "tree search", "mcts", "decision making"],
-    "Language & Vision":       ["vision-language", "vlm", "multimodal", "language model", "llm", "gpt", "clip"],
-    "Situational Awareness":   ["situational awareness", "scene understanding", "anomaly", "uncertainty", "safety"],
-    "Game Playing":            ["atari", "minecraft", "chess", "dota", "starcraft", "game environment"],
-    "Robotics & Manipulation": ["manipulation", "grasping", "dexterous", "humanoid", "end-effector"],
-    "Latent Space Models":     ["latent", "vae", "encoder", "representation learning", "dreamer", "rssm"],
-}
+from topics import assign_topics
+
+RESEARCH_DIR = Path("research")
 
 
-def assign_topics(title: str, abstract: str):
-    text = (title + " " + abstract).lower()
-    matched = [t for t, kws in TOPICS.items() if any(k in text for k in kws)]
-    return matched or ["Other"]
+def load_research(name: str, default):
+    path = RESEARCH_DIR / name
+    return json.loads(path.read_text()) if path.exists() else default
 
 
 app = FastAPI()
@@ -36,11 +24,15 @@ def get_papers():
         return JSONResponse({"papers": [], "total": 0, "last_updated": None})
     raw = json.loads(data_path.read_text())
     papers = raw.get("papers", [])
+    tagged = load_research("topics.json", {"papers": {}})["papers"]
+    audits = load_research("audits.json", {})
     enriched = []
     for p in papers:
         if not p.get("year"):
             continue
+        tag = tagged.get(p.get("paperId"), {})
         enriched.append({
+            "paper_id":    p.get("paperId") or "",
             "title":       p.get("title") or "",
             "abstract":    p.get("abstract") or "",
             "year":        p.get("year") or 0,
@@ -49,13 +41,20 @@ def get_papers():
             "citations":   p.get("citationCount") or p.get("citations") or 0,
             "paper_url":   p.get("paper_url") or p.get("paperUrl") or "",
             "code_url":    p.get("code_url") or p.get("codeUrl") or "",
-            "topics":      assign_topics(p.get("title", ""), p.get("abstract", "")),
+            "topics":      tag.get("topics") or assign_topics(p.get("title", ""), p.get("abstract", "")),
+            "tldr":        tag.get("tldr") or "",
+            "audit":       audits.get(p.get("paperId")),
         })
     return JSONResponse({
         "papers":       enriched,
         "total":        len(enriched),
         "last_updated": raw.get("last_updated"),
     })
+
+
+@app.get("/api/research")
+def get_research():
+    return JSONResponse(load_research("index.json", {}))
 
 
 _visit_count = 0
@@ -70,4 +69,6 @@ def record_visit():
 def get_stats():
     return JSONResponse({"visits": _visit_count})
 
+RESEARCH_DIR.joinpath("reports").mkdir(parents=True, exist_ok=True)
+app.mount("/research", StaticFiles(directory=RESEARCH_DIR), name="research")
 app.mount("/", StaticFiles(directory="static", html=True), name="static")

@@ -1,0 +1,112 @@
+name: Feynman Research
+
+# Runs after each daily paper fetch. Daily: Claude topic tags for new papers and a
+# few Feynman code audits. Weekly: digest (Mon), topic comparison (Wed), recipe (Fri).
+on:
+  workflow_run:
+    workflows: ["Daily Papers Fetch"]
+    types: [completed]
+  workflow_dispatch:
+    inputs:
+      task:
+        description: "What to run"
+        type: choice
+        default: scheduled
+        options: [scheduled, classify, audit, digest, compare, recipe, all]
+
+concurrency:
+  group: feynman-research
+  cancel-in-progress: false
+
+jobs:
+  research:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    permissions:
+      contents: write
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+      SEMANTIC_SCHOLAR_API_KEY: ${{ secrets.SEMANTIC_SCHOLAR_API_KEY }}
+      FEYNMAN_MODEL: ${{ vars.FEYNMAN_MODEL }}
+      FEYNMAN_TELEMETRY: "off"
+      AUDITS_PER_RUN: ${{ vars.AUDITS_PER_RUN || '2' }}
+      TASK: ${{ inputs.task || 'scheduled' }}
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main   # pick up the papers.json the fetch job just committed
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install dependencies
+        run: |
+          pip install anthropic huggingface_hub
+          npm install -g @companion-ai/feynman@0.5.3
+
+      - name: Decide what runs today
+        id: plan
+        run: |
+          dow=$(date -u +%u)   # 1=Mon … 7=Sun
+          on() { [ "$TASK" = "$1" ] || [ "$TASK" = all ] || { [ "$TASK" = scheduled ] && [ "$2" = yes ]; }; }
+          on classify yes                        && echo classify=true >> "$GITHUB_OUTPUT"
+          on audit    yes                        && echo audit=true    >> "$GITHUB_OUTPUT"
+          on digest   "$([ $dow = 1 ] && echo yes)" && echo digest=true  >> "$GITHUB_OUTPUT"
+          on compare  "$([ $dow = 3 ] && echo yes)" && echo compare=true >> "$GITHUB_OUTPUT"
+          on recipe   "$([ $dow = 5 ] && echo yes)" && echo recipe=true  >> "$GITHUB_OUTPUT"
+          cat "$GITHUB_OUTPUT"
+
+      # Each task is isolated: a failure is reported but doesn't stop the others or the deploy.
+      - name: Claude topic tags + TL;DRs
+        if: steps.plan.outputs.classify
+        continue-on-error: true
+        run: python scripts/classify_topics.py --wait-minutes 50
+
+      - name: Feynman code audits
+        if: steps.plan.outputs.audit
+        continue-on-error: true
+        run: python scripts/feynman_research.py audit --limit "$AUDITS_PER_RUN"
+
+      - name: Feynman weekly digest
+        if: steps.plan.outputs.digest
+        continue-on-error: true
+        run: python scripts/feynman_research.py digest
+
+      - name: Feynman topic comparison
+        if: steps.plan.outputs.compare
+        continue-on-error: true
+        run: python scripts/feynman_research.py compare
+
+      - name: Feynman training recipe
+        if: steps.plan.outputs.recipe
+        continue-on-error: true
+        run: python scripts/feynman_research.py recipe
+
+      - name: Commit research outputs
+        id: commit
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/research
+          if git diff --cached --quiet; then
+            echo "No research changes."
+          else
+            git commit -m "chore: research update $(date -u '+%Y-%m-%d')"
+            git pull --rebase origin main
+            git push
+            echo changed=true >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Deploy to HuggingFace Space
+        if: steps.commit.outputs.changed
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: python scripts/deploy_to_hf.py --token "$HF_TOKEN"

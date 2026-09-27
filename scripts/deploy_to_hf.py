@@ -15,6 +15,7 @@ REPO_ROOT = pathlib.Path(__file__).parent.parent
 
 def build_space(tmp: pathlib.Path):
     shutil.copy(REPO_ROOT / "server.py",       tmp / "server.py")
+    shutil.copy(REPO_ROOT / "topics.py",       tmp / "topics.py")
     shutil.copy(REPO_ROOT / "requirements.txt", tmp / "requirements.txt")
     shutil.copy(REPO_ROOT / "Dockerfile",       tmp / "Dockerfile")
 
@@ -26,6 +27,17 @@ def build_space(tmp: pathlib.Path):
 
     static_dst = tmp / "static"
     shutil.copytree(REPO_ROOT / "static", static_dst)
+
+    # Claude topic tags, audits and Feynman reports (see scripts/feynman_research.py)
+    research_src = REPO_ROOT / "data" / "research"
+    if research_src.exists():
+        shutil.copytree(research_src, tmp / "research",
+                        ignore=shutil.ignore_patterns("pending_batch.json"))
+    else:
+        (tmp / "research").mkdir()
+    # Docker's COPY research/ fails if the folder is missing from the upload.
+    if not (tmp / "research" / "index.json").exists():
+        (tmp / "research" / "index.json").write_text("{}")
 
 
 def main():

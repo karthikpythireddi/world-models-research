@@ -22,6 +22,7 @@ tool that map should have been.
 - [Topic classification](#topic-classification)
 - [The web app](#the-web-app)
 - [Daily automation](#daily-automation)
+- [Research layer](#research-layer)
 - [Run locally](#run-locally)
 - [Deploy your own](#deploy-your-own)
 - [Project layout](#project-layout)
@@ -44,6 +45,10 @@ tool that map should have been.
   auto-extracted from abstracts and arXiv comments.
 - **Self-updating** — a daily GitHub Actions job refetches and redeploys the entire
   app with zero manual steps.
+- **Research layer (Claude + [Feynman](https://github.com/companion-inc/feynman))** —
+  Claude topic tags and one-line TL;DRs for every paper, paper-vs-code audits shown as
+  badges on paper cards, and weekly digests, topic comparisons and training recipes, each
+  in its own dashboard tab.
 
 ## Architecture
 
@@ -94,10 +99,10 @@ tool that map should have been.
 
 ## Topic classification
 
-Topics are assigned at request time in [`server.py`](server.py) by keyword-matching
-the title + abstract against a curated map (`TOPICS`). A paper can belong to multiple
-topics; anything unmatched falls back to `Other`. This keeps classification
-transparent and easy to tweak — no model, no training, just editable keyword lists.
+Topics come from Claude (see [Research layer](#research-layer)), limited to a fixed list
+of 12 topic names in [`topics.py`](topics.py). Papers Claude hasn't tagged yet fall back to
+keyword-matching the title and abstract against the same list (`TOPICS`). A paper can have
+several topics; anything unmatched is `Other`.
 
 ## The web app
 
@@ -125,6 +130,32 @@ day at **09:00 UTC** (and on manual `workflow_dispatch`):
 The result: the live dashboard reflects the latest arXiv papers every morning,
 untouched by hand.
 
+## Research layer
+
+A second workflow, [`.github/workflows/feynman_research.yml`](.github/workflows/feynman_research.yml),
+runs after each successful daily fetch and writes everything to [`data/research/`](data/research/):
+
+| When | What | How |
+| --- | --- | --- |
+| Daily | Topic tags + TL;DR for new papers | [`scripts/classify_topics.py`](scripts/classify_topics.py): Claude via the Message Batches API, structured output restricted to the 12 topics |
+| Daily | Paper-vs-code audits (`AUDITS_PER_RUN`, default 2, most-cited first) | `feynman_research.py audit`, then a Claude call reduces each report to a match score for the card badge |
+| Monday | Weekly digest of new papers | `feynman_research.py digest` (Feynman `/lit`) |
+| Wednesday | Most-cited papers in one topic, compared (rotates weekly) | `feynman_research.py compare` (Feynman `/compare`) |
+| Friday | One world-model training recipe (rotates weekly) | `feynman_research.py recipe` (Feynman `/recipe`) |
+
+Each task is isolated: a failure shows in the run log but doesn't block the others or
+the deploy. Any task can be run on demand from the Actions tab (`workflow_dispatch`).
+Papers without Claude tags fall back to the keyword classifier in [`topics.py`](topics.py).
+
+Settings (repo **Secrets** / **Variables**):
+
+- `ANTHROPIC_API_KEY` (secret, required) — used by both Claude and Feynman.
+- `OPENALEX_API_KEY`, `SEMANTIC_SCHOLAR_API_KEY` (secrets, optional) — Feynman's literature
+  search uses its own rate limits with these.
+- `FEYNMAN_MODEL` (variable, optional) — e.g. `anthropic/claude-sonnet-5`; by default Feynman
+  picks the newest Claude Opus available to the key.
+- `AUDITS_PER_RUN` (variable, optional) — audits per day.
+
 ## Run locally
 
 ```bash
@@ -132,6 +163,7 @@ pip install -r requirements.txt
 
 python scripts/fetch_papers.py      # harvest arXiv + OpenAlex → data/papers.json
 cp data/papers.json .               # server reads ./papers.json from the cwd
+ln -s data/research research        # …and ./research for tags, audits and reports
 
 uvicorn server:app --reload         # → http://localhost:8000
 ```
@@ -147,24 +179,31 @@ uvicorn server:app --reload         # → http://localhost:8000
    ```
 3. Add your Hugging Face write token as an `HF_TOKEN` GitHub Actions secret so the
    daily workflow can redeploy automatically.
+4. Optional: add `ANTHROPIC_API_KEY` to turn on the [research layer](#research-layer).
 
 ## Project layout
 
 ```
 .
-├── server.py                     # FastAPI backend + topic classifier
+├── server.py                     # FastAPI backend
+├── topics.py                     # topic taxonomy + keyword fallback classifier
 ├── Dockerfile                    # HF Spaces container (uvicorn on :7860)
 ├── requirements.txt
 ├── static/                       # frontend (index.html, app.js, style.css)
 ├── data/
-│   └── papers.json               # generated catalog (arXiv + OpenAlex)
+│   ├── papers.json               # generated catalog (arXiv + OpenAlex)
+│   └── research/                 # Claude tags, audits, Feynman reports
 ├── scripts/
 │   ├── fetch_papers.py           # arXiv/OpenAlex ingestion pipeline
+│   ├── classify_topics.py        # Claude topic tags + TL;DRs (Batches API)
+│   ├── feynman_research.py       # Feynman digest / compare / recipe / audit
 │   └── deploy_to_hf.py           # packages + pushes the app to the Space
 └── .github/workflows/
-    └── daily_fetch.yml           # daily fetch + redeploy cron
+    ├── daily_fetch.yml           # daily fetch + redeploy cron
+    └── feynman_research.yml      # research layer, runs after each fetch
 ```
 
 ## Stack
 
-FastAPI · vanilla JS · Docker · Hugging Face Spaces · GitHub Actions · arXiv API · OpenAlex
+FastAPI · vanilla JS · Docker · Hugging Face Spaces · GitHub Actions · arXiv API · OpenAlex ·
+Claude API · Feynman

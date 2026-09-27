@@ -19,6 +19,15 @@ const TOPIC_COLORS = {
 let allPapers   = [];
 let activeTopics = new Set();
 let searchQuery  = "";
+let researchIndex = {};
+let currentView  = "papers";
+
+const AUDIT_COLORS = {
+  "consistent":   "#059669",
+  "minor issues": "#d97706",
+  "major issues": "#dc2626",
+  "inconclusive": "#64748b",
+};
 
 /* ── DOM refs ── */
 const grid        = document.getElementById("papers-grid");
@@ -35,6 +44,9 @@ const statTotal   = document.getElementById("stat-total");
 const statShown   = document.getElementById("stat-shown");
 const statCode    = document.getElementById("stat-code");
 const statUpdated = document.getElementById("stat-updated");
+const researchView= document.getElementById("research-view");
+const reportList  = document.getElementById("report-list");
+const reportBody  = document.getElementById("report-body");
 
 /* ── Particle canvas ── */
 (function initParticles() {
@@ -168,10 +180,17 @@ function renderCard(p, idx) {
     authors? `<span>&#128100; ${authors}</span>` : "",
   ].filter(Boolean).join("");
 
+  const auditBadge = p.audit
+    ? `<span class="audit-badge" style="color:${AUDIT_COLORS[p.audit.verdict] || "#64748b"};border-color:${AUDIT_COLORS[p.audit.verdict] || "#64748b"}"
+         title="${esc(p.audit.summary)}" onclick="openReport('audits','${p.audit.path}')">&#128269; Code audit${
+         p.audit.match_pct != null ? ` · ${p.audit.match_pct}% match` : `: ${esc(p.audit.verdict)}`}</span>`
+    : "";
+
   const absId = `abs-${idx}`;
   card.innerHTML = `
     <div class="card-title">${esc(p.title)}</div>
-    <div class="card-topics">${badges}${venueBadge}</div>
+    ${p.tldr ? `<div class="card-tldr">${esc(p.tldr)}</div>` : ""}
+    <div class="card-topics">${badges}${venueBadge}${auditBadge}</div>
     <div class="card-meta">${metaParts}</div>
     ${actions ? `<div class="card-actions">${actions}</div>` : ""}
     ${p.abstract ? `
@@ -197,6 +216,7 @@ window.toggleAbs = function(id, el) {
 
 /* ── Main render ── */
 function render() {
+  if (currentView !== "papers") return;
   const filtered = filterAndSort();
 
   grid.innerHTML = "";
@@ -216,6 +236,66 @@ function render() {
   sidebarStats.innerHTML  = `${allPapers.length} total · ${filtered.length} shown<br>${withCode} with code`;
 }
 
+/* ── Research views (Feynman reports) ── */
+const EMPTY_MESSAGES = {
+  digests:     "No digest yet. The Feynman job writes one each week.",
+  comparisons: "No comparisons yet. The Feynman job compares one topic's most-cited papers each week.",
+  recipes:     "No recipes yet. The Feynman job researches one world-model training recipe each week.",
+  audits:      "No code audits yet. The Feynman job audits the most-cited papers with code, a few each day.",
+};
+
+function showView(view, path) {
+  currentView = view;
+  document.querySelectorAll(".view-tab").forEach(t => t.classList.toggle("active", t.dataset.view === view));
+  const isPapers = view === "papers";
+  grid.classList.toggle("hidden", !isPapers);
+  researchView.classList.toggle("hidden", isPapers);
+  if (isPapers) { render(); return; }
+  empty.classList.add("hidden");
+
+  const entries = researchIndex[view] || [];
+  reportList.innerHTML = "";
+  if (!entries.length) {
+    reportBody.innerHTML = `<p class="report-empty">${EMPTY_MESSAGES[view]}</p>`;
+    return;
+  }
+  entries.forEach(e => {
+    const item = document.createElement("button");
+    item.className = "report-item";
+    item.dataset.path = e.path;
+    item.innerHTML = `<span class="report-title">${esc(e.title)}</span>
+      <span class="report-date">${e.generated_at.slice(0, 10)}</span>`;
+    item.addEventListener("click", () => loadReport(e.path));
+    reportList.appendChild(item);
+  });
+  loadReport(path || entries[0].path);
+}
+
+let reportRequest = 0;
+
+async function loadReport(path) {
+  const req = ++reportRequest;
+  document.querySelectorAll(".report-item").forEach(i => i.classList.toggle("active", i.dataset.path === path));
+  reportBody.innerHTML = `<div class="spinner"></div>`;
+  try {
+    const res = await fetch(`/research/${path}`);
+    if (!res.ok) throw new Error(res.status);
+    const html = DOMPurify.sanitize(marked.parse(await res.text()));
+    if (req !== reportRequest) return;   // a newer click superseded this one
+    reportBody.innerHTML = html;
+    reportBody.querySelectorAll("a[href^='http']").forEach(a => { a.target = "_blank"; a.rel = "noopener"; });
+    reportBody.scrollTop = 0;
+  } catch (err) {
+    if (req !== reportRequest) return;
+    reportBody.innerHTML = `<p class="report-empty">Couldn't load this report (${esc(err.message)}).</p>`;
+  }
+}
+
+window.openReport = function(view, path) { showView(view, path); };
+
+document.querySelectorAll(".view-tab").forEach(t =>
+  t.addEventListener("click", () => showView(t.dataset.view)));
+
 /* ── Update global stats chips ── */
 function updateStats(lastUpdated, visits) {
   const withCode = allPapers.filter(p => p.code_url).length;
@@ -229,7 +309,10 @@ function updateStats(lastUpdated, visits) {
 }
 
 /* ── Event listeners ── */
-searchEl.addEventListener("input", e => { searchQuery = e.target.value; render(); });
+searchEl.addEventListener("input", e => {
+  searchQuery = e.target.value;
+  if (currentView !== "papers") showView("papers"); else render();
+});
 yearFrom.addEventListener("change", render);
 yearTo.addEventListener("change", render);
 sortSel.addEventListener("change", render);
@@ -245,10 +328,12 @@ document.addEventListener("keydown", e => {
 async function boot() {
   try {
     // Record visit and fetch papers in parallel
-    const [papersRes, visitRes] = await Promise.all([
+    const [papersRes, visitRes, researchRes] = await Promise.all([
       fetch("/api/papers"),
       fetch("/api/visit"),
+      fetch("/api/research").catch(() => null),
     ]);
+    researchIndex = researchRes && researchRes.ok ? await researchRes.json() : {};
     const data  = await papersRes.json();
     const visits = (await visitRes.json()).visits;
 
