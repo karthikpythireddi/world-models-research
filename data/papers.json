@@ -35711,8 +35711,140 @@
       "venue": "",
       "citations": 0,
       "code_url": null
+    },
+    {
+      "paperId": "2611.05072v1",
+      "title": "Trajectory Evaluation via Rollout-Free World Model for End-to-end Autonomous Driving",
+      "abstract": "Although existing candidate trajectory evaluators have substantially improved end-to-end planning accuracy, their underlying mechanism remains suboptimal. Model-based evaluators typically make scoring future-aware by explicitly predicting candidate-conditioned future states over the planning horizon, which we term rollout. However, rollout incurs high inference cost and accumulates prediction errors. We argue that planning does not require reconstructing a full future scene for each candidate, but only future-relevant information for reliable comparison. We therefore propose RFWorld, a Rollout-Free World model for end-to-end trajectory evaluation. RFWorld constructs a shared scene memory and shapes it into a future-readable representation via lightweight training-time temporal readout with semantic supervision, keeping training overhead low. At inference time, candidate trajectories directly query the shared memory via sparse spatial readout for scoring, reducing computation by roughly the planning horizon times the number of candidate trajectories, while avoiding recursive rollout errors. Experiments on NAVSIM and Bench2Drive show that RFWorld learns a more planning-aligned world representation and achieves state-of-the-art performance.",
+      "year": 2026,
+      "pub_date": "2026-11-03T15:36:04Z",
+      "authors": "Junzhe Wang, Jinqing Zhang, Qingjie Liu",
+      "paper_url": "https://arxiv.org/abs/2611.05072v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2611.04870v1",
+      "title": "PrimeSim: A Generalist World Model Simulator from Large-Scale Cross-Embodiment Demonstrations",
+      "abstract": "A robot world model that serves as a simulator must do more than generate plausible videos: it must faithfully follow commanded actions, maintain consistency across camera views, and sustain coherent long-horizon rollouts. We present PrimeSim, an action-conditioned, multiview world model simulator that addresses these challenges through progressive midtraining and posttraining. Starting from a pretrained video generator, we midtrain on 30,110 hours of robot demonstrations spanning 22 platforms. To improve action following, we introduce a unified cross-embodiment action representation and frame-aligned dual-path conditioning to strengthen action-frame correspondence. To maintain multiview consistency, we develop view-aware interleaved attention with explicit camera identities, enabling cross-view information exchange while preserving view-specific representations. We further introduce a fast-video, slow-memory posttraining framework that transforms the bidirectional video generator into an efficient autoregressive simulator. By combining fast causal generation, self-rollout training, and hierarchical temporal memory, PrimeSim mitigates error accumulation from self-generated histories and supports coherent long-horizon simulation. PrimeSim runs at 10.1 FPS, remains stable over long-horizon rollouts on rigid and deformable manipulation tasks, and transfers to held-out platforms within 100 to 200 gradient steps where the pretrained backbone does not. Against five open-source action-conditioned world models it leads four of the five WorldSimProbe suites and posts the best overall EWMBench score, while fine-grained local calibration still trails the field; its rollouts are faithful enough to support GRPO-based policy optimization. We release the model weights, inference code, and training code.",
+      "year": 2026,
+      "pub_date": "2026-11-03T13:25:52Z",
+      "authors": "Travis Davies, Wentao Ma, Lihao Guo +10",
+      "paper_url": "https://arxiv.org/abs/2611.04870v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2611.04566v1",
+      "title": "A research world model of power engineering learns its dynamics and reveals what-ifs",
+      "abstract": "Decisions about the direction of research in power engineering determine which technologies mature and, through them, shape infrastructure that lasts decades, yet their consequences cannot be observed before they are taken, and existing forecasts of research fields extrapolate a single trajectory. Here we introduce research world models, which treat a research field as a dynamical system that can be acted upon, and establish one for power engineering from 1.1 million papers. A distilled language model reads each paper into role-typed concepts, two sophisticated, high-fidelity graph-temporal neural network cores learn how the resulting concept network evolves, and operators learned from natural experiments in the publication record estimate the effects of interventions. In temporally held-out tests, the model forecast years ahead which concepts would grow and which method-target pairs would be joined for the first time, outperforming tuned machine-learning baselines in most settings, and its estimated intervention effects tracked those realized in natural experiments it had not seen. Its training scheme and three of its operators replicated in two fields withheld from development. Questions posed in natural language are compiled by a domain-specialized 27-billion-parameter language model into executable actions and answered as paired simulations with and without the intervention. The answers were rated 4.1 of 5 for faithfulness by an independent language-model judge. By revealing the latent dynamics of a research field and its response to interventions, research world models offer a new way to simulate and test research decisions before they are made.",
+      "year": 2026,
+      "pub_date": "2026-11-03T09:29:05Z",
+      "authors": "Fanping Sui, Ying Zhang, Liwei Lin",
+      "paper_url": "https://arxiv.org/abs/2611.04566v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2611.04073v1",
+      "title": "Computer-Use Agents Gain Little Benefit from a World Model When Conditioned on Tutorials",
+      "abstract": "Recent work has improved computer-use agents (CUAs) by combining retrieved task-relevant tutorials and look-ahead planning using world models with MLLM judges. However, the contribution of each component -- tutorials, the judge, and the world model -- to overall improvement has not been evaluated in isolation. To fill this gap, we first construct OSWorld-Tutorial and ScienceBoard-Tutorial: two datasets for CUAs with curated multimodal tutorials, covering everyday and scientific domains. We then propose RAG-PolicyJudge (RAG-PJ), a policy-judge framework for CUAs conditioned on task-specific tutorials: the policy proposes candidate actions, and the judge selects among them. To isolate the effect of world models given tutorials, we compare RAG-PJ with and without common world models: using either zero-shot text-based descriptions of next states or an oracle that returns ground-truth visual observations. We find that RAG-PJ gains little benefit from these rollouts when tutorials are present, even with perfect visual futures. This suggests prior world-model gains in tutorial-conditioned methods come mainly from tutorial understanding and the judge's ability to select the proposed actions, rather than from predicted rollouts. Error analysis reveals that the bottleneck is not rollout fidelity, but the judge's ability to reason over future states and recognize task completion. This highlights the need to improve not just next-state prediction in world models, but also reasoning over their predicted rollouts. Datasets and code are available at https://github.com/realjoenguyen/RAGPJ-official.",
+      "year": 2026,
+      "pub_date": "2026-11-02T23:36:18Z",
+      "authors": "Anh Nguyen, Tianyi Xu, Phat Tran +3",
+      "paper_url": "https://arxiv.org/abs/2611.04073v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": "https://github.com/realjoenguyen/RAGPJ-official"
+    },
+    {
+      "paperId": "2611.04028v1",
+      "title": "Compression Forcing: Hierarchical History Tokenization Enables Flexible World Models",
+      "abstract": "Effective world modeling requires compressing salient history information that facilitates future prediction. However, most existing approaches inherit tokenization and conditioning mechanisms from video generation, where objectives are centered around perceptual realism rather than predictive utility. This discrepancy limits the world model's effectiveness, especially in environments dominated by visual nuisances or task-irrelevant background details. To this end, we introduce Compression Forcing (CF), a general framework that aligns history compression with the predictive objective of world modeling. Compression Forcing features Dynamics-Aware Tokenization (DAT), a novel tokenization method that compresses history observations into a sequence ordered by decreasing dynamics saliency. Built on a diffusion backbone, this structure enables Hierarchical History Guidance (HG-H), allowing selective amplification of dynamics-salient information during inference. Extensive experiments across various environments demonstrate improved prediction fidelity, physical realism, and downstream decision-making performance, establishing Compression Forcing as a highly flexible and effective approach for world modeling.",
+      "year": 2026,
+      "pub_date": "2026-11-02T22:18:31Z",
+      "authors": "Siqiao Huang, Partha Kaushik, Michael Chen +5",
+      "paper_url": "https://arxiv.org/abs/2611.04028v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2611.04016v1",
+      "title": "Physical Experience Builds Continual Spatial World Models",
+      "abstract": "World models are increasingly used to support prediction and planning in embodied agents, but the knowledge is usually established before deployment and then carried into later encounters. Continual operation faces a different problem. A familiar environment may change, and the agent must use previous experience without allowing old expectations to override current physical evidence. This study asks what repeated physical experience must contribute for a spatial world model to become progressively more useful rather than simply more persistent. A physics-grounded dynamic maze separates recurring spatial change from the continuous consequences of action. Cross-episode Spatial Change Memory learns relations among environmental transformations, while state-action-outcome experience refines predictions of motion. Structured experience progressively reduces the need for future route correction and transfers to spatial transitions not encountered during learning. The advantage disappears when past changes contain no information about future ones. Continuous navigation further shows that predictive memory changes behavior when a previous decision becomes invalid but leaves behavior unchanged when the decision remains correct. Physical tests expose a complementary limit: correct topology does not guarantee correct action prediction, and accumulated physical experience reduces this mismatch within the modeled dynamics. The results characterize continual world knowledge as experience that improves future prediction and action beyond stored episodes while remaining revisable by the physical outcomes it is intended to predict.",
+      "year": 2026,
+      "pub_date": "2026-11-02T21:59:48Z",
+      "authors": "Yuhang Sun",
+      "paper_url": "https://arxiv.org/abs/2611.04016v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2610.39528v2",
+      "title": "PRIME W0: Physical Priors from World Models for Embodied Manipulation",
+      "abstract": "Vision-Language-Action (VLA) models excel at instruction following, yet most remain feed-forward: they condition actions only on the current observation and discard both long-horizon temporal context and the hierarchical structure of VLM representations. We present PRIME W0, a hierarchical conditional flow-matching framework that closes this gap through three synergistic designs: (1)per-layer KV injection from a pretrained VLM into an Adaptive MoE action expert; (2)dynamics-aware conditioning via asynchronous world-model subgoal-image prediction and a DINOv2 historical-frame semantic bridge; and (3)Action Dynamic Manifold (ADM) flow matching with covariance-structured noise that respects robot kinematic coupling. PRIME W0 is trained in four stages---VLM pre-training, DAT/NTP visuomotor pre-training, DiT flow-matching decoder assembly with WM injection, and end-to-end SFT---and achieves state-of-the-art results on LIBERO and real-robot benchmarks, with systematic ablations validating each architectural component.",
+      "year": 2026,
+      "pub_date": "2026-10-29T07:25:08Z",
+      "authors": "Huabin Peng, Fagang Jin, Yancong Wei +4",
+      "paper_url": "https://arxiv.org/abs/2610.39528v2",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2609.02542v2",
+      "title": "World-Model-Augmented Visual Locomotion for Humanoids on Foothold-Constrained Terrain",
+      "abstract": "Foothold-constrained terrain limits feasible footholds to sparse, discontinuous, or narrow support regions, as in gaps, stepping stones, stairs, and balance beams. In such settings, a single misplaced step can cause a fall. Reliable traversal therefore requires precise foot placement and anticipation of upcoming terrain. To address this challenge, we present World-Model-Augmented Visual Locomotion (WM-LOCO), which augments a visual locomotion policy with predictive context from a jointly trained world model. Given onboard depth observations and proprioception, a recurrent state-space model (RSSM) learns action-conditioned latent dynamics that predict future proprioceptive states, egocentric observations, and task rewards. The resulting recurrent feature is then fed into the proximal policy optimization (PPO) actor-critic, providing predictive context for anticipatory foot placement on foothold-constrained terrain. WM-LOCO achieves average success rates of 96.0% on gaps, 96.9% on stepping stones, 94.0% on stairs, and 92.1% on balance beams, outperforming the evaluated baselines while improving gait efficiency and smoothness. Furthermore, WM-LOCO achieves zero-shot sim-to-real transfer to a Unitree G1, with 92.5% success across these four terrain classes.",
+      "year": 2026,
+      "pub_date": "2026-09-02T12:57:01Z",
+      "authors": "Yuxi Liu, Lijun Han, Ziming Wang +3",
+      "paper_url": "https://arxiv.org/abs/2609.02542v2",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2607.25242v3",
+      "title": "Medical world models in healthcare: capabilities, evidence, and trustworthy clinical translation",
+      "abstract": "Medical world models offer a framework for extending medical artificial intelligence beyond static prediction by representing evolving patient states and modelling how they change over time and in response to clinical interventions. This Review uses structured narrative synthesis and reproducible evidence mapping to define conceptual boundaries, technical foundations, application domains, and clinical evidence requirements. We screened 1,455 unique records and assembled a corpus of 300 sources, including 14 studies that met a strict empirical definition of a medical world model. The field is organized around four capabilities: patient state representation, temporal dynamics modelling, intervention-conditioned simulation, and clinician-supervised planning. Evidence spans medical imaging, longitudinal electronic health records, treatment response modelling, physiological and multimodal state modelling, ultrasound and surgical interaction, and population and health-system simulation; clinical digital twins are treated as a cross-cutting integration framework. Studies provide early evidence of technical feasibility for trajectory forecasting and comparison of candidate interventions, but most remain retrospective, task-specific, or preclinical. We distinguish functional capability from clinical evidence maturity and specify evidence needed to support progressively stronger clinical claims, from temporal forecasting to intervention comparison and planning-oriented decision support. These requirements include precise intervention representations, robust causal and mechanistic grounding, calibrated trajectory-level uncertainty, safety-constrained planning, external validation, and prospective multicentre evaluation against clinically meaningful endpoints. This framework aims to distinguish technically plausible simulation from clinically supportable prediction and decision support.",
+      "year": 2026,
+      "pub_date": "2026-07-28T03:35:47Z",
+      "authors": "Wanshu Fan, Zhongxiu Cong, Zhaoyan Chen +7",
+      "paper_url": "https://arxiv.org/abs/2607.25242v3",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2606.03371v7",
+      "title": "See, Foresee, Act: Intent-Aware World Modeling for Proactive Retail Assistance",
+      "abstract": "World models allow agents to anticipate action consequences, but proactive assistance also requires interpreting incomplete observations and deciding whether to intervene before a user asks for help. We propose See-Foresee-Act and instantiate it as the Proactive Intent World Model (PIWM) for retail assistance. See preserves role-relevant observable evidence alongside AIDA-BDI customer states; Foresee predicts one-step consequences for candidate actions; Act explicitly compares those consequences, including non-intervention. GuidanceSalesBench supplies predominantly synthetic supervision linking observations, states, candidate outcomes, and decisions. On 509 Full test examples, consequence-based selection achieves 63.65% decision accuracy, compared with 45.38% for direct decision output, an improvement of 18.27 percentage points. These results support candidate-consequence comparison for decision reasoning in this retail task. Code and data will be released after consent verification and upon publication.",
+      "year": 2026,
+      "pub_date": "2026-06-02T09:18:39Z",
+      "authors": "Honghui Zhang, Anna Min, Chenmeinian Guo +9",
+      "paper_url": "https://arxiv.org/abs/2606.03371v7",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2601.01075v3",
+      "title": "Flow Equivariant World Models: Structured Memory for Dynamic Environments",
+      "abstract": "Embodied systems experience the world as 'a symphony of flows': a combination of many continuous streams of sensory input coupled to self-motion, interwoven with the dynamics of external objects. These sensory streams and the underlying dynamics of the world obey smooth, time-parameterized symmetries which existing world models ignore. Without a memory that respects this structure, partial observability presents a major obstacle to existing methods: each observation reveals only a fraction of the world, while unobserved regions continue to evolve. In this work, we introduce Flow Equivariant World Modeling, a framework that leverages time-parameterized symmetries within a latent memory for stable and accurate dynamics prediction over long horizons. The latent memory shifts and transforms equivariantly with self-motion and inferred external object motion, keeping information about out-of-view regions aligned as time progresses. We demonstrate the advantage of this framework over state-of-the-art diffusion, memory-augmented, and recurrent world model architectures on 2D and 3D partially observed video world modeling benchmarks. More broadly, our results suggest that predictive representations become more powerful when they are organized in line with the temporal and dynamical structure of the world they model. Project page: https://flowequivariantworldmodels.github.io/",
+      "year": 2026,
+      "pub_date": "2026-01-03T05:22:27Z",
+      "authors": "Hansen Jin Lillemark, Benhao Huang, Fangneng Zhan +2",
+      "paper_url": "https://arxiv.org/abs/2601.01075v3",
+      "venue": "ICML 2026",
+      "citations": 0,
+      "code_url": null
     }
   ],
-  "last_updated": "2026-11-03T17:16:03.769878Z",
-  "total": 2976
+  "last_updated": "2026-11-04T17:15:58.059166Z",
+  "total": 2987
 }
