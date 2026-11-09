@@ -36179,8 +36179,80 @@
       "venue": "",
       "citations": 0,
       "code_url": null
+    },
+    {
+      "paperId": "2611.09625v1",
+      "title": "Encoding Memory in World Models with Test-Time Model-Based Reinforcement Learning",
+      "abstract": "Model-based reinforcement learning (MBRL) approaches have demonstrated strong performance across diverse domains in recent years, learning accurate world models from agent trajectories. However, despite this progress, current approaches still struggle to surpass human performance on tasks that require long-term memory and planning. In this work, we address the problem of long-term memory in MBRL by moving beyond the commonly studied paradigm of architecture design. We introduce Test-Time Model-Based Reinforcement Learning (TT-MBRL), using gradient descent at test time to encode the memory of episode observations into world model parameters. This enables the agent to learn a distinct world model for each episode, improving memory capabilities compared to traditional approaches that solely rely on contextual memory. We first establish a proof of concept on a simplified two-dimensional variant of the Memory Maze environment, which we refer to as Memory Maze 2D, showing consistent improvements across different world model architectures. We then demonstrate the effectiveness of TT-MBRL in the 3D domain, achieving new state-of-the-art results on the Memory Maze benchmark. Finally, we show that TT-MBRL maintains strong performance on non-memory benchmarks such as DeepMind Control and Atari 100k.",
+      "year": 2026,
+      "pub_date": "2026-11-06T15:45:54Z",
+      "authors": "Maxime Burchi, Fayaz Ali Dharejo, Radu Timofte",
+      "paper_url": "https://arxiv.org/abs/2611.09625v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2611.08898v1",
+      "title": "FATHOM: World-Model-Guided Diffusion Action-Trajectory Selection for Sparse-Marker AUV Tracking",
+      "abstract": "Reliable relative tracking is fundamental to cooperative autonomous underwater vehicles (AUVs), yet remains challenging under nonlinear vehicle dynamics and degraded underwater visual conditions. Active light markers improve robustness to appearance variation, but provide deliberately sparse observations that can become incomplete or corrupted by occlusion, reflections, and detection noise during dynamic motion. To address the resulting partial-observation control problem, this paper proposes FATHOM, a world-model-guided diffusion action-trajectory selection framework for sparse-marker AUV tracking. FATHOM first integrates structured marker observations, inertial measurements, action history, and temporal dynamics into a predictive tracking belief using a multimodal task-supervised recurrent state-space model. A diffusion action prior then generates multiple expert-like multi-thruster trajectories, whose future tracking consequences are predicted through the learned latent dynamics. Rather than directly executing a generated trajectory, FATHOM selects the most favorable candidate under an explicit receding-horizon objective and continually updates the decision from onboard observations. Extensive offline analyses verify the learned predictive belief, multi-step world-model prediction, diffusion trajectory generation, and predictive selection. More importantly, comprehensive real-AUV experiments, including strong pose-based comparisons and component ablations, demonstrate robust autonomous tracking across nominal and challenging motions with naturally occurring partial marker visibility, while maintaining real-time onboard operation without motion-capture feedback.",
+      "year": 2026,
+      "pub_date": "2026-11-06T02:40:08Z",
+      "authors": "Xiaorui Wang, Zeyu Sha, Mingyang Yang +2",
+      "paper_url": "https://arxiv.org/abs/2611.08898v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2610.19683v3",
+      "title": "MemWM: Associative Memory-Enhanced Latent World Models for Long-Horizon Planning",
+      "abstract": "World models trained via latent dynamics offer a scalable path for embodied planning, yet existing methods suffer from representational collapse, computational overhead, and limited long-horizon capability. We introduce Memory World Model (MemWM), an associative memory-enhanced latent world model that augments JEPA-style prediction with a content-addressable memory bank. MemWM learns high-level historical representations directly from observations and leverages them to condition predictions via adaptive layer normalization, complementing low-level action-conditioned dynamics within a shared latent space. To prevent memory slots from collapsing into identical representations, we propose two complementary losses that encourage structural diversity across slots and balanced utilization across timesteps. On PushT, TwoRoom, Reacher, and OGBCube, MemWM attains an average success rate of 89.9%, matching DINO-WM (89.3%) while using roughly 4$\\times$ fewer trainable parameters and no pretrained encoder, and improving over LeWM by 4.1%. Additionally, we extend the horizon to 50 timesteps, double the 25 timesteps of the original evaluation, demonstrating MemWM's robustness to long-horizon generalization.",
+      "year": 2026,
+      "pub_date": "2026-10-14T07:08:02Z",
+      "authors": "Yuwei Sun, Siyu Zhu",
+      "paper_url": "https://arxiv.org/abs/2610.19683v3",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2606.05558v4",
+      "title": "Autoregressive Diffusion World Models for Off-Policy Evaluation of LLM Agents",
+      "abstract": "Evaluating large language model (LLM) agents in multi-turn interactive environments is expensive and risky, as it requires online environment interaction. We propose ADWM (Autoregressive Diffusion World Model), an evaluation framework that estimates the performance of a new LLM agent policy purely from pre-collected trajectories. The core idea is to learn a latent diffusion world model that simulates how the environment responds to the evaluation policy, without ever executing it in the real environment. Existing diffusion-based OPE methods guide full trajectories in a single pass by jointly diffusing states and actions, an assumption that breaks down for LLM agents whose actions are discrete text that must be sampled from the policy after observing the environment. Unlike autoregressive world models that suffer from compounding errors, ADWM models each transition as an independent denoising process, enabling reliable step-by-step rollouts where the world model and agent alternate in causal order. Crucially, the LLM agent under evaluation directly guides the diffusion generation at each step via a policy-conditioned score function, ensuring that simulated trajectories accurately reflect its decision-making patterns. Empirically, ADWM achieves accurate value estimates and evaluation reliability across diverse multi-turn agent tasks, demonstrating its promise as a practical framework for offline LLM agent evaluation.",
+      "year": 2026,
+      "pub_date": "2026-06-04T01:13:24Z",
+      "authors": "Kaixuan Liu, Guojun Xiong, Weinan Zhang +1",
+      "paper_url": "https://arxiv.org/abs/2606.05558v4",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2606.04130v2",
+      "title": "CLAW: Continuous Latent Action World Models via Adversarial Regularization",
+      "abstract": "We introduce CLAW, a fully end-to-end self-supervised framework for learning a world model jointly with continuous latent action representations directly from action-free videos. Our approach leverages adversarial latent regularization to prevent the latent from encoding future observations, so that it captures the structure of the action. The diffusion-based world model then models environment dynamics as a distribution over future observations rather than as a single deterministic rollout. Both components are learned from observation sequences alone without any action annotations. By simultaneously training the Latent Action Model and world model, CLAW learns to reason about how inferred actions induce environment transitions from visual observations alone. We show that the resulting latent action world model supports both imitation learning from observation and goal-directed planning. In imitation learning, latent actions extracted from raw videos enable behavior cloning. For planning, CLAW generates sequences of latent actions and maps them to executable actions to reach desired goals. Extensive experiments across diverse tasks and embodiments demonstrate that CLAW produces semantically meaningful latent action representations, supports effective action transfer, and enables planning and imitation from observation, outperforming existing methods.",
+      "year": 2026,
+      "pub_date": "2026-06-02T18:40:24Z",
+      "authors": "Tewodros Ayalew, Samuel Wheeler, Matthew Jeung +5",
+      "paper_url": "https://arxiv.org/abs/2606.04130v2",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2610.18699v2",
+      "title": "RoboFQE: Rollout-Free Evaluation of Visual Robot Policies from Offline Trajectories",
+      "abstract": "Evaluating robot policies before deployment typically requires producing new trajectories through real-world execution, simulators, or learned world models. These rollout-based approaches impose infrastructure requirements; simulator and world-model evaluators additionally face prediction errors that can compound over the evaluation horizon. In this paper, we study off-policy evaluation as an alternative to rollout-based robot-policy evaluation methods. Specifically, we introduce RoboFQE, an evaluator that estimates the discounted expected return of a target policy from offline robot trajectories without estimating a behavior-policy density, combining fitted Q-evaluation with a pretrained vision foundation model and learned terminal success annotation to bridge the gap between standard OPE benchmarks and continuous-control visual manipulation. Controlled experiments across simulated and real-world manipulation tasks show that RoboFQE produces accurate discounted-return estimates and preserves policy rankings even on long-horizon manipulation tasks where video world-model evaluators are degraded by autoregressive prediction errors. Ablation experiments show that pretrained vision encoders substantially outperform from-scratch alternatives, particularly on long-horizon tasks, and that learned terminal success annotation enables evaluation without ground-truth reward labels with only slight reduction of accuracy.",
+      "year": 2026,
+      "pub_date": "2026-10-13T16:48:25Z",
+      "authors": "Yunfu Deng, Sangwoo Shin, Brahma S. Pavse +1",
+      "paper_url": "https://arxiv.org/abs/2610.18699v2",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
     }
   ],
-  "last_updated": "2026-11-08T16:09:52.990009Z",
-  "total": 3015
+  "last_updated": "2026-11-09T19:56:31.538110Z",
+  "total": 3021
 }
