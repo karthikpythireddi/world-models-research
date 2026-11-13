@@ -9969,7 +9969,7 @@
       "authors": "Shiqi Chen, Tongyao Zhu, Zian Wang +7",
       "paper_url": "https://arxiv.org/abs/2510.15047v1",
       "venue": "Findings of the Association for Computational Linguistics: EMNLP (Findings of EMNLP)",
-      "citations": 27,
+      "citations": 29,
       "code_url": ""
     },
     {
@@ -10101,7 +10101,7 @@
       "authors": "Yanjiang Guo, Lucy Xiaoyang Shi, Jianyu Chen +1",
       "paper_url": "https://arxiv.org/abs/2510.10125v3",
       "venue": "",
-      "citations": 151,
+      "citations": 152,
       "code_url": ""
     },
     {
@@ -11277,7 +11277,7 @@
       "authors": "Keyon Vafa, Peter G. Chang, Ashesh Rambachan +1",
       "paper_url": "https://arxiv.org/abs/2507.06952v4",
       "venue": "ICML 2025",
-      "citations": 42,
+      "citations": 43,
       "code_url": ""
     },
     {
@@ -11421,7 +11421,7 @@
       "authors": "Haonan Chen, Jingxiang Guo, Bangjun Wang +7",
       "paper_url": "https://arxiv.org/abs/2506.23919v3",
       "venue": "Proceedings - IEEE ICRA/Proceedings",
-      "citations": 21,
+      "citations": 22,
       "code_url": ""
     },
     {
@@ -11733,7 +11733,7 @@
       "authors": "Guillaume Levy, Cedric Colas, Pierre-Yves Oudeyer +2",
       "paper_url": "https://arxiv.org/abs/2506.06725v3",
       "venue": "",
-      "citations": 9,
+      "citations": 10,
       "code_url": ""
     },
     {
@@ -12105,7 +12105,7 @@
       "authors": "Yaxuan Li, Yichen Zhu, Junjie Wen +2",
       "paper_url": "https://arxiv.org/abs/2505.19017v1",
       "venue": "",
-      "citations": 83,
+      "citations": 84,
       "code_url": ""
     },
     {
@@ -12189,7 +12189,7 @@
       "authors": "Carlos Stein Brito, Daniel McNamee",
       "paper_url": "https://arxiv.org/abs/2505.15589v1",
       "venue": "NeurIPS",
-      "citations": 1,
+      "citations": 2,
       "code_url": ""
     },
     {
@@ -12201,7 +12201,7 @@
       "authors": "Siqiao Huang, Jialong Wu, Qixing Zhou +2",
       "paper_url": "https://arxiv.org/abs/2505.14357v3",
       "venue": "",
-      "citations": 69,
+      "citations": 70,
       "code_url": ""
     },
     {
@@ -12669,7 +12669,7 @@
       "authors": "Chuning Zhu, Raymond Yu, Siyuan Feng +3",
       "paper_url": "https://arxiv.org/abs/2504.02792v3",
       "venue": "RSS",
-      "citations": 246,
+      "citations": 247,
       "code_url": ""
     },
     {
@@ -36779,8 +36779,260 @@
       "venue": "",
       "citations": 0,
       "code_url": "https://github.com/showlab/MetaWAM"
+    },
+    {
+      "paperId": "2611.16645v1",
+      "title": "Rethinking Actions: Continuity-Aware Priors for World-Model Planning",
+      "abstract": "Actions in expert demonstrations exhibit temporal structure. An ordered-versus-shuffled analysis across five environments confirms this dependence. We ask whether action proposals that better reflect expert continuity can improve visual world-model planning. Rather than imposing generic smoothness, we learn continuations from the temporal structure of demonstrated actions. Our locality-gated deep-kernel Gaussian-process prior, LG-DKGP, combines recent and longer-range executed action history, predicts a neural continuation, and learns a temporal Gaussian-process (GP) residual. A training-derived exploration scale initializes search around the corrected mean; a frozen world model evaluates progress toward the goal. Training first fits the neural mean, then jointly optimizes the prior with the GP residual using expert future actions. The resulting planner achieves 87.07\\% macro success across five simulated tasks spanning native and fragment-level goal attainment, compared with 71.03\\% for INTACT, 61.66\\% for PRISM, and 58.66\\% for LeWM. Component interventions and expert-relative action-structure comparisons support demonstration-informed continuations and reveal task-dependent effects of visual conditioning, history length, and planning horizon.",
+      "year": 2026,
+      "pub_date": "2026-11-12T11:18:50Z",
+      "authors": "Shaobo Yang, Zichen Ai, Ziyang Ma +2",
+      "paper_url": "https://arxiv.org/abs/2611.16645v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2611.16579v1",
+      "title": "ActWorld-JEPA: Action-Conditioned JEPA World Models Meet Latent Planning for End-to-End Autonomous Driving",
+      "abstract": "Joint-Embedding Predictive Architectures (JEPAs) enable future prediction in latent space without pixel reconstruction. However, latent predictive consistency alone does not establish the relative driving quality of candidate plans. We present ActWorld-JEPA, a joint-embedding formulation for candidate-based driving. Where Plan-Conditioned JEPA (PC-JEPA) uses global and step-wise trajectory intentions to guide recurrent latent prediction, then combines the predicted future with the current scene through gated cross-attention; Relational Residual Reranking ($R^3$) models agreement and discrepancy between plan and future representations under planning supervision, yielding bounded, gated residual corrections to the base planning scores. This formulation connects latent prediction to candidate selection using only observed context and proposed trajectories at inference. Benchmark-specific implementations report 94.1 PDMS on NAVSIM v1 navtest, with the final selector calibrated using aggregate NAVTEST feedback, and 91.6 and 42.7 EPDMS on NAVSIM v2 navtest and navhard, respectively. The nuScenes evaluation reports a mean $L_2$ error of 1.20 m and a predicted collision rate of 0.76% over 1--6 s. This work provides an effective path from JEPA's predictive representations to driving decisions informed by anticipated consequences.",
+      "year": 2026,
+      "pub_date": "2026-11-12T10:10:39Z",
+      "authors": "Ziying Song, Shengkai Zhang, Caiyan Jia +10",
+      "paper_url": "https://arxiv.org/abs/2611.16579v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": "https://github.com/adept-thu/ActWorld-JEPA"
+    },
+    {
+      "paperId": "2611.15689v1",
+      "title": "What World Model Does Active Object Search Need? A Study under Imperfect Detection",
+      "abstract": "In active object search, a robot must decide where to look and when to stop. Imperfect detection complicates both decisions: a non-detection may indicate occlusion, an out-of-view target, or a false negative, while a detection may be a false positive. This raises the question of which representations a world model needs to support reliable search under imperfect detection. We introduce Bayesian Active Miss-aware Object Search (BAMOS) to investigate how target belief, occupancy belief, and detector errors affect search decisions. Through comprehensive ablations in Isaac Sim and HSSD houses, we examine the roles of these representations and their update mechanisms across different detector configurations. Notably, target belief and its update mechanisms are critical to search performance, with their contribution generally increasing as detection errors become more prevalent. These findings highlight the importance of maintaining and updating target beliefs to support reliable active search under uncertain detector observations, providing insights into the design of world models for embodied agents. Code is available in https://github.com/gokyeongryeol/BAMOS.",
+      "year": 2026,
+      "pub_date": "2026-11-11T16:28:48Z",
+      "authors": "Kyeongryeol Go",
+      "paper_url": "https://arxiv.org/abs/2611.15689v1",
+      "venue": "CoRL 2026",
+      "citations": 0,
+      "code_url": "https://github.com/gokyeongryeol/BAMOS"
+    },
+    {
+      "paperId": "2611.15602v1",
+      "title": "CoCode-World: Shared 3D Proxy Representation for Multi-Player World Models",
+      "abstract": "Multiplayer generative world models must produce observations that agree on shared entities despite different camera motions and occlusions. Explicit world representations provide spatial control, but precise modeling of individual game maps limits scene diversity, while shared geometry alone cannot ensure consistent appearance across views. We present CoCode-World, a shared 3D proxy framework that separates structural control from visual synthesis for two-player video generation. Programmable proxies specify scene layout, motion, and occlusion, while RGB references guide character and scene appearance. To coordinate visual details across players, we concatenate paired proxy videos, appearance references, and target views in a consistent spatial layout and generate both views jointly with a pretrained video model. This formulation uses the model's native attention for cross-view communication within a single generation branch, with LoRA adaptation learning proxy adherence and appearance correspondence from paired observations. We construct a two-player GTA~V dataset that pairs synchronized RGB observations with proxy videos derived from shared map geometry and game-engine state. Experiments demonstrate appearance transfer to characters and scene styles unseen during training, with improvements in video quality and cross-view player identity over the evaluated baseline. Ablations further examine how proxy construction and cross-view communication affect generation. Project page: https://iapple233.github.io/CCW/.",
+      "year": 2026,
+      "pub_date": "2026-11-11T15:19:47Z",
+      "authors": "Qirui Li, Xin Zhang, Yabo Chen +7",
+      "paper_url": "https://arxiv.org/abs/2611.15602v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2611.15260v1",
+      "title": "Driving World Models Move the Camera, Not the Scene",
+      "abstract": "Plan-conditioned driving world models are used to compare candidate plans, so their forecast should change with the plan as the real scene would, yet widely used control metrics check only whether the camera follows the command. Recorded drives already contain real outcomes of plans that were never driven: retiming a log gives pose-matched images and LiDAR for other speeds, and a stereo rig records a laterally shifted view. Against these references, released world models move their camera but barely move the scene: their scene response, the share of the real change in distance that the forecast reproduces, reaches at most about a third of real video's, and the trajectory score cannot tell an executed speed command from an ignored one. Interventions inside the generator trace the failure to the plan's channel. The forecast geometry follows the context frames; once they carry the planned geometry, plan tokens add little. ReTime-Compose therefore delivers the plan as geometry, without training. It transports the frames of one logged-speed rollout to the planned cameras, and the frozen model completes only what no frame covers. Frozen generators then follow a 0.54 m lateral shift nearly as the real scene does on KITTI, nuScenes and Argoverse 2, and respond more than re-sampling to slow-down plans in three generators and to speed-up plans in two.",
+      "year": 2026,
+      "pub_date": "2026-11-11T09:50:30Z",
+      "authors": "Yuqiao Feng, Xiaoyu Ao",
+      "paper_url": "https://arxiv.org/abs/2611.15260v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2611.15215v1",
+      "title": "AFTER: A World Model with Adaptive Fast--Slow Timescales for Error-Driven Retention",
+      "abstract": "In robotics and embodied AI, a core challenge for world models is adapting to sudden, persistent, yet initially unknown changes in robot dynamics during interaction. For instance, when a robotic arm grasps an object with an unknown payload, the robot dynamics change suddenly. If the world model fails to adapt, its prediction errors accumulate over the open-loop rollout and ultimately mislead the robot's actions. Existing world models, however, struggle to simultaneously satisfy three critical requirements for dynamics adaptation: responsiveness, reacting promptly to sudden changes to curb prediction error accumulation; stability, distinguishing persistent changes from transient disturbances to prevent incorrect updates; and persistence, retaining the adapted dynamics without new observations so that later predictions do not revert to the old dynamics. Inspired by predictive coding in the human brain with multi-timescale adaptation, we propose AFTER-WM, a world model with Adaptive Fast-slow Timescales for Error-driven Retention, whose prediction errors drive a fast correction that fades and a slow correction that persists, while dynamically adjusting the combination weights of pre-trained experts without altering them, to overcome the trade-offs among responsiveness, stability and persistence. On five simulated robot datasets and real UAV data, AFTER-WM has a lower multi-step mean error than all ten compared models and the highest mean return in a joint-failure control task. In simulation, its multistep mean error is 16%-34% below the strongest compared model's and is also the lowest 1-4 steps after a change and under transient disturbances alone, and its step-40 error is the lowest as well, reflecting responsiveness, stability and persistence. All code (method, baselines, experiments) and datasets will be released online.",
+      "year": 2026,
+      "pub_date": "2026-11-11T09:09:37Z",
+      "authors": "Haoyi Zhang, Qi Zhang, Yunfan Ren +3",
+      "paper_url": "https://arxiv.org/abs/2611.15215v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2611.15131v1",
+      "title": "Duo: A Reciprocal World Model for Full-Duplex Interaction",
+      "abstract": "In this report, we introduce the Reciprocal World Model (RWM) and present Duo v1, a full-duplex world model that continuously perceives audiovisual inputs while responding to users in real time. The RWM treats intelligence and physical reality as equally fundamental to what constitutes a world. Existing world models largely focus on simulating the latter, leaving reasoning and decision-making as external controls rather than intrinsic parts of the world itself. In RWM, we identify two equally fundamental capabilities: Intent, which provides the cognition underlying world interactions, and Realization, which generates coherent audio-visual behavior. To realize this formulation, Duo v1 introduces three key technical designs: (1) Leveraging autoregressive modeling for continuous interaction reasoning and participation decisions, rather than restricting it to instruction understanding for diffusion models. (2) Constructing chunk-specific conditions and synchronize tokens across Intent and Realization on a unified timeline. Module-specific attention masks enforce causal dependencies both within and across chunks, preventing access to future inputs. (3) Mitigating distribution shift in both modules through dual rollout distillation, training on autoregressively generated Intent tokens and synthesized audiovisual histories from Realization. Both modules continuously perceive real-time audio, video, and text, enabling full-duplex interaction with spontaneous conversations and interruptions. Beyond conversation, users can share real objects, reshape virtual scenes, guide assistants, or play audiovisual games without mouse or keyboard controls. The release of Duo v1 makes our first step, with the next version coming soon. We look forward to broader exploration of this emerging field.",
+      "year": 2026,
+      "pub_date": "2026-11-11T07:17:02Z",
+      "authors": "Hengyuan Cao, Biao Gong, Guoshan Lu +17",
+      "paper_url": "https://arxiv.org/abs/2611.15131v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2611.15082v1",
+      "title": "Prediction or Persistence? What Future-Prediction Scores Miss About World Models",
+      "abstract": "Pretrained video world models are compared and chosen as components for robot learning largely by future-prediction scores. On its own, such a score cannot be read as evidence of prediction, because it mixes encoder quality, the near future's resemblance to the recent past, and the predictor's own contribution. We separate the three with a matched control. On 27,000 future-retrieval trials from household egocentric video, a model must pick the true continuation of a clip among eleven candidates from the same video (chance 0.091), ranked zero-shot by its own training criterion. Each model is paired with a persistence control, an identical copy whose predictor is never invoked, so the paired difference isolates the predictor. Score and contribution dissociate within the native-video V-JEPA family alone: the predictor adds +0.291 top-1 for V-JEPA 2.1 but +0.03 to +0.04 for V-JEPA 2 on the identical trials. Across five models the contribution ranges from +0.291 to negative, and it is negative only for the two action-conditioned models, which we evaluate outside their training regime. Persistence alone recovers the encoder ordering expected from pretraining, a sign that the probe tracks real signal. We suggest reporting each future-prediction score together with its persistence baseline. The gap between them, not the score, is what makes the number interpretable: a necessary check costing one forward pass. Establishing downstream usefulness is a separate matter, for a planning or control evaluation.",
+      "year": 2026,
+      "pub_date": "2026-11-11T05:56:50Z",
+      "authors": "Animesh Maheshwari",
+      "paper_url": "https://arxiv.org/abs/2611.15082v1",
+      "venue": "the CoRL 2026",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2611.15048v1",
+      "title": "Does Your World Model Know Actions Have Consequences?",
+      "abstract": "Embodied world models (WMs) are implicit learning systems that predict the next future latent state directly from observations and actions. Unique from other end-to-end learning systems, the dynamics predictor of WMs can simulate the environment's response to alternative actions without physical deployment nor pre-specifying states of the dynamical system. Current metrics focus on the quality of model outputs, e.g., clarity of reconstructions or task success, but fail to assess the fidelity of modeling consequences of counterfactual actions. Inspecting the forced response to action perturbations through sensitivity analysis is one way to audit how well WMs can predict the consequences of counterfactual actions. Deploying WMs on hardware will require new evaluation frameworks to analyze the tradeoffs between state error and accurate sensitivity prediction.",
+      "year": 2026,
+      "pub_date": "2026-11-11T05:21:33Z",
+      "authors": "Ayush Gaggar, Jared Berry, Todd D. Murphey",
+      "paper_url": "https://arxiv.org/abs/2611.15048v1",
+      "venue": "CoRL",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2611.15011v1",
+      "title": "Fast Inference-Time Policy Refinement via Action-Affine World Models",
+      "abstract": "Imitation policies can perform complex manipulation, yet small execution errors can accumulate and cause failure. Refinement can correct these errors, but existing approaches often require additional on-policy learning or costly online planning. Our key insight is that a pretrained policy already supplies a useful nominal behavior: refinement can focus on predicting how small action corrections change its outcome. We therefore learn this local response in a form that is cheap to optimize. Our \\textit{action-affine world model} (A\\textsuperscript{2}WM) learns local action sensitivities offline from action-perturbed policy rollouts. Given interaction history and a policy proposal, it predicts task-relevant geometry as a nominal trajectory plus a linear response to corrections. It predicts the full planning horizon directly, avoiding the propagation of intermediate errors through recursive model evaluations. Quadratic penalties on predicted task errors and linear correction constraints then yield a cheap convex quadratic program (QP). Online refinement requires one model evaluation and one QP solve, while both policy and model weights remain frozen. Across four simulated manipulation tasks, our framework achieves the highest success rate among evaluated baselines, adding only 3.8 ms of mean refinement overhead per control step, excluding base-policy sampling.",
+      "year": 2026,
+      "pub_date": "2026-11-11T04:08:28Z",
+      "authors": "Run Wang, Yilin Mo, Liang Wu",
+      "paper_url": "https://arxiv.org/abs/2611.15011v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2611.15009v1",
+      "title": "From Forecasting to World Modeling: Can Temporal Foundation Models Recover Causal Response?",
+      "abstract": "A model that forecasts sales accurately can still mislead a retailer about how sales respond to a price change. We evaluate released tabular and time-series foundation models, as well as a foundation model pretrained specifically to estimate causal effects. We report three findings. First, forecast accuracy does not indicate the accuracy of the predicted effect of price, both on simulated data in which the true effect is known and on real retail sales records. Second, for the tabular foundation models, additional context improves forecasts but not the predicted effect of price. Third, instrumental variables, the standard remedy in econometrics, reduce this error only when supplied in a specific form and increase it for every model under confounding when supplied as raw instruments.",
+      "year": 2026,
+      "pub_date": "2026-11-11T04:08:01Z",
+      "authors": "Juwon Hong, Minha Hwang, Venkatesh Shankar",
+      "paper_url": "https://arxiv.org/abs/2611.15009v1",
+      "venue": "the NeurIPS 2026",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2611.14955v1",
+      "title": "The Posterior-Prior Epistemic Gap: When World Model Imagination Fails to Carry Task-Relevant Signals",
+      "abstract": "Model-based planners that roll out imagined futures assume the transition model faithfully propagates task-relevant signals---a property rarely measured directly. In a single-seed case study of a Recurrent State Space Model world model with active-inference planning in the CARLA driving simulator, we identify a \\textbf{posterior-prior gap}---posterior (observation-filtered) states retain obstacle information that imagined rollout states progressively lose: a supervised obstacle probe achieves AUC 0.85 on posterior states, but the same probe applied to imagined prior states shows monotonic decay (AUC 0.85$\\rightarrow$0.71 over 15 steps; logit separation drops 57\\%). Because the probe is identical, the decay isolates the transition model---not the representation---as the information bottleneck. Obstacle avoidance drops to 0\\% without privileged runtime coordinates, and the planner's own ensemble-based epistemic term does not flag the loss---ensemble disagreement yields AUC 0.52 as an obstacle classifier (chance level), making the failure an unflagged imagination failure---an unknown unknown at planning time. As a secondary contribution, we show that \\textbf{task-conditioned weighting of Effective Free Energy components} over the same world model yields lane keeping ($81.2 \\pm 1.8$\\% route completion) and obstacle avoidance (28/28 avoided, \\emph{using privileged coordinates}) in the CARLA simulator, with runtime weight modulation enabling post-evasion centering.",
+      "year": 2026,
+      "pub_date": "2026-11-11T03:02:55Z",
+      "authors": "Jaerock Kwon, Elahe Delavari, Donghyun Kim +1",
+      "paper_url": "https://arxiv.org/abs/2611.14955v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2611.14815v1",
+      "title": "BirdDreams: Joint Perspective and BEV Video Generation for a Plausible, Reactive Driving World Model",
+      "abstract": "Driving world models aim to simulate how a scene unfolds under different ego actions. This requires plausible motion of surrounding vehicles as well as precise ego-trajectory control. Learning vehicle motion from perspective video alone is challenging because motion is entangled with appearance and vehicles can be occluded. Prior work therefore conditions video generation on layouts that specify vehicle motion, providing control over surrounding vehicles but requiring their future trajectories as inputs. We introduce BirdDreams, an autoregressive driving world model that jointly generates perspective video and a schematic bird's-eye-view (BEV) video, making scene layout part of the predicted future. The BEV, rendered from scene annotations for training, depicts roads and vehicles as simple shapes at a fixed metric scale, providing a top-down view of their positions and motion with reduced occlusion between vehicles. Perspective video, by contrast, retains scene details that the BEV omits, such as traffic signals and object appearance. Joint attention between two video diffusion transformers, one per stream, lets each stream inform the other during generation. The predicted BEV also provides a geometric interface for ego control: we translate and rotate its latest frame along an input ego trajectory and use the resulting frames as a soft condition that shows how the scene would appear to move if only the ego vehicle moved. At inference, BirdDreams generates both videos from a single camera image without requiring an HD map or vehicle-state inputs. On PhysicalAI-AV and nuScenes, BirdDreams follows input ego trajectories more faithfully than prior driving world models and generates more plausible ego motion without ego-action conditioning. Human evaluation shows that BirdDreams outperforms a perspective-only baseline in generating realistic surrounding-vehicle behavior.",
+      "year": 2026,
+      "pub_date": "2026-11-10T23:04:58Z",
+      "authors": "Junyoung Seo, Jaewoo Seo, Seungryong Kim +3",
+      "paper_url": "https://arxiv.org/abs/2611.14815v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2611.01666v4",
+      "title": "Stand-In Effects and Pooling Amplification: Lessons from Biological World Models for Testing Action Effects",
+      "abstract": "Whether an action-conditioned world model responds to actions is usually checked by replacing or removing the actions and measuring the loss in accuracy. Taking biological experiments as the guiding case, we show that such diagnostics report action effects where there are none: under autocorrelated designs, future actions stand in for history the model does not see. When the design law is known, a conditional randomization test written as an e-value is valid in finite samples whatever the model. A second failure arises whenever many sites share one action sequence, as in world models: the pooled score turns small model errors along the action contrast into an e-value near zero, so a valid test loses its power although the effect is real. Tempering the score changes the bet, not the validity. The log e-value is concave in the tempering factor and zero at zero, so too small a factor costs little and too large a one can cost everything; every single factor we tried, estimated or tuned, failed in some setting, and mixtures over a fixed grid never did. Our own preregistered analysis of optogenetic ERK experiments failed by pooling; a tempered statistic, registered before the data were obtained, then rejected the null on a never-opened field (E = 1.1e10). In three registered tests on models trained by others, the pooled test rejected in 0 of 96 units of a diffusion model, and reached the power bar in 10 of 26 Atari games under IRIS's token likelihood and 1 of 6 control tasks under TD-MPC2; mixtures fixed in advance reached it in 96 units, 24 games and 6 tasks. On recorded robot video with iVideoGPT the mixture rejected in 155 of 159 trajectories; the pooled test did not collapse there (143). Under exact nulls the statistics made 14 rejections in 26,664 tests.",
+      "year": 2026,
+      "pub_date": "2026-11-01T07:21:43Z",
+      "authors": "Bowen Xu, Boyu Chen, Jiaying Li",
+      "paper_url": "https://arxiv.org/abs/2611.01666v4",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2610.39100v2",
+      "title": "Generating Critic-Guided Synthetic Experience in Latent World Models",
+      "abstract": "Learning from offline datasets is limited in scalability, as collecting new experience is often costly or unsafe in the real world. World models offer an alternative way to generate new experience through a learned dynamics model, yet learning policies in latent space is limited due to compounding errors in imagined rollouts. To this end, we propose using the world model as a local transition generator, leveraging critic guidance to choose actions inside that model to generate synthetic experiences. We study action refinement methodologies, introducing Critic-Guided Synthetic Experience (CGSE) generation in world models. Specifically, CGSE augments an existing offline dataset by sampling candidate actions using an offline policy and refining each to maximize a first-order approximation of the $Q$-function within a trust region. We then use a frozen latent world model to imagine the future state given each updated action, and use the critic to choose the best one, appending this synthetic transition to the replay buffer. Our method requires no additional real-environment interaction or test-time planner, as it generates synthetic experience offline using the world model. On three OGBench manipulation tasks, CGSE improves an offline policy by a relative improvement of $7.1\\%$ on the average success rate.",
+      "year": 2026,
+      "pub_date": "2026-10-29T00:41:38Z",
+      "authors": "Jorge de Freitas, Christos Ziakas, Alessandra Russo",
+      "paper_url": "https://arxiv.org/abs/2610.39100v2",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2609.03681v2",
+      "title": "WISE: World-model-guided Imagination Scheduling for Efficient Post-training of Vision-Language-Action Models",
+      "abstract": "Post-training VLA policies typically rely on supervised fine-tuning with costly expert demonstrations or reinforcement learning with expensive and potentially unstable real-world exploration. World models offer a promising alternative by evaluating candidate behaviors through imagined futures, yet effective post-training requires more than accurate prediction: imagination must be scheduled where it is useful, bounded within reliable horizons, and translated into trustworthy policy supervision. In robotic manipulation, the value of imagination varies substantially across execution stages, while extended rollouts can accumulate prediction errors and introduce unreliable learning signals. We introduce WISE (World-model-guided Imagination Scheduling for Efficient Post-training of Vision-Language-Action Models), a unified framework that coordinates when and how world-model imagination is used during policy refinement. WISE selectively invokes imagination at interaction-relevant states, performs bounded multi-view rollouts, evaluates candidate futures using progress and completion signals, and uses their relative outcomes to refine actions generated from real interaction contexts. Extensive experiments with both $\u03c0_0$ and $\u03c0_{0.5}$ demonstrate consistent improvements across diverse manipulation tasks while reducing GPU computation time by approximately 80% compared with full imagination. Real-world evaluations further show substantial gains in robustness and generalization under diverse real-world distribution shifts.",
+      "year": 2026,
+      "pub_date": "2026-09-03T11:17:57Z",
+      "authors": "Chenhao Zhang, Hanyu Zhao, Zihan Que +3",
+      "paper_url": "https://arxiv.org/abs/2609.03681v2",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2608.07408v2",
+      "title": "Addressable Memory for Video World Models",
+      "abstract": "We study visual persistence in interactive video world models. These models rely on a Key-Value (KV) cache as a growing visual memory to carry forward previously generated frames. However, we find that models can no longer reliably address stored content once rollouts extend beyond the training horizon, because temporal Rotary Positional Embedding (RoPE) offsets can exceed the training range and the model struggles to retrieve the relevant visual information through attention. Moreover, naively compressing the cache in the RoPE-rotated space degrades memory by averaging keys with incompatible positional phases. To address this, we propose WorldTrace, a training-free memory framework for long-horizon visual persistence. WorldTrace keeps compressed memory addressable by assigning each summary slot a distinct, in-distribution virtual position. Within this cache, WorldTrace uses the model's own attention to decide which observations to retain verbatim and which redundant ones to merge into compressed summaries, all within one bounded addressable memory bank. We evaluate this ability with LoopBench, a benchmark that tests whether a compressed cache can reconstruct a previously visited scene after a long detour. On LoopBench, WorldTrace improves average DINOv2 recall similarity by 32.6% over a sliding window at the same cache budget, extending visually persistent generation without retraining.",
+      "year": 2026,
+      "pub_date": "2026-08-07T16:55:57Z",
+      "authors": "Xindi Wu, Sven Elflein, James Lucas +5",
+      "paper_url": "https://arxiv.org/abs/2608.07408v2",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2606.31399v3",
+      "title": "World-Model Collapse as a Phase Transition",
+      "abstract": "Water looks unchanged as it warms, then at a critical point it boils. We ask whether long-horizon language agents show an analogous transition in their ability to maintain an accurate representation of the evolving world state. In some parameter settings, a small change in a task parameter, or adding a single step to the task, leaves behavior nearly unchanged; near a critical boundary, the same small change causes a sudden collapse. We study this effect in a deterministic task family where the true world state is known at every step. A large grid search over state size, state dependency, horizon, number of available actions, observation mode, and frequency of state changes reveals a phase diagram: a low-stress region where the agent consistently succeeds, a narrow region where success drops sharply, and a high-stress region where the agent consistently fails. Step-by-step traces show the mechanism: the agent loses track of the true world before its actions become invalid, so the agent is not merely choosing a bad action; it is acting from a corrupted world. Stronger models reach the critical boundary later but do not eliminate the sharp transition. These results make world-model collapse a measurable bottleneck for long-horizon agents. Code will be made publicly available soon.",
+      "year": 2026,
+      "pub_date": "2026-06-30T09:28:01Z",
+      "authors": "Xinyuan Song, Zekun Cai",
+      "paper_url": "https://arxiv.org/abs/2606.31399v3",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2606.03159v4",
+      "title": "NVIDIA OmniDreams: Real-Time Generative World Model for Closed-Loop Autonomous Vehicle Simulation",
+      "abstract": "As autonomous vehicle capabilities advance, the safe evaluation of driving policies in long-tail scenarios remains a critical bottleneck. In closed-loop simulation, the driving policy model actively interacts with the environment, where its actions dynamically update the simulator state and directly influence the next set of generated sensor observations. While recent reconstruction-based neural simulators offer photorealism, they are fundamentally constrained by their initial captured data and struggle to generalize to highly dynamic or novel scenes. To overcome these limitations, we introduce OmniDreams, a foundation generative world model mid- and post-trained from the Cosmos diffusion model to autoregressively generate action-conditioned videos in real time. By leveraging the rich visual priors of Cosmos and mid- and post-training on 21k hours of driving scenarios, OmniDreams synthesizes complex, unobserved phenomena that are hard for traditional simulators to capture, such as extreme weather and unpredictable dynamic agent behaviors. Crucially, it autoregressively conditions its photorealistic sensor generation on past frames, the current simulator state, and immediate driving actions. Deployed in a closed-loop system with the Alpamayo 1 policy model and AlpaSim orchestrator, OmniDreams acts as a highly responsive, reactive environment, providing a scalable and comprehensive solution for training and evaluating next-generation autonomous driving policies. We additionally show preliminary results indicating that a world-action model (WAM) post-trained from OmniDreams achieves strong performance on the Physical AI Autonomous Vehicles NuRec dataset, surpassing the VLA-based Alpamayo 1.5 research policy model while using only 1/5 the total parameters. These results highlight the potential for a real-time world model like OmniDreams to also serve as a backbone for policy architectures.",
+      "year": 2026,
+      "pub_date": "2026-06-02T05:11:05Z",
+      "authors": "Aarti Basant, Amlan Kar, Despoina Paschalidou +30",
+      "paper_url": "https://arxiv.org/abs/2606.03159v4",
+      "venue": "",
+      "citations": 0,
+      "code_url": "https://github.com/nv-tlabs/omni-dreams"
+    },
+    {
+      "paperId": "2602.02799v3",
+      "title": "Joint Learning of Hierarchical Neural Options and Abstract World Model",
+      "abstract": "Building agents that can perform new skills by composing existing skills is a long-standing goal of AI agent research. Towards this end, we investigate how to efficiently acquire a sequence of skills, formalized as hierarchical neural options. However, existing model-free hierarchical reinforcement algorithms need a lot of data. We propose a novel method, which we call AgentOWL (Option and World model Learning Agent), that jointly learns -- in a sample efficient way -- an abstract world model (abstracting across both states and time) and a set of hierarchical neural options. We show, on a subset of Object-Centric Atari games, that our method can learn more skills using less data than baseline methods and possesses learning and generalization capabilities that the baselines do not have.",
+      "year": 2026,
+      "pub_date": "2026-02-02T20:58:11Z",
+      "authors": "Wasu Top Piriyakulkij, Wolfgang Lehrach, Kevin Ellis +1",
+      "paper_url": "https://arxiv.org/abs/2602.02799v3",
+      "venue": "NeurIPS 2026",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2511.05963v5",
+      "title": "Next-Latent Prediction Transformers Learn Compact World Models",
+      "abstract": "Transformers replace recurrence with a memory that grows with sequence length and self-attention that enables ad-hoc lookups over past tokens. Consequently, they lack an inherent incentive to compress history into compact latent states with consistent transition rules. This often leads to learning solutions that generalize poorly. We introduce Next-Latent Prediction (NextLat), which extends standard next-token training with self-supervised predictions in the latent space. Specifically, NextLat trains a transformer to learn latent representations that are predictive of its next latent state given the next token. Theoretically, we show that these latents converge towards belief states, compressed information about the history necessary to predict the future. This simple auxiliary objective injects a recurrent inductive bias into transformers while leaving their architecture, parallel training efficiency, and inference unchanged. NextLat effectively encourages transformers to form compact internal world models with coherent belief states and transition dynamics -- crucial properties not guaranteed by standard next-token prediction alone. Empirically, across benchmarks in world modeling, reasoning, planning, and language modeling, NextLat demonstrates significant gains over standard next-token prediction and other baselines in downstream accuracy, representation compression, and lookahead planning. Furthermore, NextLat enables variable-length self-speculative decoding, accelerating inference by up to 3.3x in language modeling. NextLat offers a simple yet effective paradigm for learning compact, predictive representations in transformers that generalize better. Our code is available at https://github.com/JaydenTeoh/NextLat.",
+      "year": 2025,
+      "pub_date": "2025-11-08T10:41:26Z",
+      "authors": "Jayden Teoh, Manan Tomar, Kwangjun Ahn +7",
+      "paper_url": "https://arxiv.org/abs/2511.05963v5",
+      "venue": "NeurIPS 2026",
+      "citations": 0,
+      "code_url": "https://github.com/JaydenTeoh/NextLat"
     }
   ],
-  "last_updated": "2026-11-12T17:40:05.126813Z",
-  "total": 3065
+  "last_updated": "2026-11-13T17:13:23.583266Z",
+  "total": 3086
 }
