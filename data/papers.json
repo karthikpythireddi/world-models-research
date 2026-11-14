@@ -21,7 +21,7 @@
       "authors": "Gawon Seo, Dongwon Kim, Suha Kwak",
       "paper_url": "https://arxiv.org/abs/2607.02403v1",
       "venue": "",
-      "citations": 8,
+      "citations": 9,
       "code_url": ""
     },
     {
@@ -237,7 +237,7 @@
       "authors": "Ying Wang, Oumayma Bounou, Yann LeCun +1",
       "paper_url": "https://arxiv.org/abs/2606.32026v1",
       "venue": "",
-      "citations": 29,
+      "citations": 30,
       "code_url": ""
     },
     {
@@ -429,7 +429,7 @@
       "authors": "Francois Porcher, Nicolas Carion, Karteek Alahari +1",
       "paper_url": "https://arxiv.org/abs/2606.29059v1",
       "venue": "",
-      "citations": 7,
+      "citations": 8,
       "code_url": ""
     },
     {
@@ -717,7 +717,7 @@
       "authors": "Siyin Wang, Junhao Shi, Senyu Fei +4",
       "paper_url": "https://arxiv.org/abs/2606.26025v2",
       "venue": "",
-      "citations": 6,
+      "citations": 7,
       "code_url": ""
     },
     {
@@ -801,7 +801,7 @@
       "authors": "Bingxuan Li, Yining Hong, Cheng Qian +6",
       "paper_url": "https://arxiv.org/abs/2606.24256v1",
       "venue": "",
-      "citations": 1,
+      "citations": 2,
       "code_url": ""
     },
     {
@@ -1161,7 +1161,7 @@
       "authors": "Petr Ivashkov, Randall Balestriero, Bernhard Sch\u00f6lkopf",
       "paper_url": "https://arxiv.org/abs/2606.20104v1",
       "venue": "",
-      "citations": 22,
+      "citations": 23,
       "code_url": ""
     },
     {
@@ -2073,7 +2073,7 @@
       "authors": "Yuhai Wang, Jiawei Xia, Rongxuan Zhou +4",
       "paper_url": "https://arxiv.org/abs/2606.07974v1",
       "venue": "",
-      "citations": 10,
+      "citations": 11,
       "code_url": ""
     },
     {
@@ -2121,7 +2121,7 @@
       "authors": "Jewon Yeom, Hanseul Kim, Jeongjae Park +3",
       "paper_url": "https://arxiv.org/abs/2606.07687v1",
       "venue": "",
-      "citations": 13,
+      "citations": 14,
       "code_url": ""
     },
     {
@@ -2829,7 +2829,7 @@
       "authors": "David Klindt, Yann LeCun, Randall Balestriero",
       "paper_url": "https://arxiv.org/abs/2605.26379v1",
       "venue": "",
-      "citations": 40,
+      "citations": 41,
       "code_url": ""
     },
     {
@@ -3081,7 +3081,7 @@
       "authors": "Liangyu Li, Shengzhi Wang, Qingwen Liu",
       "paper_url": "https://arxiv.org/abs/2605.22164v1",
       "venue": "",
-      "citations": 12,
+      "citations": 13,
       "code_url": ""
     },
     {
@@ -4065,7 +4065,7 @@
       "authors": "Jiaxuan Gao, Yongjian Guo, Zhong Guan +5",
       "paper_url": "https://arxiv.org/abs/2605.07288v1",
       "venue": "",
-      "citations": 4,
+      "citations": 5,
       "code_url": ""
     },
     {
@@ -4353,7 +4353,7 @@
       "authors": "Bohan Hou, Gen Li, Jindou Jia +15",
       "paper_url": "https://arxiv.org/abs/2605.00080v1",
       "venue": "The International Journal of Robotics Research",
-      "citations": 67,
+      "citations": 68,
       "code_url": ""
     },
     {
@@ -4485,7 +4485,7 @@
       "authors": "Xiaojie Xu, Zhengyuan Lin, Kang He +5",
       "paper_url": "https://arxiv.org/abs/2604.21686v1",
       "venue": "",
-      "citations": 37,
+      "citations": 38,
       "code_url": ""
     },
     {
@@ -4701,7 +4701,7 @@
       "authors": "Team HY-World, Chenjie Cao, Xuhui Zuo +42",
       "paper_url": "https://arxiv.org/abs/2604.14268v1",
       "venue": "",
-      "citations": 50,
+      "citations": 51,
       "code_url": ""
     },
     {
@@ -4833,7 +4833,7 @@
       "authors": "Zile Wang, Zexiang Liu, Jiaxing Li +20",
       "paper_url": "https://arxiv.org/abs/2604.08995v2",
       "venue": "",
-      "citations": 126,
+      "citations": 127,
       "code_url": ""
     },
     {
@@ -4953,7 +4953,7 @@
       "authors": "Hang Zou, Yuzhi Yang, Lina Bariah +15",
       "paper_url": "https://arxiv.org/abs/2604.06882v1",
       "venue": "",
-      "citations": 6,
+      "citations": 7,
       "code_url": ""
     },
     {
@@ -5049,7 +5049,7 @@
       "authors": "Yan Zheng, Florian Bordes",
       "paper_url": "https://arxiv.org/abs/2604.02580v1",
       "venue": "",
-      "citations": 9,
+      "citations": 10,
       "code_url": ""
     },
     {
@@ -5265,7 +5265,7 @@
       "authors": "Ziqi Chen, Yi Ren, Yixuan Huang +6",
       "paper_url": "https://arxiv.org/abs/2603.25216v1",
       "venue": "",
-      "citations": 7,
+      "citations": 8,
       "code_url": ""
     },
     {
@@ -5373,7 +5373,7 @@
       "authors": "Meiqi Wu, Zhixin Cai, Fufangchen Zhao +13",
       "paper_url": "https://arxiv.org/abs/2603.22212v1",
       "venue": "",
-      "citations": 20,
+      "citations": 21,
       "code_url": ""
     },
     {
@@ -6117,7 +6117,7 @@
       "authors": "Fabian Domberg, Georg Schildbach",
       "paper_url": "https://arxiv.org/abs/2603.04029v1",
       "venue": "",
-      "citations": 3,
+      "citations": 4,
       "code_url": ""
     },
     {
@@ -6501,7 +6501,7 @@
       "authors": "Shiyi Cao, Ziming Mao, Joseph E. Gonzalez +1",
       "paper_url": "https://arxiv.org/abs/2602.19128v2",
       "venue": "",
-      "citations": 36,
+      "citations": 37,
       "code_url": ""
     },
     {
@@ -7029,7 +7029,7 @@
       "authors": "Yu Shang, Zhuohang Li, Yiding Ma +18",
       "paper_url": "https://arxiv.org/abs/2602.08971v2",
       "venue": "AI Open",
-      "citations": 88,
+      "citations": 89,
       "code_url": ""
     },
     {
@@ -7149,7 +7149,7 @@
       "authors": "Ziming Liu, Sophia Sanborn, Surya Ganguli +1",
       "paper_url": "https://arxiv.org/abs/2602.06923v1",
       "venue": "",
-      "citations": 5,
+      "citations": 6,
       "code_url": ""
     },
     {
@@ -7641,7 +7641,7 @@
       "authors": "Lin Li, Qihang Zhang, Yiming Luo +9",
       "paper_url": "https://arxiv.org/abs/2601.21998v2",
       "venue": "RSS",
-      "citations": 431,
+      "citations": 434,
       "code_url": ""
     },
     {
@@ -7653,7 +7653,7 @@
       "authors": "Rishi Upadhyay, Howard Zhang, Jim Solomon +7",
       "paper_url": "https://arxiv.org/abs/2601.21282v1",
       "venue": "",
-      "citations": 29,
+      "citations": 30,
       "code_url": ""
     },
     {
@@ -7665,7 +7665,7 @@
       "authors": " Robbyant Team, Zelin Gao, Qiuyu Wang +21",
       "paper_url": "https://arxiv.org/abs/2601.20540v1",
       "venue": "",
-      "citations": 216,
+      "citations": 218,
       "code_url": ""
     },
     {
@@ -8085,7 +8085,7 @@
       "authors": "Yang Zhou, Hao Shao, Letian Wang +3",
       "paper_url": "https://arxiv.org/abs/2601.01528v2",
       "venue": "ICLR 2026",
-      "citations": 19,
+      "citations": 20,
       "code_url": ""
     },
     {
@@ -8133,7 +8133,7 @@
       "authors": "Nicolas Bougie, Gian Maria Marconi, Tony Yip +1",
       "paper_url": "https://arxiv.org/abs/2601.00930v1",
       "venue": "conference - Association for Computational Linguistics. Meeting",
-      "citations": 13,
+      "citations": 14,
       "code_url": ""
     },
     {
@@ -8421,7 +8421,7 @@
       "authors": "Wenqiang Sun, Haiyu Zhang, Haoyuan Wang +7",
       "paper_url": "https://arxiv.org/abs/2512.14614v2",
       "venue": "",
-      "citations": 170,
+      "citations": 171,
       "code_url": ""
     },
     {
@@ -8481,7 +8481,7 @@
       "authors": "Hongzhe Bi, Hengkai Tan, Shenghao Xie +13",
       "paper_url": "https://arxiv.org/abs/2512.13030v2",
       "venue": "",
-      "citations": 248,
+      "citations": 249,
       "code_url": ""
     },
     {
@@ -8529,7 +8529,7 @@
       "authors": "Gabrijel Boduljak, Yushi Lan, Christian Rupprecht +1",
       "paper_url": "https://arxiv.org/abs/2512.11225v1",
       "venue": "",
-      "citations": 4,
+      "citations": 5,
       "code_url": ""
     },
     {
@@ -8553,7 +8553,7 @@
       "authors": "Ao Liang, Lingdong Kong, Tianyi Yan +19",
       "paper_url": "https://arxiv.org/abs/2512.10958v2",
       "venue": "CVPR 2026",
-      "citations": 29,
+      "citations": 30,
       "code_url": ""
     },
     {
@@ -9045,7 +9045,7 @@
       "authors": "Junshu Tang, Jiacheng Liu, Jiaqi Li +8",
       "paper_url": "https://arxiv.org/abs/2511.23429v2",
       "venue": "",
-      "citations": 72,
+      "citations": 73,
       "code_url": ""
     },
     {
@@ -9609,7 +9609,7 @@
       "authors": "Peng-Fei Zhang, Ying Cheng, Xiaofan Sun +4",
       "paper_url": "https://arxiv.org/abs/2511.02097v2",
       "venue": "",
-      "citations": 33,
+      "citations": 34,
       "code_url": ""
     },
     {
@@ -9897,7 +9897,7 @@
       "authors": "Jiahan Zhang, Muqing Jiang, Nanru Dai +14",
       "paper_url": "https://arxiv.org/abs/2510.18135v1",
       "venue": "",
-      "citations": 35,
+      "citations": 36,
       "code_url": ""
     },
     {
@@ -9909,7 +9909,7 @@
       "authors": "Chenxu Dang, Haiyan Liu, Jason Bao +6",
       "paper_url": "https://arxiv.org/abs/2510.17482v3",
       "venue": "AAAI2026",
-      "citations": 13,
+      "citations": 14,
       "code_url": ""
     },
     {
@@ -10365,7 +10365,7 @@
       "authors": "Danijar Hafner, Wilson Yan, Timothy Lillicrap",
       "paper_url": "https://arxiv.org/abs/2509.24527v1",
       "venue": "",
-      "citations": 165,
+      "citations": 168,
       "code_url": ""
     },
     {
@@ -10857,7 +10857,7 @@
       "authors": "Xianglong He, Chunli Peng, Zexiang Liu +16",
       "paper_url": "https://arxiv.org/abs/2508.13009v4",
       "venue": "",
-      "citations": 214,
+      "citations": 215,
       "code_url": ""
     },
     {
@@ -10893,7 +10893,7 @@
       "authors": "Hongbin Lin, Bin Li, Kwok Wai Samuel Au",
       "paper_url": "https://arxiv.org/abs/2508.11200v1",
       "venue": "",
-      "citations": 3,
+      "citations": 4,
       "code_url": ""
     },
     {
@@ -11085,7 +11085,7 @@
       "authors": "Federico Baldassarre, Marc Szafraniec, Basile Terver +6",
       "paper_url": "https://arxiv.org/abs/2507.19468v1",
       "venue": "",
-      "citations": 65,
+      "citations": 67,
       "code_url": ""
     },
     {
@@ -11133,7 +11133,7 @@
       "authors": "Arian Mousakhan, Sudhanshu Mittal, Silvio Galesso +2",
       "paper_url": "https://arxiv.org/abs/2507.13162v2",
       "venue": "",
-      "citations": 14,
+      "citations": 15,
       "code_url": ""
     },
     {
@@ -11169,7 +11169,7 @@
       "authors": "Yuncong Yang, Jiageng Liu, Zheyuan Zhang +5",
       "paper_url": "https://arxiv.org/abs/2507.12508v2",
       "venue": "NeurIPS",
-      "citations": 38,
+      "citations": 39,
       "code_url": ""
     },
     {
@@ -11961,7 +11961,7 @@
       "authors": "Julian Quevedo, Ansh Kumar Sharma, Yixiang Sun +3",
       "paper_url": "https://arxiv.org/abs/2506.00613v3",
       "venue": "",
-      "citations": 88,
+      "citations": 89,
       "code_url": ""
     },
     {
@@ -12958,7 +12958,7 @@
       "paper_url": "https://arxiv.org/abs/2503.08872v1",
       "venue": "ACMSE 2025",
       "citations": 0,
-      "code_url": ""
+      "code_url": null
     },
     {
       "paperId": "2503.08751v3",
@@ -12970,7 +12970,7 @@
       "paper_url": "https://arxiv.org/abs/2503.08751v3",
       "venue": "ICCV 2025",
       "citations": 3,
-      "code_url": ""
+      "code_url": null
     },
     {
       "paperId": "2503.08122v1",
@@ -12982,7 +12982,7 @@
       "paper_url": "https://arxiv.org/abs/2503.08122v1",
       "venue": "",
       "citations": 4,
-      "code_url": ""
+      "code_url": null
     },
     {
       "paperId": "2503.07338v4",
@@ -12994,7 +12994,7 @@
       "paper_url": "https://arxiv.org/abs/2503.07338v4",
       "venue": "",
       "citations": 13,
-      "code_url": ""
+      "code_url": null
     },
     {
       "paperId": "2503.06170v2",
@@ -13006,7 +13006,7 @@
       "paper_url": "https://arxiv.org/abs/2503.06170v2",
       "venue": "",
       "citations": 14,
-      "code_url": ""
+      "code_url": null
     },
     {
       "paperId": "2503.05573v1",
@@ -13018,7 +13018,7 @@
       "paper_url": "https://arxiv.org/abs/2503.05573v1",
       "venue": "",
       "citations": 4,
-      "code_url": ""
+      "code_url": null
     },
     {
       "paperId": "2503.04421v1",
@@ -13030,7 +13030,7 @@
       "paper_url": "https://arxiv.org/abs/2503.04421v1",
       "venue": "ICLR",
       "citations": 12,
-      "code_url": ""
+      "code_url": null
     },
     {
       "paperId": "2503.04416v2",
@@ -13042,7 +13042,7 @@
       "paper_url": "https://arxiv.org/abs/2503.04416v2",
       "venue": "",
       "citations": 14,
-      "code_url": ""
+      "code_url": null
     },
     {
       "paperId": "2503.02552v1",
@@ -13054,7 +13054,7 @@
       "paper_url": "https://arxiv.org/abs/2503.02552v1",
       "venue": "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
       "citations": 3,
-      "code_url": ""
+      "code_url": null
     },
     {
       "paperId": "2503.02247v5",
@@ -13066,7 +13066,7 @@
       "paper_url": "https://arxiv.org/abs/2503.02247v5",
       "venue": "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
       "citations": 53,
-      "code_url": ""
+      "code_url": null
     },
     {
       "paperId": "2503.02143v2",
@@ -13078,7 +13078,7 @@
       "paper_url": "https://arxiv.org/abs/2503.02143v2",
       "venue": "",
       "citations": 13,
-      "code_url": ""
+      "code_url": null
     },
     {
       "paperId": "2503.01837v2",
@@ -13090,7 +13090,7 @@
       "paper_url": "https://arxiv.org/abs/2503.01837v2",
       "venue": "",
       "citations": 7,
-      "code_url": ""
+      "code_url": null
     },
     {
       "paperId": "2503.01584v2",
@@ -13102,7 +13102,7 @@
       "paper_url": "https://arxiv.org/abs/2503.01584v2",
       "venue": "ICML 2025",
       "citations": 7,
-      "code_url": ""
+      "code_url": null
     },
     {
       "paperId": "2503.01411v3",
@@ -13114,7 +13114,7 @@
       "paper_url": "https://arxiv.org/abs/2503.01411v3",
       "venue": "SDS 2025",
       "citations": 4,
-      "code_url": ""
+      "code_url": null
     },
     {
       "paperId": "2503.02904v2",
@@ -13138,7 +13138,7 @@
       "paper_url": "https://arxiv.org/abs/2503.00713v3",
       "venue": "National Academy of Sciences",
       "citations": 5,
-      "code_url": ""
+      "code_url": null
     },
     {
       "paperId": "2503.00653v1",
@@ -13150,7 +13150,7 @@
       "paper_url": "https://arxiv.org/abs/2503.00653v1",
       "venue": "ICLR 2025",
       "citations": 3,
-      "code_url": ""
+      "code_url": null
     },
     {
       "paperId": "2502.21142v2",
@@ -13162,7 +13162,7 @@
       "paper_url": "https://arxiv.org/abs/2502.21142v2",
       "venue": "",
       "citations": 4,
-      "code_url": ""
+      "code_url": null
     },
     {
       "paperId": "2502.20694v1",
@@ -13174,7 +13174,7 @@
       "paper_url": "https://arxiv.org/abs/2502.20694v1",
       "venue": "NeurIPS",
       "citations": 113,
-      "code_url": ""
+      "code_url": null
     },
     {
       "paperId": "2502.20168v1",
@@ -13186,7 +13186,7 @@
       "paper_url": "https://arxiv.org/abs/2502.20168v1",
       "venue": "",
       "citations": 12,
-      "code_url": ""
+      "code_url": null
     },
     {
       "paperId": "2502.19544v3",
@@ -13198,7 +13198,7 @@
       "paper_url": "https://arxiv.org/abs/2502.19544v3",
       "venue": "",
       "citations": 2,
-      "code_url": ""
+      "code_url": null
     },
     {
       "paperId": "2502.16230v1",
@@ -13210,7 +13210,7 @@
       "paper_url": "https://arxiv.org/abs/2502.16230v1",
       "venue": "",
       "citations": 18,
-      "code_url": ""
+      "code_url": null
     },
     {
       "paperId": "2502.13200v1",
@@ -13222,7 +13222,7 @@
       "paper_url": "https://arxiv.org/abs/2502.13200v1",
       "venue": "",
       "citations": 1,
-      "code_url": ""
+      "code_url": null
     },
     {
       "paperId": "2502.13092v2",
@@ -13234,7 +13234,7 @@
       "paper_url": "https://arxiv.org/abs/2502.13092v2",
       "venue": "Findings of the Association for Computational Linguistics: ACL (Findings of ACL)",
       "citations": 26,
-      "code_url": ""
+      "code_url": null
     },
     {
       "paperId": "2502.11663v1",
@@ -13246,7 +13246,7 @@
       "paper_url": "https://arxiv.org/abs/2502.11663v1",
       "venue": "IEEE Computer Society Conference on CVPR/Proceedings - IEEE Computer Society Conference on CVPR/Proceedings",
       "citations": 24,
-      "code_url": ""
+      "code_url": null
     },
     {
       "paperId": "2502.11537v4",
@@ -13282,7 +13282,7 @@
       "paper_url": "https://arxiv.org/abs/2502.10012v2",
       "venue": "AAAI 2026",
       "citations": 5,
-      "code_url": ""
+      "code_url": null
     },
     {
       "paperId": "2502.09297v5",
@@ -13294,7 +13294,7 @@
       "paper_url": "https://arxiv.org/abs/2502.09297v5",
       "venue": "ICML 2025",
       "citations": 2,
-      "code_url": ""
+      "code_url": null
     },
     {
       "paperId": "2502.07591v2",
@@ -13306,7 +13306,7 @@
       "paper_url": "https://arxiv.org/abs/2502.07591v2",
       "venue": "NeurIPS",
       "citations": 7,
-      "code_url": ""
+      "code_url": null
     },
     {
       "paperId": "2502.07309v1",
@@ -13318,7 +13318,7 @@
       "paper_url": "https://arxiv.org/abs/2502.07309v1",
       "venue": "ICLR 2025",
       "citations": 18,
-      "code_url": ""
+      "code_url": null
     },
     {
       "paperId": "2502.05907v3",
@@ -13330,7 +13330,7 @@
       "paper_url": "https://arxiv.org/abs/2502.05907v3",
       "venue": "",
       "citations": 25,
-      "code_url": ""
+      "code_url": null
     },
     {
       "paperId": "2502.04728v2",
@@ -13342,7 +13342,7 @@
       "paper_url": "https://arxiv.org/abs/2502.04728v2",
       "venue": "TMLR2025",
       "citations": 11,
-      "code_url": ""
+      "code_url": null
     },
     {
       "paperId": "2502.01591v3",
@@ -37033,6 +37033,6 @@
       "code_url": "https://github.com/JaydenTeoh/NextLat"
     }
   ],
-  "last_updated": "2026-11-13T17:13:23.583266Z",
+  "last_updated": "2026-11-14T15:51:14.042086Z",
   "total": 3086
 }
