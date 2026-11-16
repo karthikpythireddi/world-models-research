@@ -237,7 +237,7 @@
       "authors": "Ying Wang, Oumayma Bounou, Yann LeCun +1",
       "paper_url": "https://arxiv.org/abs/2606.32026v1",
       "venue": "",
-      "citations": 30,
+      "citations": 31,
       "code_url": ""
     },
     {
@@ -729,7 +729,7 @@
       "authors": "Kaiwen Zheng, Guande He, Min Zhao +7",
       "paper_url": "https://arxiv.org/abs/2606.25473v1",
       "venue": "",
-      "citations": 37,
+      "citations": 38,
       "code_url": ""
     },
     {
@@ -1197,7 +1197,7 @@
       "authors": "Kaixin Lan, Ze Wang, Hongyi Li +6",
       "paper_url": "https://arxiv.org/abs/2606.19928v1",
       "venue": "",
-      "citations": 0,
+      "citations": 1,
       "code_url": ""
     },
     {
@@ -3309,7 +3309,7 @@
       "authors": "Yiwei Li, Zihao Wu, Huaqin Zhao +5",
       "paper_url": "https://arxiv.org/abs/2605.23992v1",
       "venue": "",
-      "citations": 2,
+      "citations": 3,
       "code_url": ""
     },
     {
@@ -4353,7 +4353,7 @@
       "authors": "Bohan Hou, Gen Li, Jindou Jia +15",
       "paper_url": "https://arxiv.org/abs/2605.00080v1",
       "venue": "The International Journal of Robotics Research",
-      "citations": 68,
+      "citations": 69,
       "code_url": ""
     },
     {
@@ -5037,7 +5037,7 @@
       "authors": "Zihao Sheng, Xin Ye, Jingru Luo +2",
       "paper_url": "https://arxiv.org/abs/2604.02714v2",
       "venue": "ECCV 2026",
-      "citations": 8,
+      "citations": 9,
       "code_url": ""
     },
     {
@@ -5577,7 +5577,7 @@
       "authors": "Ruixiang Wang, Qingming Liu, Yueci Deng +3",
       "paper_url": "https://arxiv.org/abs/2603.17808v2",
       "venue": "",
-      "citations": 22,
+      "citations": 23,
       "code_url": ""
     },
     {
@@ -5649,7 +5649,7 @@
       "authors": "Jacob Levy, Tyler Westenbroek, Kevin Huang +6",
       "paper_url": "https://arxiv.org/abs/2603.15759v2",
       "venue": "RSS",
-      "citations": 12,
+      "citations": 13,
       "code_url": ""
     },
     {
@@ -6453,7 +6453,7 @@
       "authors": "Ge Yuan, Qiyuan Qiao, Jing Zhang +1",
       "paper_url": "https://arxiv.org/abs/2602.20057v1",
       "venue": "",
-      "citations": 10,
+      "citations": 11,
       "code_url": ""
     },
     {
@@ -7101,7 +7101,7 @@
       "authors": "Chendong Xiang, Jiajun Liu, Jintao Zhang +7",
       "paper_url": "https://arxiv.org/abs/2602.07854v3",
       "venue": "",
-      "citations": 14,
+      "citations": 15,
       "code_url": ""
     },
     {
@@ -7329,7 +7329,7 @@
       "authors": "Zhuoran Yang, Yanyong Zhang",
       "paper_url": "https://arxiv.org/abs/2602.03213v3",
       "venue": "",
-      "citations": 2,
+      "citations": 3,
       "code_url": ""
     },
     {
@@ -7641,7 +7641,7 @@
       "authors": "Lin Li, Qihang Zhang, Yiming Luo +9",
       "paper_url": "https://arxiv.org/abs/2601.21998v2",
       "venue": "RSS",
-      "citations": 441,
+      "citations": 442,
       "code_url": ""
     },
     {
@@ -8085,7 +8085,7 @@
       "authors": "Yang Zhou, Hao Shao, Letian Wang +3",
       "paper_url": "https://arxiv.org/abs/2601.01528v2",
       "venue": "ICLR 2026",
-      "citations": 20,
+      "citations": 21,
       "code_url": ""
     },
     {
@@ -8145,7 +8145,7 @@
       "authors": "Yuxue Yang, Lue Fan, Ziqi Shi +3",
       "paper_url": "https://arxiv.org/abs/2601.00393v2",
       "venue": "CVPR 2026",
-      "citations": 45,
+      "citations": 46,
       "code_url": ""
     },
     {
@@ -10893,7 +10893,7 @@
       "authors": "Hongbin Lin, Bin Li, Kwok Wai Samuel Au",
       "paper_url": "https://arxiv.org/abs/2508.11200v1",
       "venue": "",
-      "citations": 4,
+      "citations": 5,
       "code_url": ""
     },
     {
@@ -11325,7 +11325,7 @@
       "authors": "Yifei Gao, Junhong Ye, Jiaqi Wang +1",
       "paper_url": "https://arxiv.org/abs/2507.04370v1",
       "venue": "",
-      "citations": 22,
+      "citations": 23,
       "code_url": ""
     },
     {
@@ -11361,7 +11361,7 @@
       "authors": "Zizhao Wang, Kaixin Wang, Li Zhao +2",
       "paper_url": "https://arxiv.org/abs/2507.03298v1",
       "venue": "NeurIPS",
-      "citations": 12,
+      "citations": 22,
       "code_url": ""
     },
     {
@@ -13353,8 +13353,8 @@
       "authors": "Antoine Dedieu, Joseph Ortiz, Xinghua Lou +5",
       "paper_url": "https://arxiv.org/abs/2502.01591v3",
       "venue": "ICML 2025",
-      "citations": 0,
-      "code_url": null
+      "citations": 10,
+      "code_url": ""
     },
     {
       "paperId": "2502.01366v2",
@@ -13376,9 +13376,9 @@
       "pub_date": "2025-02-02T01:21:19Z",
       "authors": "Han Qi, Haocheng Yin, Aris Zhu +2",
       "paper_url": "https://arxiv.org/abs/2502.00622v4",
-      "venue": "",
-      "citations": 0,
-      "code_url": null
+      "venue": "IEEE Robotics and Automation Letters",
+      "citations": 45,
+      "code_url": ""
     },
     {
       "paperId": "2502.00466v2",
@@ -37031,8 +37031,68 @@
       "venue": "NeurIPS 2026",
       "citations": 0,
       "code_url": "https://github.com/JaydenTeoh/NextLat"
+    },
+    {
+      "paperId": "2611.18458v1",
+      "title": "When to Trust Simulated Patient Responses:Support-Gated World Models for Vasopressor Decision Support",
+      "abstract": "Clinical world models expose language-model agents to predicted patient responses, but simulations can be unreliable for poorly supported treatments or unfamiliar hospitals. We introduce Support-Gated World-Model decision support, a lightweight extension of a propose--simulate--refine agent. A recurrent dynamics ensemble predicts short-horizon physiological responses to documented norepinephrine dose categories, while a behavior model estimates observational action support. The interface withholds predictions with insufficient support or excessive ensemble disagreement and abstains when no candidate qualifies. Evaluation on eICU-CRD includes 70 hospitals and 30,700 decision transitions, with 14 hospitals held out for testing. At 62.0% factual-transition coverage, joint gating yields a MAP mean absolute error of 7.3 mmHg, compared with 9.2 mmHg for random selection at the same coverage. The gated agent achieves 60.0% agreement with recorded actions at 81.0% decision coverage, compared with 55.0% agreement and 99.5% coverage for an ungated ensemble agent. Component ablations show lower factual risk with joint gating than with either gate alone.These results characterize a reliability--coverage trade-off in selective clinical simulation; they do not identify individualized treatment effects or establish improved patient outcomes.",
+      "year": 2026,
+      "pub_date": "2026-11-13T17:28:25Z",
+      "authors": "Yifan Jin, Tao Liu",
+      "paper_url": "https://arxiv.org/abs/2611.18458v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2611.18393v1",
+      "title": "WeatherDreamer: Learning a World Model from Multimodal Earth Observations",
+      "abstract": "Machine learning weather models now rival operational global forecasts but still start from analyses produced by separate, expensive data assimilation (DA) systems, which for global models are typically updated every six hours. Observation-to-observation models avoid this dependence, but most omit the recursive filtering cycle that lets DA systems carry a background state through sparse, irregular observations. We introduce WeatherDreamer, a world model that learns this cycle end-to-end from 18 global observing systems, without reanalysis. It infers a latent state from observations, carries it forward hour by hour with learned dynamics, corrects it each hour with new observations, and can predict what any of its observing systems would measure at any location. At held-out stations, its ensembles beat NOAA's Global Ensemble Forecast System (GEFS) for temperature, dew point and wind out to 12 h and are better calibrated than GEFS and the ECMWF ensemble. Precipitation, cloud-top height and solar irradiance, never inputs at inference, are inferred with skill matching or exceeding operational products at short leads. Against the first guess of NOAA's Gridpoint Statistical Interpolation (GSI) DA system, WeatherDreamer's short-range departures are within 10% of GSI's at surface stations and within 25% for moisture-sensitive microwave channels, but up to five times larger for temperature-sounding channels. Never given observation errors, its learned update assumes errors close to known instrument and retrieval errors of microwave sounders and scatterometer winds. WeatherDreamer also separates viewing geometry from atmospheric state, recovering 83-96% of observed limb darkening and producing seamless nadir-view imagery. Producing an hourly global analysis in about 1.5 minutes on one GPU, WeatherDreamer shows that assimilation and forecasting can be learned together directly from observations.",
+      "year": 2026,
+      "pub_date": "2026-11-13T16:37:49Z",
+      "authors": "Kate Duffy, Elise Penn, Tristan Ballard +2",
+      "paper_url": "https://arxiv.org/abs/2611.18393v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2611.17775v1",
+      "title": "Beyond Prediction Gain: LASR as a Metric for Action-Grounded Latents in World Models",
+      "abstract": "World models that support planning, control, and interpretable reasoning require latent representations that genuinely encode action. Yet the large-scale video data from which such models are learned overwhelmingly lack action annotations. Latent-action models infer action-like variables from observation sequences, enabling action-aware learning from unlabeled videos or trajectories. A fundamental concern, however, remains: a latent that improves future prediction may simply encode the current state, episode progress, task identity, or other predictive shortcuts. Existing evaluation practices---reconstruction loss, rollout fidelity, action recovery, or downstream performance---cannot isolate this distinction. We introduce the Latent Action Support Ratio (LASR), a dimensionless metric that measures, under offline evaluation on held-out data, whether a learned latent provides predictive support for action-related targets beyond the current state and non-action alternatives. LASR provides two complementary summaries: GeoLASR captures typical support, while WorstLASR identifies the weakest case. We instantiate the LASR benchmark with recorded actions and corresponding physical state changes as targets, episode-held-out splits, one predictor type for all comparisons, and positive and negative controls. Experiments on recorded robot manipulation data and a matched multi-task panel demonstrate that LASR detects known action information, rejects representative non-action shortcuts, and enables graded comparisons among imperfect latent representations. We further use LASR to train and audit a lightweight residual adapter, obtaining descriptively better point estimates whose uncertainty is assessed with paired comparisons. LASR thus provides a principled offline protocol for measuring action-related predictive support in world-model latents.",
+      "year": 2026,
+      "pub_date": "2026-11-13T05:35:37Z",
+      "authors": "Yu Zhou, Changsong Lei, Yixiang Wei +6",
+      "paper_url": "https://arxiv.org/abs/2611.17775v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2611.17529v1",
+      "title": "Learning Latent Goal Costs for Visual World-Model Planning with an Expanding Curriculum",
+      "abstract": "Image-goal planning with a frozen visual world model depends on how predicted observations are scored against the goal. Mean-squared error (MSE) between embeddings from a pretrained visual encoder can provide a useful signal near a goal, yet favor states across an obstacle that are visually similar to the goal and difficult to reach. We fit a small residual adapter on top of frozen I-JEPA embeddings to improve this latent goal cost. Starting near each goal, a planner collects trajectories from progressively wider regions of initial states. The adapter learns from the order of observations along successful trajectories, with additional comparisons inferred from failed rollouts. No task-specific progress labels are used for fitting, so the procedure can be applied to other goal-reaching tasks. DotWall and PointMaze are used in this work. In paired 50-case evaluations with identical starts, goals, world models, and planner settings, success increases from 54% to 98% in DotWall and from 82% to 96% in PointMaze. On 16 unseen DotWall layout-goal cases, the adapter fitted on one fixed layout improves agreement between latent-cost ordering and shortest legal-path ordering from 71.9% to 85.8%. The results indicate that planning experience can improve a frozen visual representation's goal cost without retraining the encoder or the world model.",
+      "year": 2026,
+      "pub_date": "2026-11-12T21:28:35Z",
+      "authors": "Konstantinos Mylonas, Thrasyvoulos Spyropoulos",
+      "paper_url": "https://arxiv.org/abs/2611.17529v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2610.03713v2",
+      "title": "What Should World Models Forget? Stratified Retention for Continual Adaptation",
+      "abstract": "Continual learning treats any drop in performance on previously seen data as forgetting, a convention inherited from settings where the prediction target is stationary. World models violate this assumption: their target is the environment, which changes, so knowledge that was accurate when learned can later become false, and revising it is correct behavior rather than a defect. Non-stationary ground truth is well studied in the concept drift literature and in the temporal factuality of language models, but it has not been formulated for world models, which are distinctive in that they also encode structural knowledge, such as physical laws and object permanence, that must never be degraded. We argue that continual world models need retention stratified by invariance timescale, the time over which knowledge stays true: invariants should be refined but never degraded, while instance-level facts should be revised once the environment changes. We show that standard forgetting metrics, used alone, count correct revision as forgetting and so rank a frozen model highest. We propose differential retention, which reports two quantities separately: invariant retention, checked after every adaptation round, and revision latency, the number of observations a model needs to pick up a change.",
+      "year": 2026,
+      "pub_date": "2026-10-02T17:58:14Z",
+      "authors": "Nishit Anand, Ramani Duraiswami, Dinesh Manocha",
+      "paper_url": "https://arxiv.org/abs/2610.03713v2",
+      "venue": "NeurIPS 2026",
+      "citations": 0,
+      "code_url": null
     }
   ],
-  "last_updated": "2026-11-15T16:22:01.045503Z",
-  "total": 3086
+  "last_updated": "2026-11-16T19:36:27.261600Z",
+  "total": 3091
 }
