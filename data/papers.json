@@ -153,7 +153,7 @@
       "authors": "Xiaoxiong Zhang, Xiong Zeng, Wei Zhang",
       "paper_url": "https://arxiv.org/abs/2607.00836v2",
       "venue": "",
-      "citations": 5,
+      "citations": 6,
       "code_url": ""
     },
     {
@@ -237,7 +237,7 @@
       "authors": "Ying Wang, Oumayma Bounou, Yann LeCun +1",
       "paper_url": "https://arxiv.org/abs/2606.32026v1",
       "venue": "",
-      "citations": 31,
+      "citations": 32,
       "code_url": ""
     },
     {
@@ -957,7 +957,7 @@
       "authors": "Linghan Chen, Kaiyan Ji, Minyu Guo",
       "paper_url": "https://arxiv.org/abs/2606.22966v1",
       "venue": "",
-      "citations": 5,
+      "citations": 6,
       "code_url": ""
     },
     {
@@ -1329,7 +1329,7 @@
       "authors": "Zhexiao Xiong, Yizhi Song, Hao Kang +11",
       "paper_url": "https://arxiv.org/abs/2606.17730v1",
       "venue": "",
-      "citations": 19,
+      "citations": 20,
       "code_url": ""
     },
     {
@@ -3633,7 +3633,7 @@
       "authors": "Minghao Wu, Yuting Yan, Zhenyang Cai +9",
       "paper_url": "https://arxiv.org/abs/2605.14723v1",
       "venue": "",
-      "citations": 8,
+      "citations": 9,
       "code_url": ""
     },
     {
@@ -3776,7 +3776,7 @@
       "pub_date": "2026-05-12T09:43:10Z",
       "authors": "Sebastian Stapf, Pablo Acuaviva Huertos, Aram Davtyan +1",
       "paper_url": "https://arxiv.org/abs/2605.18813v1",
-      "venue": "",
+      "venue": "ICLR",
       "citations": 3,
       "code_url": ""
     },
@@ -3789,7 +3789,7 @@
       "authors": "Conglang Zhang, Yifan Zhan, Qingjie Wang +10",
       "paper_url": "https://arxiv.org/abs/2605.11596v2",
       "venue": "",
-      "citations": 7,
+      "citations": 8,
       "code_url": ""
     },
     {
@@ -4353,7 +4353,7 @@
       "authors": "Bohan Hou, Gen Li, Jindou Jia +15",
       "paper_url": "https://arxiv.org/abs/2605.00080v1",
       "venue": "The International Journal of Robotics Research",
-      "citations": 79,
+      "citations": 80,
       "code_url": ""
     },
     {
@@ -5013,7 +5013,7 @@
       "authors": "Wancong Zhang, Basile Terver, Artem Zholus +8",
       "paper_url": "https://arxiv.org/abs/2604.03208v2",
       "venue": "",
-      "citations": 58,
+      "citations": 60,
       "code_url": ""
     },
     {
@@ -5889,7 +5889,7 @@
       "authors": "Rongxiang Zeng, Yongqi Dong",
       "paper_url": "https://arxiv.org/abs/2603.09086v1",
       "venue": "",
-      "citations": 4,
+      "citations": 5,
       "code_url": ""
     },
     {
@@ -6957,7 +6957,7 @@
       "authors": "Jingwen Sun, Wenyao Zhang, Zekun Qi +6",
       "paper_url": "https://arxiv.org/abs/2602.10098v2",
       "venue": "Lecture notes in computer science",
-      "citations": 165,
+      "citations": 166,
       "code_url": ""
     },
     {
@@ -7305,7 +7305,7 @@
       "authors": "Linjie Mu, Zhongzhen Huang, Yannian Gu +3",
       "paper_url": "https://arxiv.org/abs/2602.03569v1",
       "venue": "",
-      "citations": 31,
+      "citations": 32,
       "code_url": ""
     },
     {
@@ -7328,7 +7328,7 @@
       "pub_date": "2026-02-03T07:28:44Z",
       "authors": "Zhuoran Yang, Yanyong Zhang",
       "paper_url": "https://arxiv.org/abs/2602.03213v3",
-      "venue": "",
+      "venue": "ICLR",
       "citations": 5,
       "code_url": ""
     },
@@ -7532,7 +7532,7 @@
       "pub_date": "2026-02-01T15:00:30Z",
       "authors": "Boxuan Zhang, Weipu Zhang, Zhaohan Feng +4",
       "paper_url": "https://arxiv.org/abs/2602.01270v1",
-      "venue": "",
+      "venue": "ICLR",
       "citations": 1,
       "code_url": ""
     },
@@ -8720,7 +8720,7 @@
       "pub_date": "2025-12-05T18:19:36Z",
       "authors": "Xuanru Zhou, Jiachen Lian, Henry Hong +2",
       "paper_url": "https://arxiv.org/abs/2512.05933v1",
-      "venue": "",
+      "venue": "ICLR",
       "citations": 3,
       "code_url": ""
     },
@@ -9104,7 +9104,7 @@
       "pub_date": "2025-11-26T00:06:02Z",
       "authors": "Qineng Wang, Wenlong Huang, Yu Zhou +8",
       "paper_url": "https://arxiv.org/abs/2511.20937v1",
-      "venue": "",
+      "venue": "ICLR",
       "citations": 16,
       "code_url": ""
     },
@@ -9164,7 +9164,7 @@
       "pub_date": "2025-11-24T18:57:19Z",
       "authors": "Nicklas Hansen, Hao Su, Xiaolong Wang",
       "paper_url": "https://arxiv.org/abs/2511.19584v2",
-      "venue": "",
+      "venue": "ICLR",
       "citations": 14,
       "code_url": ""
     },
@@ -9356,7 +9356,7 @@
       "pub_date": "2025-11-12T17:54:09Z",
       "authors": "Fangqi Zhu, Zhengyang Yan, Zicong Hong +3",
       "paper_url": "https://arxiv.org/abs/2511.09515v1",
-      "venue": "",
+      "venue": "ICLR",
       "citations": 72,
       "code_url": ""
     },
@@ -9369,7 +9369,7 @@
       "authors": " PAN Team, Jiannan Xiang, Yi Gu +31",
       "paper_url": "https://arxiv.org/abs/2511.09057v3",
       "venue": "",
-      "citations": 51,
+      "citations": 52,
       "code_url": ""
     },
     {
@@ -9896,7 +9896,7 @@
       "pub_date": "2025-10-20T22:09:15Z",
       "authors": "Jiahan Zhang, Muqing Jiang, Nanru Dai +14",
       "paper_url": "https://arxiv.org/abs/2510.18135v1",
-      "venue": "",
+      "venue": "ICLR",
       "citations": 47,
       "code_url": ""
     },
@@ -10028,7 +10028,7 @@
       "pub_date": "2025-10-14T17:59:47Z",
       "authors": "Yingyan Li, Shuyao Shang, Weisong Liu +10",
       "paper_url": "https://arxiv.org/abs/2510.12796v2",
-      "venue": "",
+      "venue": "ICLR",
       "citations": 131,
       "code_url": ""
     },
@@ -10076,7 +10076,7 @@
       "pub_date": "2025-10-13T19:52:04Z",
       "authors": "Kai Mei, Jiang Guo, Shuaichen Chang +4",
       "paper_url": "https://arxiv.org/abs/2510.11892v2",
-      "venue": "",
+      "venue": "ICLR",
       "citations": 20,
       "code_url": ""
     },
@@ -10100,7 +10100,7 @@
       "pub_date": "2025-10-11T09:13:10Z",
       "authors": "Yanjiang Guo, Lucy Xiaoyang Shi, Jianyu Chen +1",
       "paper_url": "https://arxiv.org/abs/2510.10125v3",
-      "venue": "",
+      "venue": "ICLR",
       "citations": 184,
       "code_url": ""
     },
@@ -10232,7 +10232,7 @@
       "pub_date": "2025-10-06T07:16:07Z",
       "authors": "Wolfgang Lehrach, Daniel Hennes, Miguel Lazaro-Gredilla +13",
       "paper_url": "https://arxiv.org/abs/2510.04542v1",
-      "venue": "",
+      "venue": "ICLR",
       "citations": 30,
       "code_url": ""
     },
@@ -10365,7 +10365,7 @@
       "authors": "Danijar Hafner, Wilson Yan, Timothy Lillicrap",
       "paper_url": "https://arxiv.org/abs/2509.24527v1",
       "venue": "",
-      "citations": 175,
+      "citations": 176,
       "code_url": ""
     },
     {
@@ -10376,7 +10376,7 @@
       "pub_date": "2025-09-28T23:19:27Z",
       "authors": "Minsoo Kim, Seung-won Hwang",
       "paper_url": "https://arxiv.org/abs/2509.24116v2",
-      "venue": "",
+      "venue": "ICLR",
       "citations": 1,
       "code_url": ""
     },
@@ -10424,7 +10424,7 @@
       "pub_date": "2025-09-26T13:50:32Z",
       "authors": "Fan Wang, Zhiyuan Chen, Yuxuan Zhong +8",
       "paper_url": "https://arxiv.org/abs/2509.22353v2",
-      "venue": "",
+      "venue": "ICLR",
       "citations": 2,
       "code_url": ""
     },
@@ -10460,7 +10460,7 @@
       "pub_date": "2025-09-25T22:24:23Z",
       "authors": "Yixiang Dai, Fan Jiang, Chiyu Wang +2",
       "paper_url": "https://arxiv.org/abs/2509.21657v2",
-      "venue": "",
+      "venue": "ICLR",
       "citations": 37,
       "code_url": ""
     },
@@ -10497,7 +10497,7 @@
       "authors": "Tongtong Feng, Xin Wang, Yu-Gang Jiang +1",
       "paper_url": "https://arxiv.org/abs/2509.20021v1",
       "venue": "IEEE Circuits and Systems Magazine",
-      "citations": 73,
+      "citations": 75,
       "code_url": ""
     },
     {
@@ -10652,7 +10652,7 @@
       "pub_date": "2025-09-15T17:59:19Z",
       "authors": "Yang Zhou, Yifan Wang, Jianjun Zhou +16",
       "paper_url": "https://arxiv.org/abs/2509.12201v2",
-      "venue": "",
+      "venue": "ICLR",
       "citations": 76,
       "code_url": ""
     },
@@ -10845,7 +10845,7 @@
       "authors": "Ziyang Luo, Zhiqi Shen, Wenzhuo Yang +7",
       "paper_url": "https://arxiv.org/abs/2508.14704v1",
       "venue": "",
-      "citations": 144,
+      "citations": 145,
       "code_url": ""
     },
     {
@@ -10905,7 +10905,7 @@
       "authors": "Changyuan Zhao, Guangyuan Liu, Ruichen Zhang +11",
       "paper_url": "https://arxiv.org/abs/2508.09561v1",
       "venue": "IEEE Transactions on Cognitive Communications and Networking",
-      "citations": 40,
+      "citations": 41,
       "code_url": ""
     },
     {
@@ -11157,7 +11157,7 @@
       "authors": "Yanchen Guan, Haicheng Liao, Chengyue Wang +3",
       "paper_url": "https://arxiv.org/abs/2507.12762v1",
       "venue": "Communications Engineering",
-      "citations": 18,
+      "citations": 19,
       "code_url": ""
     },
     {
@@ -11240,7 +11240,7 @@
       "pub_date": "2025-07-10T17:55:08Z",
       "authors": "Haoyu Wu, Diankun Wu, Tianyu He +4",
       "paper_url": "https://arxiv.org/abs/2507.07982v2",
-      "venue": "",
+      "venue": "ICLR",
       "citations": 97,
       "code_url": ""
     },
@@ -11529,7 +11529,7 @@
       "authors": "Jun Cen, Chaohui Yu, Hangjie Yuan +9",
       "paper_url": "https://arxiv.org/abs/2506.21539v1",
       "venue": "",
-      "citations": 497,
+      "citations": 498,
       "code_url": ""
     },
     {
@@ -11853,7 +11853,7 @@
       "authors": "Yijun Yang, Zhao-Yang Wang, Qiuping Liu +8",
       "paper_url": "https://arxiv.org/abs/2506.02327v1",
       "venue": "",
-      "citations": 47,
+      "citations": 48,
       "code_url": ""
     },
     {
@@ -11960,7 +11960,7 @@
       "pub_date": "2025-05-31T15:51:56Z",
       "authors": "Julian Quevedo, Ansh Kumar Sharma, Yixiang Sun +3",
       "paper_url": "https://arxiv.org/abs/2506.00613v3",
-      "venue": "",
+      "venue": "ICLR",
       "citations": 108,
       "code_url": ""
     },
@@ -12200,7 +12200,7 @@
       "pub_date": "2025-05-20T13:41:45Z",
       "authors": "Siqiao Huang, Jialong Wu, Qixing Zhou +2",
       "paper_url": "https://arxiv.org/abs/2505.14357v3",
-      "venue": "",
+      "venue": "ICLR",
       "citations": 86,
       "code_url": ""
     },
@@ -12572,7 +12572,7 @@
       "pub_date": "2025-04-15T14:03:10Z",
       "authors": "Dezhao Luo, Bohan Tang, Kang Li +6",
       "paper_url": "https://arxiv.org/abs/2504.13936v2",
-      "venue": "",
+      "venue": "ICLR",
       "citations": 44,
       "code_url": ""
     },
@@ -12741,7 +12741,7 @@
       "authors": "Lloyd Russell, Anthony Hu, Lorenzo Bertoni +4",
       "paper_url": "https://arxiv.org/abs/2503.20523v1",
       "venue": "",
-      "citations": 245,
+      "citations": 246,
       "code_url": ""
     },
     {
@@ -13040,7 +13040,7 @@
       "pub_date": "2025-03-06T13:18:37Z",
       "authors": "Maxime Burchi, Radu Timofte",
       "paper_url": "https://arxiv.org/abs/2503.04416v2",
-      "venue": "",
+      "venue": "ICLR",
       "citations": 22,
       "code_url": ""
     },
@@ -13196,7 +13196,7 @@
       "pub_date": "2025-02-26T20:34:29Z",
       "authors": "Yi Zhao, Aidan Scannell, Wenshuai Zhao +7",
       "paper_url": "https://arxiv.org/abs/2502.19544v3",
-      "venue": "",
+      "venue": "ICLR",
       "citations": 2,
       "code_url": ""
     },
@@ -37859,8 +37859,368 @@
       "venue": "",
       "citations": 0,
       "code_url": "https://github.com/YimingYang23/DualTopo"
+    },
+    {
+      "paperId": "2611.24940v1",
+      "title": "$Z$-sight: Unifying Vision-Language-Action and Latent World Modeling",
+      "abstract": "We introduce $Z$-sight, a unified robot foundation model that couples vision-language-action (VLA) and generative latent world modeling. Video-based world action models (WAMs) show the value of joint future-and-action generation for control, yet inherit the heavy cost of video generators. Recent latent-space policies avoid pixel generation, yet typically align intermediate features or rely on frozen target encoders, decoupling future prediction from the VLM's native feature space. $Z$-sight instead predicts the future directly in the visual token space in which its VLM perceives the present. Coupling a foresight expert and a continuous action expert with the VLM in a mixture-of-transformers, $Z$-sight jointly denoises future spatial tokens and actions at inference without pixel reconstruction or external encoders. Trained on human video and robot trajectories, $Z$-sight achieves 81.9% success on SIMPLE (+9.6 points over the strongest baseline) and 73.3% across six Unitree G1 tasks (+20.0 points) at 110 ms per chunk, while remaining competitive on tabletop benchmarks.",
+      "year": 2026,
+      "pub_date": "2026-11-18T18:59:38Z",
+      "authors": "Junjie Ye, Yiqi Zhao, Muchen Xu +12",
+      "paper_url": "https://arxiv.org/abs/2611.24940v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2611.24925v1",
+      "title": "Render the Robot, Generate the World: One Video World Model Across Embodiments",
+      "abstract": "Predicting the consequences of an agent's actions requires modeling both the body's motion and the environment's response. Most video world models attempt to learn both from numerical actions, even though geometry and kinematics already specify the intended motion. We introduce Doppel, an embodiment-agnostic video world model conditioned on camera-aligned renderings of future body configurations and numerical action trajectories. By explicitly providing the intended motion, Doppel can focus on predicting object motion and interaction-driven changes in the environment. Rendered motion also provides a common visual interface across different embodiments and action spaces. To train on robot datasets without camera extrinsics, we recover camera poses and align rendered trajectories with recorded observations. We jointly train a single shared video backbone and conditioning adapter on eight datasets spanning eight robot and human embodiments, from single- and bimanual robot arms to a dexterous humanoid and human hands and bodies, using about 600 hours of video without embodiment labels. Across three robot-arm datasets, Doppel improves PSNR over action-only baselines by 1.00 dB on held-out trajectories and 1.20 dB under out-of-distribution evaluation, while predicting more consistent object motion. Training on all eight embodiments (Doppel-8) improves robot predictions over the three-robot model (Doppel-3) on four of six evaluation sets. Project page: https://doppelwm.github.io/.",
+      "year": 2026,
+      "pub_date": "2026-11-18T18:52:28Z",
+      "authors": "Yash Jangir, Karan Mirakhor, Renos Zabounidis +4",
+      "paper_url": "https://arxiv.org/abs/2611.24925v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2611.24869v1",
+      "title": "WorldRuler: Interactive World Modeling under Configurable Rules",
+      "abstract": "Rules govern how player actions change interactive worlds. Different rules create distinct gameplay experiences within similar scenes and action spaces. For customizable gameplay, generative world models must follow user-defined rules beyond real-world behaviors. However, realizing user-defined rules presents two challenges: Rule-State Persistence and Rule-to-Visual Realization. The former requires preserving rule definitions, dependencies, and world states across saving and loading, so that restored worlds follow the established rules. The latter requires accurately realizing rule-induced changes on designated objects and attributes, particularly when affected objects are unseen. In this paper, we propose WorldRuler, which organizes rule definitions, dependencies, and object states in an executable 3D rule graph and connects rule execution, video generation, and perceptual feedback in a closed loop. The graph supports joint saving and restoration of rules and world states, while dynamic object binding grounds rule-specified entities in visual instances and uses stored states to constrain generation from their first appearance. We further introduce object attribute state replacement and counterfactual reconstruction training, enabling accurate attribute control and compatible appearance and motion changes while limiting interference with unrelated content. We develop an automated data collection and annotation pipeline using GTA-V and Habitat to construct RuleVerse, a dataset of rule-driven interactions with detailed state and event annotations, including cases where rules take effect before affected objects become visible. Extensive experiments demonstrate the effectiveness of WorldRuler in preserving rule-state consistency across saving and loading and accurately realizing rule outcomes on designated objects and attributes.",
+      "year": 2026,
+      "pub_date": "2026-11-18T18:20:39Z",
+      "authors": "Mingliang Zhai, Chuanhao Li, Jiaming Tan +6",
+      "paper_url": "https://arxiv.org/abs/2611.24869v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2611.24840v1",
+      "title": "Does the Action Matter? Probing Action-Conditioned Semantic Forecasting as a World Model for Autonomous Driving",
+      "abstract": "World models are increasingly used in autonomous driving to predict how a scene evolves under the ego vehicle's actions, supporting counterfactual reasoning and model-based planning. However, existing evaluations focus on prediction fidelity and planning performance, and rarely verify that the predictions depend on the conditioning action. In this paper, we study action dependence in action-conditioned semantic forecasting, which predicts future semantic segmentation from past segmentations and the ego action. We compare a forecaster with feature-wise and input-level action conditioning against an identical model without action input, and measure action dependence with test-time action interventions scored by standard segmentation metrics. The evaluation is validated in a synthetic environment with known action-dependent dynamics and applied to Cityscapes and BDD100K, both within each dataset and across the two vehicle platforms. Experiments show that the executed action improves mid-term mIoU by at most 2.5 points on Cityscapes and 0.6 points on BDD100K, whereas a wrong action reduces it by up to 23.2 and 7.0 points, below the model without action input. On real data, feature-wise conditioning depends 1.6 times more on the action than input-level conditioning at similar accuracy, whereas both depend on it equally in the synthetic environment, where the history does not determine the action. These results show that an accuracy gain indicates that a driving world model uses its action, but not how strongly its forecasts depend on it. Code is available at https://github.com/binayksingh/does-action-matter.",
+      "year": 2026,
+      "pub_date": "2026-11-18T18:06:20Z",
+      "authors": "Binay Kumar Singh, Niels Da Vitoria Lobo",
+      "paper_url": "https://arxiv.org/abs/2611.24840v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": "https://github.com/binayksingh/does-action-matter"
+    },
+    {
+      "paperId": "2611.24836v1",
+      "title": "DiWALI: Diffusion Policy Learning in World Models via Latent Action Inference from Human and Robot Play",
+      "abstract": "Learning robot manipulation is constrained by the availability of action-labeled robot data, for both imitation and world models. Humans can demonstrate skills in seconds, but their demonstrations lack the required robot actions. We introduce DiWALI, a framework that learns and improves diffusion policies within a world model trained on human and robot play. DiWALI infers latent actions from consecutive frames using an inverse dynamics model, enabling world model training without action labels, and grounds them in robot commands through a decoder trained separately on robot play. Skill policies are trained over latent actions from action-free human demonstrations and improved with reinforcement learning in imagination. On the CALVIN benchmark, DiWALI policies trained solely from human demonstrations substantially outperform baselines trained with robot demonstrations. Incorporating human play into the world model training also yields stronger policies after fine-tuning than using the same amount of robot play alone. Experiments on a physical robot show that skills learned primarily from human demonstrations are further improved in imagination with a world model trained on human and robot play. Together, these results demonstrate that human experience can support both manipulation skill acquisition and subsequent policy improvement, reducing reliance on action-labeled robot data. Videos, dataset and code are available at https://diwali.cs.uni-freiburg.de.",
+      "year": 2026,
+      "pub_date": "2026-11-18T18:03:14Z",
+      "authors": "Akshay L Chandra, Iman Nematollahi, Lingyue Zhao +4",
+      "paper_url": "https://arxiv.org/abs/2611.24836v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2611.24778v1",
+      "title": "Counterfactual World Models: JEPAs That Reason About \"What If\"",
+      "abstract": "World models operate in a world they cannot fully observe. When a hidden disturbance, such as a current pushing a boat, changes the outcome of an action, a counterfactual question follows: what would have happened under a different action, subject to the same disturbance? Its answer separates bad decisions from bad luck. We prove that world models trained on factual transitions cannot answer it on their own, whatever their data or capacity. For many physical systems, the observed outcome and a simple property of the dynamics suffice: natura non facit saltus, nature makes no leaps. When actions and disturbances act as separate forces, their interaction is second-order in time, so the counterfactual outcome is, to first order, the observed outcome plus the difference between the world model's predictions under the alternative and factual actions. This yields a counterfactual world model with no counterfactual data, extra parameters, or retraining. For transitions of duration $h$, we prove an $O(h^2)$ bound on the counterfactual error relative to the disturbance variance, establish a matching minimax lower bound from unpaired factual data, and characterize failures at discontinuities, coordinate folds, and disturbances that scale the command. We validate these predictions from pixels with JEPA world models on frozen DINOv2 and masked autoencoder (MAE) encoders. On four rendered simulators, our approach improves counterfactual $R^2$ from $38$--$46\\%$ to $86$--$96\\%$ with the same world models; on a fifth, an underwater vehicle, it reaches $90$--$94\\%$ with sixteen times more factual data. Four further frozen encoders, DINOv3, SigLIP~2, CLIP and EVA-02, give $81$--$95\\%$ on the same simulators. In hindsight planning, it finds the action that would have reached the goal in $35$--$69\\%$ of events, against $14$--$23\\%$ for an oracle planner that knows the simulator but not the outcome.",
+      "year": 2026,
+      "pub_date": "2026-11-18T17:24:00Z",
+      "authors": "Randall Balestriero, Yann LeCun, Kerda Varaku",
+      "paper_url": "https://arxiv.org/abs/2611.24778v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2611.24731v1",
+      "title": "HandWorldBench: A Unified Benchmark for Hand-Centric World Models",
+      "abstract": "Recent advances in world models are opening new possibilities for fine-grained embodied tasks, with hand-object interaction offering a particularly demanding setting. Modeling these interactions involves capturing how hand actions change objects and how the resulting states persist over time. Yet systematic evaluation tailored to these hand-centric capabilities remains underdeveloped. To address this gap, we introduce HandWorldBench, a unified benchmark that systematically evaluates hand-centric world models across human hands, simulated dexterous hands, and real dexterous hands along six dimensions: visual quality, hand fidelity, appearance consistency, instruction following, physical consistency, and temporal coherence. To construct the benchmark, we develop a data curation pipeline that extracts hand-object interaction clips and screens them for quality, yielding 20,500 high-quality egocentric clips from over 600 hours of footage. We then manually select 500 clips covering seven task families for evaluation. Benchmarking eleven models under a unified protocol reveals that stronger hand-pose control does not consistently translate into coherent object-state evolution and persistence or robust cross-embodiment performance, with several specialized hand-control models underperforming general-purpose text/image-to-video generators on dexterous-hand tasks.",
+      "year": 2026,
+      "pub_date": "2026-11-18T16:47:46Z",
+      "authors": "Zhaolu Wang, Jiacheng Xu, Lihong Wang +12",
+      "paper_url": "https://arxiv.org/abs/2611.24731v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2611.24512v1",
+      "title": "Comparing Each Generation with Independent Siblings Gives Video World Model Post-Training a Proper Objective for Outcome Frequencies",
+      "abstract": "Video world models are used as simulators, so when a first frame leaves several physical outcomes open, repeated generations should produce each outcome as often as it occurs in the data. Physics post-training scores every generation against the single recorded future of its history, which makes single videos more faithful, but the expected score is linear in the model distribution and is maximized by always producing the most likely outcome. The log-likelihood of the recorded outcome is maximized by the data distribution, and its gradient weights agreement with the record by the inverse of how often the model produces the generated outcome, a frequency that other generations of the same history with independent noise, its siblings, can estimate. To train with this weight from a finite group, we propose SibPO, which performs Sibling-paired Policy Optimization: siblings estimate a truncated inverse-frequency weight for agreement with the record, and a second term subtracts the same weight times the agreement with the siblings, which makes the expected objective a strictly proper divergence over outcome cells at every group size. On PisaBench, SibPO lowers the KS distance to simulated landing times by 9.1-10.2% relative to the strongest method outside its reward family on three of four video models without degrading single videos, and it lowers the error of estimated robot policy success rates by 13%.",
+      "year": 2026,
+      "pub_date": "2026-11-18T14:34:06Z",
+      "authors": "Xin Li, Yiwen Chen",
+      "paper_url": "https://arxiv.org/abs/2611.24512v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2611.24470v1",
+      "title": "When to Refine: Selective Search for Frozen Visual World Models",
+      "abstract": "Planning with a visual world model requires deciding both which actions to execute and how long to search for them. We introduce Selective CEM Refinement (SCR), a learned rule for deciding whether to continue cross-entropy method (CEM) search with a frozen LeWorldModel. After five it- erations, the gate measures how far the mean first action chunk has moved, how much the mean terminal cost of elite plans has fallen, and how widely their first chunks vary. It returns the current plan for execution or continues the same search for ten more iterations. The gate requires no addi- tional world-model rollout. On 16 PushT scenes evaluated with two planning seeds, SCR succeeded in 25 of 32 trials, compared with 28 of 32 for fixed 15-iteration search (Fixed-15). All 25 SCR suc- cesses occurred in trials that Fixed-15 also solved, yield- ing 89.29% paired success retention. Across complete episodes, including replanning, SCR evaluated 23.81% fewer candidate plans and reduced mean controller time per eight-environment batch by 17.22%. Its observed suc- cess rate was 5.36 percentage points above an analytic mix- ture of the two fixed-depth controllers at the same expected candidate workload, although the difference changed sign across planning seeds. Compared with gating only at the initial solve under the same random-draw padding proto- col, gating again at replanning produced nine additional early exits. This reduced total candidate evaluations by 15.79%, while successes fell from 27 to 25.",
+      "year": 2026,
+      "pub_date": "2026-11-18T14:08:01Z",
+      "authors": "Jingni Huang",
+      "paper_url": "https://arxiv.org/abs/2611.24470v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2611.24457v1",
+      "title": "ShoWorld: Shape-Faithful Multi-Hypothesis Occupancy World Model",
+      "abstract": "Occupancy world models struggle to forecast moving objects due to motion uncertainty and shape distortion. A single trajectory can average plausible futures into an implausible path, and repeated re-voxelization can erode or inflate object shape even under correct motion. We introduce ShoWorld to address these challenges through separate motion and shape representations. The motion forecaster predicts probabilistic trajectories conditioned on scene layout, nearby agents and the future ego trajectory. Each hypothesis is rendered into occupancy and fused according to its probability to retain alternative futures. The shape component predicts sub-voxel points with occupancy probabilities and offsets from local geometry. These points move rigidly with the object, and voxel occupancy follows the probability that at least one occupied point falls within it. This representation reduces shape distortion under motion. ShoWorld achieves state-of-the-art results on Occ3D-nuScenes. With ground-truth occupancy and ego trajectory, it improves mIoU and IoU by 6.56 and 9.16 points overall and by 6.06 and 5.53 points on dynamic classes.",
+      "year": 2026,
+      "pub_date": "2026-11-18T14:02:31Z",
+      "authors": "Zhiqiang Yan, Guangfa Wang, Yuan Wu +2",
+      "paper_url": "https://arxiv.org/abs/2611.24457v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2611.24408v1",
+      "title": "StrideWorld: Benchmarking Scene Rigidity and Action Consistency in Interactive Video World Model",
+      "abstract": "Interactive video world models turn user commands into the exploration of a generated scene, which requires the scene to keep its 3D structure as the camera moves and each action to keep a stable effect. Existing benchmarks mostly evaluate these properties against references fitted to the video under test, either a scene reconstructed from its own frames or a camera trajectory aligned to the command path with a free scale. Such references can absorb gradual scene deformation and changes in pace and route length, so these errors can pass undetected. We therefore introduce StrideWorld, a benchmark whose references are fixed before the motion they judge. It evaluates scene rigidity against the ground-truth geometry of the start view, and action consistency against the stride of each action, the camera motion of one command. The stride is measured on the model's first steps and then used to test the steps that follow, so each model is judged only against its own steps. Its measurements are validated on rendered videos with known camera motion, and its scores agree with human judgments. Across \\nvideos{} videos generated by \\nmodels{} open models from $140$ start views, all models but one deform their scenes as the camera moves, with offsets up to $7.3$ times those of a rigid rendering along the same camera path. Most models keep a steady pace when a single action is held. Along composed routes, several models often stall, and most completed routes end away from the positions predicted by each model's own strides. Only the two models that scale commands by the estimated scene depth bring most routes close to these positions. Fine-tuning two models on a few rendered clips removes most of their mid-route stalls. Code, data, and a leaderboard are publicly available at https://github.com/chuangwang123/strideworld.",
+      "year": 2026,
+      "pub_date": "2026-11-18T13:37:51Z",
+      "authors": "Chuang Wang, Rui Nie, Jie Song +9",
+      "paper_url": "https://arxiv.org/abs/2611.24408v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": "https://github.com/chuangwang123/strideworld"
+    },
+    {
+      "paperId": "2611.24244v1",
+      "title": "CommDreamer: Radio-Geometric World Models for Mapless Cellular-Connected UAV Trajectory Planning",
+      "abstract": "Reliable cellular connectivity and collision-free flight are essential for unmanned aerial vehicle (UAV) operations in low-altitude urban canyons, where dense 3D buildings obstruct flight clearance, shadow serving base stations, and create strong co-channel interference at street intersections. Existing planners either require prior 3D city meshes and channel knowledge maps unavailable onboard, or rely on model-free reinforcement learning with low sample efficiency and poor cross-city generalization. We propose CommDreamer, a mapless radio-geometric world model that fuses raw onboard 3D LiDAR scans, multicell cellular reports, and shift-invariant relative kinematics to jointly infer local obstacle clearance and directional signal-to-interference-plus-noise ratio (SINR) dynamics. Using a categorical recurrent state-space model, CommDreamer compresses multimodal measurement histories into a coordinate-invariant latent belief, enabling the UAV to foresee deep shadow zones and train a lightweight online policy purely via multi-step latent imagination without prior maps or antenna patterns. Zero-shot evaluations across unseen urban morphologies in our open-source ray-tracing simulator, AeroCity-RT, show that CommDreamer converges within 150 episodes where model-free reinforcement learning fails to complete flights, achieving 100.0% mission success with zero collisions while lifting median route SINR to 8.02 dB and cutting effective SINR outage by over 50% relative to radio-blind world-model and reactive LiDAR baselines.",
+      "year": 2026,
+      "pub_date": "2026-11-18T11:22:40Z",
+      "authors": "Yuqi Ping, Tianhao Liang, Tingting Zhang",
+      "paper_url": "https://arxiv.org/abs/2611.24244v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2611.24229v1",
+      "title": "ProbeShare: Probing a Few, Sharing Across Many for Fast World-Model Planning",
+      "abstract": "Visual planning with a frozen joint-embedding world model supports robotic reaching and object manipulation by evaluating candidate action sequences against an image goal before execution. Standard cross-entropy method (CEM) planners roll out every candidate independently through a billion-parameter predictor, even when nearby actions induce similar scene changes. This redundant computation grows with population size and search rounds, slowing closed-loop replanning. We observe that candidates within a planning step share an observation history and thus a common action-to-feature map. Based on this insight, we propose ProbeShare, which measures local responses with a few representative probes and reconstructs each candidate's feature grid through scene-conditioned, geometry-aware weighting. When promising candidates move beyond existing probe coverage, ProbeShare evaluates a new probe to rescore nearby candidates. Across four RoboCasa tasks, ProbeShare accelerates episode planning by 43.8--128.9 times over dense RoboJEPA and at least $14.2\\times$ over competitive baselines, with greater mean goal progress in a matched-time comparison.",
+      "year": 2026,
+      "pub_date": "2026-11-18T11:05:38Z",
+      "authors": "Zejian Kang, Xiantao Lin, Zekai Chen +5",
+      "paper_url": "https://arxiv.org/abs/2611.24229v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2611.24222v1",
+      "title": "Target-Consistent Action Guidance via Semi-Unbalanced Optimal Transport for Drifting World Models",
+      "abstract": "Action-conditioned world models let robots imagine the outcomes of their actions for planning and offline policy evaluation, but these uses need many rollouts, which multi-step diffusion makes expensive. Drifting models move the iteration from inference to training and generate samples in one network pass. DriftWorld brought this paradigm to action-conditioned world models; to strengthen action following, it repels predictions from the current frame, a construction borrowed from classifier-free guidance. We show that this accentuation has a target bias: the push persists even when a prediction matches the recorded future, in kernel, balanced, and unbalanced Wasserstein drifting fields alike. We introduce Mass-Share Accentuation (MSA) to remove this bias. MSA treats the current frame as a counterfactual destination competing with the recorded future in a semi-relaxed optimal transport problem; subtracting the closed-form share of the correct future makes the guidance vanish at the target, and the remainder is shared by all predictions. We prove that the recorded future is the unique fixed point along the motion direction for collapsed predictions, and that the guidance fades with prediction error. On Push-T, Robomimic, and BridgeV2, where trained models under-react rather than overshoot, MSA improves action ranking, response slope, and moving-region error over latent-space baselines at no inference cost, though these benchmarks do not isolate bias removal as the cause.",
+      "year": 2026,
+      "pub_date": "2026-11-18T10:58:48Z",
+      "authors": "Md Abtahi Majeed Chowdhury, Md Rifat Ur Rahman, Md Sakib Hossain Shovon +2",
+      "paper_url": "https://arxiv.org/abs/2611.24222v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2611.24193v1",
+      "title": "WM^MLLM: Turning MLLMs into World Models",
+      "abstract": "Video world models keep the world in the context of a generator, so a revisit is synthesized again and earlier edits can drift or disappear. We present WM^MLLM, the first interactive world model built on multimodal large language models (MLLMs), for persistent, editable world generation from a single image. WM^MLLM keeps the world state outside every generator, as a panorama with a revision history, and lets the MLLMs write it: they turn each request into operations on this state, select where a local edit is written, and check every candidate before it becomes the next state. Image generators only propose views, and video only presents them. Users can walk to new places and return, edit objects through text or a box, place subjects, and change lighting, weather or season. By construction, a revisit at the same revision reproduces the earlier view exactly, a local edit leaves every panorama pixel outside its region unchanged, and each request starts from the result of the previous one. Against six world model baselines on MBench-A, WM^MLLM has the highest mean on all four environment-recovery metrics (Epipolar 91.5 versus 0.1 to 74.0) and completes the most camera round trips (85.3% versus at most 50.9%). It has the best value in all 15 CompBench columns against 15 baselines. On 112 local edits judged blind, selecting the region to write after generation raises completion from 34.8% to 83.0%. On 258 WBench and MBench-A items, all 46 revisits recover their earlier views, and all 97 local edits that pass the check leave panorama pixels outside their region unchanged.",
+      "year": 2026,
+      "pub_date": "2026-11-18T10:29:16Z",
+      "authors": "Baiang Li, Enze Xie, Jincheng Yu +5",
+      "paper_url": "https://arxiv.org/abs/2611.24193v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2611.24187v1",
+      "title": "Worth Another Look:Constrained World-Model Planning for Visual Inspection",
+      "abstract": "Visual inspection in field robotics and environmental monitoring must localize multiple targets under strict compute and sensing caps. Exhaustive sweeps waste calls on absent classes, while myopic and search-free policies stumble over heterogeneous tariff cliffs or discard viewport edits whose value emerges only after re-querying. We formulate inspection over frozen detectors as neuro-symbolic observation planning under partial observability, decoupling a compact recurrent world model (WM) from exact symbolic feasibility and tariff rules. Receding-horizon beam search with online replanning jointly schedules class queries, crops, enhancements, and termination (stop), paired with slack-aware shadow pricing and legal fallback at larger budgets. Across eight terrestrial, optical, and sonar benchmarks, multi-step lookahead outperforms static schedules and search-free offline RL under tight budgets -- gaining up to 28.4 AP percentage points over static priority on RUOD and 15.1 on ARIS -- while dynamic pricing lifts large-budget performance on all eight domains at 11 ms planning cost. Ultimately, pairing lightweight learned dynamics with exact symbolic constraints turns frozen detectors into adaptive, budget-aware inspection agents without retraining.",
+      "year": 2026,
+      "pub_date": "2026-11-18T10:26:26Z",
+      "authors": "Ziyue Kang, Zixi Qi, Yuchen Dai +6",
+      "paper_url": "https://arxiv.org/abs/2611.24187v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2611.24171v1",
+      "title": "Efficient World-Model Planning via Physics-Guided Search Distillation",
+      "abstract": "World models support autonomous driving by evaluating candidate trajectories through predicted future scene evolution. However, accurate future prediction does not ensure road-compliant execution; when all candidates violate road boundaries, re-ranking cannot select a feasible trajectory. We propose Physics-Guided Search Distillation (PGSD), a single-view planning framework that combines future representations and execution feedback for verified beyond-pool repair through three components: (1) Execution-Aware Selection checks ego-vehicle road compliance under simulated execution and selects the highest-scoring feasible trajectory; (2) a Clearance-Aware Search Teacher generates beyond-pool corrections and selects demonstrations with larger minimum road-boundary clearance during execution to buffer imitation errors; and (3) a Future-Conditioned Repair Student predicts one correction from rewarder features and execution feedback for single-rollout verification. The pretrained planner and rewarder remain frozen; no future scenes are generated online. On NAVSIM v1, single-view PGSD achieves 90.97 PDMS, exceeding all compared prior single-view planners and retaining 73.2% of the search teacher's PDMS gain over execution-aware selection. On NAVSIM v2 navhard, it reaches 38.96 EPDMS, improving on WorldDrive by 11.24 points (40.5%). The student replaces up to ten search rollouts with a single verification rollout per repair trigger. HUGSIM Hard examples provide qualitative evidence of zero-shot transfer.",
+      "year": 2026,
+      "pub_date": "2026-11-18T10:14:22Z",
+      "authors": "Hongyu Zhang, Xiaoshuai Hao, Heye Huang +7",
+      "paper_url": "https://arxiv.org/abs/2611.24171v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2611.24115v1",
+      "title": "Embodied Graph: A Relational World Model for Long-Horizon Tasks",
+      "abstract": "Long-horizon tasks in embodied and web environments involve extended decision sequences and delayed feedback, making accurate planning crucial for success. World models tackle this by learning latent dynamics for imagination-based planning. However, existing approaches merely rely on dense pixel-level observations, which forces the model to absorb redundant information while overlooking relations among task-relevant entities. Consequently, small errors may accumulate over long imagined rollouts and gradually corrupt the predictions. In this paper, we explore world models that imagine over sparse state abstractions, which poses two key challenges: 1) how to remove redundant information and form a compact state abstraction; 2) how to incorporate the relational structure to learn reliable long-horizon dynamics. To address these challenges, we propose Embodied Graph, a relational state abstraction that supports structured dynamics modeling and long-horizon imagination, and the Relational World Model (RWM), which performs imagination directly over graph states. RWM consists of (i) a Task-Aware Embodied Graph Constructor that filters redundant details and maintains graph memory through online updates, and (ii) an Embodied Graph Recurrent State Space Model that learns node-wise latent dynamics while capturing inter-node dependencies. The imagined graph states provide predictions of action consequences to guide decision-making. Experiments on Minecraft and Crafter demonstrate the effectiveness of RWM in embodied environments. Notably, in Minecraft, RWM is the only method that obtains diamonds within the given budget. Experiments on web interaction further illustrate the applicability of relational state prediction to the decision making process of web agents.",
+      "year": 2026,
+      "pub_date": "2026-11-18T09:30:33Z",
+      "authors": "Zongyuan Wu, Xin Wang, Tongtong Feng +4",
+      "paper_url": "https://arxiv.org/abs/2611.24115v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2611.24074v1",
+      "title": "SemPhys: Semantic-Physical Co-Learning for Humanoid Motion Generation via Differentiable World Models",
+      "abstract": "In human-robot collaboration, natural language lets people direct a humanoid's whole-body movements without programming joint trajectories. A common approach generates a kinematic reference from an instruction and relies on a tracking controller to execute it. However, as the controller maintains balance under contact constraints, the executed motion can depart from the reference in ways that change the action it conveys. Our central insight is that semantic alignment must be evaluated directly on the complete motion the robot physically executes. Building on this insight, we introduce \\textbf{SemPhys}, a framework that trains motion generators using semantic feedback from simulated executions. A differentiable world model and a fixed tracking controller predict a short segment of a recorded execution. SemPhys inserts this prediction at its original position, scores the complete trajectory against the instruction, and backpropagates through the predicted segment. A paired anchoring loss stabilizes adaptation by keeping each generated reference close to its counterpart from the initial generator. On BONES-SEED, SemPhys largely preserves instruction retrieval accuracy from reference to execution and achieves the highest retrieval accuracy on executed motions among the evaluated methods.",
+      "year": 2026,
+      "pub_date": "2026-11-18T09:03:59Z",
+      "authors": "Zejian Kang, Yeqiang Wang, Zekai Chen +9",
+      "paper_url": "https://arxiv.org/abs/2611.24074v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2611.24062v1",
+      "title": "JEPA Dots: Dual-Latent World Model for Language-Guided Robot Control",
+      "abstract": "Predictive world models for language-guided robot control face a fundamental conditioning challenge: instructions should influence action selection without altering the predicted consequences of fixed actions under identical observations. To address this challenge, we introduce JEPA Dots (Dynamics-Oriented Task Separation), a compact dual-latent framework that jointly learns visual dynamics and language-guided control through separate dynamics and task representations. Language-conditioned task features guide a flow-matching policy, while masked attention restricts world prediction to instruction-independent dynamics history and supplied actions. In closed-loop evaluation on 40 trained LIBERO tasks, JEPA Dots achieves 84.9% overall success with approximately 39.1M parameters, compared with the published 78.7% of NanoVLA-S with 161.0M parameters under a different evaluation protocol. In the reference experiment, JEPA Dots also improves overall success from 76.0% for our task-ID-conditioned adaptation baseline to 84.9%, with LIBERO-Goal success increasing from 67.1% to 88.5%. Instruction-switching experiments further confirm that task representations and policy outputs respond to language changes, while dynamics representations and world predictions remain invariant under fixed observations and supplied actions.",
+      "year": 2026,
+      "pub_date": "2026-11-18T08:55:54Z",
+      "authors": "Xianhao Pan, Chi Li, Hanchao Li +3",
+      "paper_url": "https://arxiv.org/abs/2611.24062v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2611.23953v1",
+      "title": "MitoWorld: A Stochastic World Model of the Single-Cell Cycle under Genetic Perturbation",
+      "abstract": "A cell observed after a gene knockdown has an uncertain future, both in how its appearance will evolve and when it will divide. Existing approaches predict endpoints or population-level changes without jointly modeling individual trajectories and division timing. In this work, we present MitoWorld, a stochastic world model that generates these future appearances as continuous evolution in a Gaussian reference latent, terminated by a division hazard and converted into images by a conditional diffusion renderer. The ordinary transition provably preserves its Gaussian reference, tying its noise to its dynamics; paired observations identify its discrete transition where stationary marginals cannot. The hazard turns division timing into a survival likelihood that can be tested against real cycle lengths. On 325 held-out MitoCheck tracks spanning 17 knockdowns and a control, MitoWorld lowers FID by 34.6\\% and the video metric JEDi by 45.6\\% relative to the strongest baselines. Its latent-space prediction intervals achieve near-nominal 90\\% coverage, are 35\\% narrower than those of a model with freely fitted noise. The hazard also yields cell-cycle length distributions with KS distance close to the model-based finite-sample reference. Testable single-cell stochastic dynamics thus offer a generative tool for time-lapse perturbation screens.",
+      "year": 2026,
+      "pub_date": "2026-11-18T06:42:32Z",
+      "authors": "Ting Long, Xiaojing Sun, Cheng Han +5",
+      "paper_url": "https://arxiv.org/abs/2611.23953v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2611.23685v1",
+      "title": "Measuring the Conservatism of Latent Safety Filters for World Models",
+      "abstract": "A latent safety filter decides from the latent of a world model whether a planned action is safe. Conformal calibration sets the threshold of the filter so that it accepts an unsafe action only with a small probability. However, the filter can still be conservative and refuse many safe actions, depending on the latent. To measure the conservatism that a latent forces on the filter, we group similar latents and actions into cells. A filter that gives one decision per cell can refuse the unsafe transitions of a cell only by refusing the safe ones in it as well. We call the share of safe transitions that lie in such cells the overlap. We prove that the overlap is the minimum share of safe transitions that such a filter has to refuse in order to accept no unsafe transition in the data. Both the overlap and the conformal calibration can be applied to any latent. We use this to compare three existing designs, in which the safety labels train a classifier on top of the world model, the world model itself, or a separate encoder beside it. In a visual navigation task, the separate encoder has the lowest overlap, and at the same conformal level its filter refuses the fewest safe actions and lets the planner reach the most goals of the three.",
+      "year": 2026,
+      "pub_date": "2026-11-18T01:17:45Z",
+      "authors": "Johannes Mootz, Mani Amani, Reza Akhavian",
+      "paper_url": "https://arxiv.org/abs/2611.23685v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2611.23620v1",
+      "title": "How Uncertain Is My Action? Self-Correcting Visual Planning with Frozen World Models",
+      "abstract": "A frozen latent world model combined with sampling-based model predictive control is a visual planner. At deployment, the executed action can depart from the commanded one, and the frozen model has no way to notice. We show that the model can be run in reverse: for any hypothesized actuation shift, it predicts what it should have observed under that shift, and comparing this prediction with what was actually observed quantifies the shift and lets the planner correct itself. Unlike the residual energy, which mixes the shift with the model's own error, the score keeps only the part of the residual that a shift can produce. This shift score detects the shift with a locally optimal test, estimates it with Cramer-Rao error bars, names the dominant generator, and compensates the planner once an alarm fires. On PushT, TwoRoom and OGBench-Cube with a frozen latent world model, measured detection follows the prediction to within 0.05 AUROC. Self-correction raises success from 0.650 to 0.862 on PushT and from 0.378 to 0.432 on the harder Cube task, levels with an oracle that is told the true shift at the same block, better than five common test-time adaptation methods. On a real robotic arm, the score identifies a base-joint offset that no joint encoder registers and reduces the reach error from 36 mm to 3-5 mm, and under shifts drawn at random and sealed before the session, estimates recover 92-94% of the error reduction achieved with the true shift. The broader implication is that a frozen world model can act as a filter by predicting the future, testing action-interface uncertainty and validity, and finally correcting failures.",
+      "year": 2026,
+      "pub_date": "2026-11-17T23:23:42Z",
+      "authors": "Siqing Li, Luming Yang, Yijia Jiao +2",
+      "paper_url": "https://arxiv.org/abs/2611.23620v1",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2611.22925v2",
+      "title": "Code World Model 2.0: Towards Infinite Controllable Video Generation",
+      "abstract": "Visual proxies decouple explicit world-state simulation from photorealistic video synthesis, offering a controllable interface for both offline clip creation and real-time interactive streaming. Yet a practical renderer must address two challenges. Upstream proxies vary from coarse layouts to fine articulated geometry depending on the interaction, and streaming inference must operate in a few causal steps without accumulating drift across self-generated history. We present Invoker-Render, pairing a bidirectional creation model with a causal four-step streaming model under a shared conditioning interface over structural proxies, an appearance reference, and language. Trained on an aligned approximately 200-hour multi-granularity corpus, Invoker-Render honors fine geometric constraints when supplied while synthesizing plausible local motion under coarse proxies, enabling runtime selection of input detail. To bridge bidirectional creation and real-time streaming without compounding step compression and rollout drift, we introduce Progressive Forcing (ProForcing). ProForcing first trains a causal predictor and distills it into a four-step renderer using histories derived from training videos. Training then shifts to continuous self-generated rollouts. A pipelined serving stack supports efficient streaming inference. Experiments show versatile control across proxy families, granularities, and camera paths, consistent gains over recent streaming baselines, and stable 30-minute racing rollouts that preserve scene and subject appearance.",
+      "year": 2026,
+      "pub_date": "2026-11-17T15:23:57Z",
+      "authors": "Ruoyu Wang, Hao Zhong, Yanming Yang +8",
+      "paper_url": "https://arxiv.org/abs/2611.22925v2",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2611.22669v2",
+      "title": "Beyond the Camera: A Tri-Modal Driving World Model for Future RGB, Thermal, and LiDAR Forecasting in Adverse Weather",
+      "abstract": "Driving world models forecast what a vehicle's sensors will record next. Most forecast camera video and some add LiDAR, but thermal cameras, which still see in darkness and some adverse weather, are rarely a forecast target, and to our knowledge no world model forecasts all three sensors. We study joint forecasting of RGB, thermal, and LiDAR on real adverse-weather sequences of the DSERT-RoLL dataset. We post-train a pretrained video world model for each sensor and represent LiDAR as a depth video aligned with the RGB camera, with densification and encoding chosen by what the model's video tokenizer can reconstruct. A tri-sensor model sees all three sensors as one video. We score LiDAR in meters against measured returns and compare against persistence baselines passed through the same tokenizer as the model. With this matching, an apparent loss of the thermal model to persistence in fog disappears. On all 58 validation sequences in six weather conditions, post-trained RGB and thermal forecasts beat compression-matched persistence. Joint training lowers the LiDAR error at 2s by 2.1m at a small cost in camera fidelity, and only the tri-sensor model's LiDAR forecasts beat persistence in mean error. Blanking one sensor degrades the forecasts of the others more in snow than in fog.",
+      "year": 2026,
+      "pub_date": "2026-11-17T12:24:09Z",
+      "authors": "Faysal Mehrab Chowdhury, Md. Mahfuzur Rahman, Ahmed Rafi Hasan +3",
+      "paper_url": "https://arxiv.org/abs/2611.22669v2",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2611.20811v3",
+      "title": "Auditing World-Model Explanations in Retail Forecasting: Faithfulness, Accuracy and Price Response",
+      "abstract": "Forecasting models that read the price and promotion plan explain each forecast as a baseline, what would sell with nothing planned, plus the lift the plan adds, and merchants order stock and plan promotions on that lift. We show that an explanation can pass the checks used to trust it and still be wrong enough to cost money. We define eight checks for any forecaster that states a plan lift, six with a pass rule fixed before any result, and run them on a world model and on LightGBM. In generated store data with known effects, the world model passes the checks of construction, stability, price direction and agreement with sales and with LightGBM, yet when merchants plan into high-demand weeks it states 1.33 to 1.40 times the true lift, and 1.23 to 1.42 times in eight variants of that world; LightGBM overstates it too (1.26, and 1.16 to 1.35). Both still pick the right weeks to promote, but stock ordered to the world model's lift is off by 0.44 to 0.48 of the true lift. The world model's stated response to a lasting regular-price change is 4.7 to 6.5 times the true -0.5, an error in kind that only a measured cause finds. Sanity checks for explanations test whether an explanation depends on the model; a decision needs to know whether it is right about the world, and these results show the first does not give the second. For the final tuned world models of our companion paper on nine data sets, baseline and lift add up under each model's own plan on every window, but a deeper price cut lowers the forecast in 29% to 83% of item-week steps on Dominick's. Across 703 configurations from the settings searches, checks passed were not related to accuracy (Spearman 0.02, 95% interval -0.02 to 0.05). A noisy benchmark of price episodes in Dominick's data is reported as a check of direction only.",
+      "year": 2026,
+      "pub_date": "2026-11-16T09:57:40Z",
+      "authors": "Karthik Iyer",
+      "paper_url": "https://arxiv.org/abs/2611.20811v3",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2610.06651v2",
+      "title": "Considering Context: When World Models Need Context Encoders",
+      "abstract": "Methods for generalization in model-based reinforcement learning typically assume that an agent cannot recover the latent context governing the environment dynamics from its own experience, and therefore supplies it externally. We formalize and test this assumption with \\emph{predictive sufficiency}, which quantifies what access to the context adds to next-step prediction under the visitation distribution an agent induces, and separates that quantity into a history-recoverable part and a residual requiring the true context, both distinct from a finite model's deficit. We classify context-aware algorithms by the predictive risk their conditioning set can target and demonstrate across environments of increasing identification difficulty that the headroom does not follow the MDP class. The same task under different priors leaves predictive headroom in one setting and nothing distinguishable from zero in another, where the agent's behavior implicitly identifies the context and any benefit of such a mechanism cannot be attributed to missing one-step predictive information. Where headroom persists, the learned state exposes it only partially, and adding the true context still lowers the risk. Our contribution is an analytical framework, instantiated by a practical criterion for matching contextual mechanisms to the predictive information available to them, estimated from the ordinary trained agent.",
+      "year": 2026,
+      "pub_date": "2026-10-05T16:32:15Z",
+      "authors": "Oleg Smirnov, Sofiane Ennadir, John Pertoft +2",
+      "paper_url": "https://arxiv.org/abs/2610.06651v2",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2609.18442v2",
+      "title": "RiskWorld: Risk-Aware World Modeling with Flow-Guided Occupancy Evolution for Selective Trajectory Planning in Automated Driving",
+      "abstract": "Safe motion planning in automated driving requires anticipating evolving traffic risks and deciding when to revise the current planned trajectory. We introduce RiskWorld, a risk-aware world modeling framework for shared occupancy forecasting and selective trajectory replacement. Spatial risk fields and temporal actor context are fused with visual bird's-eye-view features. Flow-guided evolution transports occupancy and scene features, while signed residuals correct occupancy after transport. One forecast is generated per planning step and reused across candidates. Each candidate is compared with a current-state persistence reference, yielding a nonnegative collision-score correction. The trajectory selected by current-world evaluation serves as the planning anchor and is replaced only when additional predicted risk triggers intervention and an alternative satisfies component-wise constraints on predicted risk and trajectory error. Candidate geometries remain unchanged. We evaluate RiskWorld for open-loop planning on nuScenes using camera features, annotation-derived current and historical actor states, and dataset-provided map context. RiskWorld achieves the lowest collision rate at a long evaluation horizon of 3 s, and the second-best average L2 error among various state-of-the-art baselines, while running at 11.5 FPS on a single NVIDIA RTX 4090 with 90.81 M parameters. Within-setting ablations show that RiskWorld achieves lower collision rates than the current-state rescoring baseline, while forecast reuse enables additional candidates to be evaluated at low marginal computational cost.",
+      "year": 2026,
+      "pub_date": "2026-09-16T10:32:37Z",
+      "authors": "Rongxiang Zeng, Linsen Cai, Jiafu Zhang +7",
+      "paper_url": "https://arxiv.org/abs/2609.18442v2",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2606.24152v3",
+      "title": "Autonomous Video Generation for Self-Evolving World Models",
+      "abstract": "Large-scale video generation models are increasingly described as world models because they can learn rich spatiotemporal regularities from visual data. We argue that an ideal world model should benefit in a self-evolving generative character. As such, a self-evolving world model can be realized via a generative model conditioned by various constraints, whose future predictions are refined through feedback. However, traditional visually plausible predictions alone are not enough to establish whether an imagined future is physically actionable for a particular embodied agent, failing to provide informative feedback from environments for self-evolving improvement. To realize self-evolving world models, this article proposes the concept of autonomous video generation, which is evaluated through counterfactual controllability, i.e., the ability to i) generate intervention-conditioned futures, ii) bind these future frames to embodiment constraints, iii) verify them under distribution shifts, and iv) distil surviving branches into compact variables for decision-making. We formalize a four-stage closed-loop optimization of Generation, Binding, Verification and Distillation, together with four corresponding evaluation metrics: novelty, consistency, out-of-distribution (OOD) and efficiency. We further discuss two examples, i.e., drones and manipulators, as early embodied testbeds where wind, sensing limits, actuation delay, contact dynamics and recovery constraints can be systematically perturbed and verified. The central claim is that the framework of autonomous video generation for self-evolving world models should not be judged by video fidelity alone, but by whether the generated frames improve valid action under counterfactual interventions and various embodiment constraints.",
+      "year": 2026,
+      "pub_date": "2026-06-23T05:19:47Z",
+      "authors": "Xin Wang, Wenxuan Liu, Tongtong Feng +1",
+      "paper_url": "https://arxiv.org/abs/2606.24152v3",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
+    },
+    {
+      "paperId": "2606.15160v2",
+      "title": "DLWM: Diverse Latent World Models for Efficient Multimodal Reasoning",
+      "abstract": "Reasoning capabilities of multimodal large language models (MLLMs) have improved considerably in recent years. Existing approaches typically rely on explicit chain-of-thought or continuous latent-space trajectories to enhance multi-step reasoning. However, these methods generally assume that an input admits a single latent interpretation and unfold reasoning along a fixed path or under a uniform computation budget. In real-world multimodal settings, visual observations are often subject to occlusion, blur, viewpoint variation, or semantic ambiguity, giving rise to multiple plausible interpretations. A uniform reasoning strategy not only limits the model's ability to explore multiple hypotheses but also incurs high memory usage and rollout cost. We present DLWM (Diverse Latent World Models), a multimodal reasoning framework that combines latent-space reasoning with reinforcement learning. First, we construct a set of diverse latent world hypotheses in continuous latent space, each representing a candidate interpretation of the visual input, and unfold latent reasoning independently on each hypothesis. An orthogonality-based diversity regularizer discourages hypothesis collapse. Second, we formulate the latent reasoning process as a resource-constrained sequential decision problem and introduce a resource-aware reinforcement learning policy that adaptively allocates computation across hypotheses, dynamically deciding whether to expand a reasoning path, prune a hypothesis, merge reasoning paths, or produce the final answer, thereby substantially reducing memory footprint and improving rollout efficiency. Experiments on multiple multimodal reasoning benchmarks demonstrate that DLWM outperforms existing methods by 2-5 points in accuracy while reducing memory usage by 24%.",
+      "year": 2026,
+      "pub_date": "2026-06-13T07:12:46Z",
+      "authors": "David Huang, Lianlei Shan",
+      "paper_url": "https://arxiv.org/abs/2606.15160v2",
+      "venue": "",
+      "citations": 0,
+      "code_url": null
     }
   ],
-  "last_updated": "2026-11-18T18:07:39.465560Z",
-  "total": 3155
+  "last_updated": "2026-11-19T18:18:13.133615Z",
+  "total": 3185
 }
